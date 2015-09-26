@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>TUD Informatik Katalog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="libs/angular-tree-control/css/tree-control.css">
+    <link rel="stylesheet" type="text/css" href="libs/angular-tree-control/css/tree-control-attribute.css">
+    <link rel="stylesheet" href="assets/main.css" />
+</head>
+<!-- Ey, raus aus meinem Sourcecode! :D -->
+<body ng-app="informatikModules" ng-controller="RootCtrl" ng-class="{'aside-open': !!selectedNode, 'aside-big': bigAside }">
+    <section>
+        <header class="fixed-top header">
+            <input ng-model="search" placeholder="Modul suchen" />
+            <div class="buttons">
+                <button ng-click="toggleExpanded(ALL_EXPANDED)">+ Expand all</button>
+                <button ng-click="toggleExpanded(ALL_COLLAPSED)">- Collapse all</button>
+            </div>
+        </header>
+        <treecontrol class="tree tree-classic" expanded-nodes="expandedNodes" filter-expression="search" filter-comparator="comparator" on-selection="showSelected(node)" tree-model="data" options="treeOptions">
+            {{node.text}}  <span class="credits" ng-if="node.credits">{{node.credits}} CP</span>
+        </treecontrol>
+    </section>
+
+    <aside ng-if="selectedNode">
+        <div class="close-button button" ng-click="showSelected()">x</div>
+        <div class="resize-button button" ng-click="toggleAside()">{{bigAside ? '>' : '<'}}</div>
+        <h2>{{selectedNode.text}}</h2>
+        <div ng-repeat="detail in selectedNode.details">
+            <b>{{detail.title}}</b>
+            <br/>
+            <span ng-bind-html="detail.details"></span>
+        </div>
+    </aside>
+    <div class="overlay" ng-if="!overlayHidden">
+        <div class="content">
+            <h1>Ganz wichtig!</h1>
+            <p>
+                Die Benutzung ist natürlich auf eigene Gefahr!
+                <br/>
+                <br/>
+                Ich habe viel gegengetestet und nachgeprüft, aber da die Menge der Daten schwierig zu überblicken und testen ist, können sich Fehler einschleichen!
+                <br/>
+                <br/>
+                Also: du wurdest gewarnt :D
+                <br/>
+                <br/>
+                <button ng-click="hideOverlay()">Ja, bin gewarnt!</button>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="libs/angular-tree-control/angular-tree-control.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ramda/0.17.1/ramda.min.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+
+</html>

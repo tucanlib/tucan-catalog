@@ -1,0 +1,20 @@
+{
+  "name": "ajskdja",
+  "version": "0.0.0",
+  "authors": [
+    "David Gengenbach <davidgengenbach@gmx.de>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-tree-control": "~0.2.15",
+    "angular-sanitize": "1.2.28"
+  }
+}
