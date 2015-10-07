@@ -6,19 +6,20 @@
     <title>TUD Informatik Katalog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="libs/angular-tree-control/css/tree-control.css">
-    <link rel="stylesheet" type="text/css" href="libs/angular-tree-control/css/tree-control-attribute.css">
     <link rel="stylesheet" href="assets/main.css" />
 </head>
 <!-- Ey, raus aus meinem Sourcecode! :D -->
 <body ng-app="informatikModules" ng-controller="RootCtrl" ng-class="{'aside-open': !!selectedNode, 'aside-big': bigAside }">
-    <section>
-        <header class="fixed-top header">
-            <input ng-model="search" placeholder="Modul suchen" />
-            <div class="buttons">
-                <button ng-click="toggleExpanded(ALL_EXPANDED)">+ Expand all</button>
-                <button ng-click="toggleExpanded(ALL_COLLAPSED)">- Collapse all</button>
-            </div>
-        </header>
+
+    <header class="fixed-top header">
+        <input ng-model="search" placeholder="Modul suchen" />
+        <div class="buttons">
+            <button ng-click="toggleExpanded(ALL_EXPANDED)">+ Expand all</button>
+            <button ng-click="toggleExpanded(ALL_COLLAPSED)">- Collapse all</button>
+        </div>
+    </header>
+
+    <section class="overflow-auto">
         <treecontrol class="tree tree-classic" expanded-nodes="expandedNodes" filter-expression="search" filter-comparator="comparator" on-selection="showSelected(node)" tree-model="data" options="treeOptions">
             {{node.text}}  <span class="credits" ng-if="node.credits">{{node.credits}} CP</span>
         </treecontrol>
@@ -52,11 +53,11 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <script src="libs/jquery/dist/jquery.js"></script>
     <script src="libs/angular/angular.min.js"></script>
     <script src="libs/angular-sanitize/angular-sanitize.min.js"></script>
     <script src="libs/angular-tree-control/angular-tree-control.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ramda/0.17.1/ramda.min.js"></script>
+    <script src="libs/ramda/dist/ramda.js"></script>
     <script src="assets/main.js"></script>
 </body>
 

@@ -431,11 +431,29 @@ th {
 }
 
 
+html,
 body {
     font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
     font-size: 14px;
-    padding: 20px;
     line-height: 1.4;
+    height: 100%;
+    overflow: hidden;
+}
+
+section {
+    padding: 14px;
+    position: absolute;
+    top: 42px;
+    width: 100%;
+    bottom: 0;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.relative {
+    position: relative;
 }
 
 .credits {
@@ -466,7 +484,7 @@ aside {
     bottom: 0;
     width: 40%;
     border-left: 1px solid #b1bd00;
-    padding: 10px;
+    padding: 14px;
     top: 42px;
     overflow: auto;
 }
@@ -475,6 +493,12 @@ aside .close-button {
     position: absolute;
     top: 5px;
     right: 5px;
+}
+
+aside .resize-button {
+    position: absolute;
+    top: 5px;
+    right: 30px;
 }
 
 aside .button {
@@ -487,19 +511,8 @@ aside .button {
     cursor: pointer;
 }
 
-aside .resize-button {
-    position: absolute;
-    top: 5px;
-    right: 30px;
-}
-
 .center {
     text-align: center;
-}
-
-.tree {
-    position: relative;
-    top: 40px;
 }
 
 .fixed-top {
