@@ -440,6 +440,10 @@ body {
     overflow: hidden;
 }
 
+h1 {
+    font-size: 24px;
+}
+
 section {
     padding: 14px;
     position: absolute;
@@ -549,7 +553,7 @@ button:last-child {
     border-left: 1px solid #b1bd00;
 }
 
-input {
+header input {
     border: none;
     margin: 0 0 10px;
     width: 60%;
@@ -569,6 +573,15 @@ input {
     bottom: 0;
     background: rgba(0,0,0, 0.8);
     z-index: 99;
+}
+
+.overlay h1 {
+    margin-bottom: 28px;
+}
+
+.overlay .hint {
+    font-size: 12px;
+    color: #777;
 }
 
 .overlay .content {
