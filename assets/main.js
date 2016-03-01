@@ -8,11 +8,13 @@
         }, acc, list);
     }
 
-    var getParents = R.memoize(R.partial(flatten, R.path(['children', 'length'])));
+    var getParents = R.partial(flatten, function(item) {
+        return item.children && item.children.length;
+    });
 
-    var getModules = R.memoize(R.partial(flatten, function(curr) {
+    var getModules = R.partial(flatten, function(curr) {
         return curr.details && curr.details.length;
-    }));
+    });
 
     function prepareData(data) {
         function extractCP(data) {
@@ -40,7 +42,7 @@
             $scope.treeOptions = {
                 nodeChildren: 'children',
                 dirSelectable: false,
-                level: 20
+                level: 10
             };
 
             $scope.toggleExpanded = function(state) {
