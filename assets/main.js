@@ -8,11 +8,11 @@
         }, acc, list);
     }
 
-    var getParents = R.partial(flatten, R.path(['children', 'length']));
+    var getParents = R.memoize(R.partial(flatten, R.path(['children', 'length'])));
 
-    var getModules = R.partial(flatten, function(curr) {
-            return curr.details && curr.details.length;
-        });
+    var getModules = R.memoize(R.partial(flatten, function(curr) {
+        return curr.details && curr.details.length;
+    }));
 
     function prepareData(data) {
         function extractCP(data) {

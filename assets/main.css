@@ -493,6 +493,10 @@ aside {
     overflow: auto;
 }
 
+aside .module-detail {
+    margin-bottom: 16px;
+}
+
 aside .close-button {
     position: absolute;
     top: 5px;

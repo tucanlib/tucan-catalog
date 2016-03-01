@@ -30,7 +30,7 @@
         <div class="close-button button" ng-click="showSelected()">x</div>
         <div class="resize-button button" ng-click="toggleAside()">{{bigAside ? '>' : '<'}}</div>
         <h2>{{selectedNode.text}}</h2>
-        <div ng-repeat="detail in selectedNode.details">
+        <div class="module-detail" ng-repeat="detail in selectedNode.details">
             <b>{{detail.title}}</b>
             <br/>
             <span ng-bind-html="detail.details"></span>
