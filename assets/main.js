@@ -35,14 +35,17 @@
 
     angular
         .module('informatikModules', ['treeControl', 'ngSanitize'])
-        .controller('RootCtrl', function($scope, $http) {
+        .controller('RootCtrl', function($scope, $http, $timeout) {
             $scope.ALL_EXPANDED = 'ALL_EXPANDED';
             $scope.ALL_COLLAPSED = 'ALL_COLLAPSED';
 
             $scope.treeOptions = {
                 nodeChildren: 'children',
                 dirSelectable: false,
-                level: 10
+                level: 10,
+                equality: function(n1, n2) {
+                    return n1 === n2;
+                }
             };
 
             $scope.toggleExpanded = function(state) {
