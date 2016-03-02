@@ -460,6 +460,17 @@ section {
     position: relative;
 }
 
+.tree-label:hover {
+    color: #000;
+}
+
+
+
+.tree-selected .credits,
+.tree-label:hover .credits {
+    opacity: 1;
+}
+
 .credits {
     background: #b1bd00;
     color: white;
@@ -467,6 +478,7 @@ section {
     padding: 3px;
     margin-left: 4px;
     font-size: 12px;
+    opacity: 0.7;
 }
 
 .aside-open section {

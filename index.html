@@ -21,8 +21,16 @@
     </header>
 
     <section class="overflow-auto" ng-cloak>
-        <treecontrol class="tree tree-classic" expanded-nodes="expandedNodes" filter-expression="search" filter-comparator="comparator" on-selection="showSelected(node)" tree-model="data" options="treeOptions">
-            {{node.text}}  <span class="credits" ng-if="node.credits">{{node.credits}} CP</span>
+        <treecontrol
+            class="tree tree-classic"
+            expanded-nodes="expandedNodes"
+            filter-expression="search"
+            filter-comparator="comparator"
+            on-selection="showSelected(node, selected)"
+            tree-model="data"
+            options="treeOptions">
+            {{node.text}}
+            <span class="credits" ng-if="node.credits">{{node.credits}} CP</span>
         </treecontrol>
     </section>
 
