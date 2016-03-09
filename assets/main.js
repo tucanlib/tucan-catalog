@@ -1,31 +1,16 @@
 (function(angular, R) {
     'use strict';
 
-    var getParents = R.partial(flatten, R.path(['children', 'length']));
-    var getModules = R.partial(flatten, function(curr) {
-        return curr.details && curr.details.length;
-    });
-
     var modules,
         parents;
 
     function prepareData(data) {
-        function extractCP(data) {
-            return parseInt(R.trim(R.head(data.split(' '))), 10);
-        }
-
-        parents = getParents(data, []);
-        modules = getModules(data, []);
-
-        R.forEach(function(module) {
-            var CP = R.find(function(item) {
-                return item.title.indexOf('Credits') >= 0;
-            }, module.details);
-
-            if (CP) {
-                module.credits = extractCP(CP.details);
-            }
-        }, modules);
+        // Returns only "modules" in the module tree that have children (= categories)
+        parents = R.partial(flatten, R.path(['children', 'length']))(data, []);
+        // Returns only modules that have no children (= are modules)
+        modules = R.partial(flatten, function(curr) {
+            return curr.details && curr.details.length;
+        })(data, []);
     }
 
     angular
@@ -42,6 +27,15 @@
                 }
             };
 
+            // Retrieve module data
+            $http
+                .get('assets/modules.json')
+                .success(function(data) {
+                    prepareData(data);
+                    $scope.data = data;
+                    $scope.toggleExpanded($scope.ALL_EXPANDED);
+                });
+
             $scope.toggleExpanded = function(state) {
                 $scope.expandedNodes = (state === $scope.ALL_EXPANDED) ? parents : [];
             };
@@ -57,14 +51,6 @@
             $scope.hideOverlay = function() {
                 $scope.overlayHidden = true;
             };
-
-            $http
-                .get('assets/modules.json')
-                .success(function(data) {
-                    prepareData(data);
-                    $scope.data = data;
-                    $scope.toggleExpanded($scope.ALL_EXPANDED);
-                });
         });
 
     function flatten(test, list, acc) {

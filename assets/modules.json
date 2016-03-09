@@ -58,7 +58,110 @@
 						"title": "Notenverbesserung nach §25 (2)",
 						"details": "In dieser Vorlesung findet eine Anrechnung von vorlesungsbegleitenden Leistungen statt, die lt. §25(2) der 5. Novelle der APB und den vom FB 20 am 02.10.2012 beschlossenen Anrechnungsregeln zu einer Notenverbesserung um bis zu 1.0 führen kann.<br><!-- End Descriptions -->"
 					}
-				]
+				],
+				"credits": 10
+			},
+			{
+				"text": "04-00-0121 Formale Grundlagen der Informatik II: Logic for Computer Science (SoSe 2014)",
+				"children": [],
+				"details": [
+					{
+						"title": "Modulverantwortliche:",
+						"details": "<span id=\"dozenten\">Prof. Dr. phil. nat. Ulrich Kohlenbach</span>"
+					},
+					{
+						"title": "Anzeige im Stundenplan:",
+						"details": ""
+					},
+					{
+						"title": "Dauer:",
+						"details": "5"
+					},
+					{
+						"title": "Anzahl Wahlkurse:",
+						"details": "0"
+					},
+					{
+						"title": "Credits:",
+						"details": "5,0                                                            <br>Hinweis: In Ihrer Prüfungsordnung können abweichende Credits festgelegt sein."
+					},
+					{
+						"title": "Startsemester:",
+						"details": "SoSe 2014                                 <br><br><!-- Start participant selection --><!-- End participant selection --><!-- Start Descriptions -->"
+					},
+					{
+						"title": "Lehrinhalte",
+						"details": "Syntax und Semantik der Aussagenlogik, funktionale Vollständigkeit und Normalformen, Kompaktheitssatz der Aussagenlogik, vollständige Beweiskalküle: Resolution und ein Sequenzenkalkül;<br>Syntax und Semantik der Logik erster Stufe, Strukturen und Belegungen, Normalformen und Skolemisierung, der Satz von Herbrand und der Kompaktheitsstaz der Logik erster Stufe, vollständige Beweiskalküle: (Grundinstanzen-)Resolution und ein Sequenzenkalkül,<br>Gödelscher Vollständigkeitssatz, Unentscheidbarkeit der Logik erster Stufe;<br>optional: Exkurse zu Ausdrucksstärke und model checking"
+					},
+					{
+						"title": "Qualifikationsziele / Lernergebnisse",
+						"details": "Die Studierenden werden mit Inhalten und Methoden der mathematischen Logik und ihrer Rolle in der Informatik vertraut gemacht. Sie lernen die grundlegenden Begriffe und Resultate der Logik, insbesondere der Logik erster Stufe, kennen und anzuwenden. Sie beherrschen die grundsätzlichen mathematischen Methoden in der Behandlung von Syntax, Semantik und formalen Beweisen, sowie die Diskussion einfacher modelltheoretischer und algorithmischer Aspekte der behandelten logischen Systeme"
+					},
+					{
+						"title": "Literatur",
+						"details": "Burris: Logic for Mathematics and Computer Science<br><br>Schöning: Logik für Informatiker<br><br>Boolos, Burgess, Jeffrey: Computability and Logic<br><br>Skript (2 Teile, elektronisch unter www.mathematik.tu-darmstadt.de/&#x2DC;otto)"
+					},
+					{
+						"title": "Verwendbarkeit",
+						"details": "Pflichtveranstaltung in Informatikstudiengängen"
+					},
+					{
+						"title": "Voraussetzung für die Teilnahme",
+						"details": "mathematische Allgemeinbildung und Formale Grundlagen I<br><!-- End Descriptions -->"
+					}
+				],
+				"credits": 5
+			},
+			{
+				"text": "04-00-0119 Mathematik II für Informatik und Wirtschaftsinformatik (SoSe 2015)",
+				"children": [],
+				"details": [
+					{
+						"title": "Modulverantwortliche:",
+						"details": "<span id=\"dozenten\">Prof. Dr. rer. nat. Thomas Streicher</span>"
+					},
+					{
+						"title": "Anzeige im Stundenplan:",
+						"details": ""
+					},
+					{
+						"title": "Dauer:",
+						"details": "3"
+					},
+					{
+						"title": "Anzahl Wahlkurse:",
+						"details": "0"
+					},
+					{
+						"title": "Credits:",
+						"details": "9,0                                                            <br>Hinweis: In Ihrer Prüfungsordnung können abweichende Credits festgelegt sein."
+					},
+					{
+						"title": "Startsemester:",
+						"details": "SoSe 2015                                 <br><br><!-- Start participant selection --><!-- End participant selection --><!-- Start Descriptions -->"
+					},
+					{
+						"title": "Lehrinhalte",
+						"details": "<ul><br><li>Analysis in R: Potenzreihen, Elementarfunktionen, Differenzial- und Integralrechnung,Satz von Taylor, Extremwerte, Fourierreihen<br></li><li>Analysis mehrer Veränderlicher: Stetigkeit, partielle und totale Differenzierbarkeit, Extremwerte, Kurven<br></li><li>Gewöhnliche Differentialgleichungen: Systeme linearer DGLen, Satz von Picard-Lindelöf<br></li><li>Allgemeine Algebra: Algebren und Unteralgebren, Homomorphismen, Quotienten<br></li></ul>"
+					},
+					{
+						"title": "Qualifikationsziele / Lernergebnisse",
+						"details": "Nach Abschluss des Moduls können die Studierenden:<br><br>- mit abstrakten Begriffen präzise umgehen, Beweise nachvollziehen, Beweisideen erläutern und auch selbstständig Beweise führen,<br><br>- die axiomatisch-deduktive Vorgehensweise der Mathematik verstehen und anwenden,<br><br>- die vermittelten Kenntnisse und Begriffe aus zentralen Gebieten der Mathematikgrundausbildung beherrschen, so dass sie diese für die verschiedenen Anwendungen in der Informatik nutzen können.<br><br><br>Die Studierenden sollen<br><br>- mit mathematischer Methodik und Fachkultur vertraut sein.<br><br>- in der Lage sein, aufbauend auf das vermittelte Grundwissen Mathematik, weitere mathematische Inhalte selbstständig zu erarbeiten."
+					},
+					{
+						"title": "Literatur",
+						"details": "Skript der Veranstaltung"
+					},
+					{
+						"title": "Verwendbarkeit",
+						"details": "Pflicht"
+					},
+					{
+						"title": "Voraussetzung für die Teilnahme",
+						"details": "Mathematik I<br><!-- End Descriptions -->"
+					}
+				],
+				"credits": 9
 			}
 		]
 	},
@@ -120,7 +223,8 @@
 								"title": "Notenverbesserung nach §25 (2)",
 								"details": "In dieser Vorlesung findet eine Anrechnung von vorlesungsbegleitenden Leistungen statt, die lt. §25(2) der 5. Novelle der APB und den vom FB 20 am 02.10.2012 beschlossenen Anrechnungsregeln zu einer Notenverbesserung um bis zu 1.0 führen kann.<br><!-- End Descriptions -->"
 							}
-						]
+						],
+						"credits": 5
 					},
 					{
 						"text": "20-00-0014 Einführung in Human Computer Systems (SoSe 2015)",
@@ -174,7 +278,8 @@
 								"title": "Voraussetzung für die Teilnahme",
 								"details": "Lineare Algebra, Datenstrukturen<br><br><!-- End Descriptions -->"
 							}
-						]
+						],
+						"credits": 5
 					},
 					{
 						"text": "20-00-0016 Computer Netzwerke und verteilte Systeme (SoSe 2016)",
@@ -232,7 +337,8 @@
 								"title": "Notenverbesserung nach §25 (2)",
 								"details": "In dieser Vorlesung findet eine Anrechnung von vorlesungsbegleitenden Leistungen statt, die lt. §25(2) der 5. Novelle der APB und den vom FB 20 am 02.10.2012 beschlossenen Anrechnungsregeln zu einer Notenverbesserung um bis zu 1.0 führen kann.<br><!-- End Descriptions -->"
 							}
-						]
+						],
+						"credits": 5
 					},
 					{
 						"text": "20-00-0015 Einführung in Data and Knowledge Engineering (SoSe 2014)",
@@ -286,7 +392,8 @@
 								"title": "Voraussetzung für die Teilnahme",
 								"details": "Datenstrukturen, Indexmechanismen<br><br><!-- End Descriptions -->"
 							}
-						]
+						],
+						"credits": 5
 					}
 				]
 			}
@@ -360,7 +467,8 @@
 												"title": "Notenverbesserung nach §25 (2)",
 												"details": "In dieser Vorlesung findet eine Anrechnung von vorlesungsbegleitenden Leistungen statt, die lt. §25(2) der 5. Novelle der APB und den vom FB 20 am 02.10.2012 beschlossenen Anrechnungsregeln zu einer Notenverbesserung um bis zu 1.0 führen kann.<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 10
 									},
 									{
 										"text": "10-30-0036 Bioinformatik BB 36 VL+Ü (SoSe 2016)",
@@ -390,7 +498,8 @@
 												"title": "Startsemester:",
 												"details": "SoSe 2016                                 <br><br><!-- Start participant selection --><!-- End participant selection --><!-- Start Descriptions --><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 4
 									},
 									{
 										"text": "20-00-0784 Intelligente Multi-Agenten Systeme (SoSe 2016)",
@@ -444,7 +553,8 @@
 												"title": "Notenverbesserung nach §25 (2)",
 												"details": "In dieser Vorlesung findet eine Anrechnung von vorlesungsbegleitenden Leistungen statt, die lt. §25(2) der 5. Novelle der APB und den vom FB 20 am 02.10.2012 beschlossenen Anrechnungsregeln zu einer Notenverbesserung um bis zu 1.0 führen kann.<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									},
 									{
 										"text": "20-00-0953 Multithreading in C++ (SoSe 2016)",
@@ -486,7 +596,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "&#x2022; Kenntnisse in C/C++<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 10
 									}
 								]
 							}
@@ -528,7 +639,7 @@
 											},
 											{
 												"title": "Lehrinhalte",
-												"details": "Die Vorlesung Echtzeitsysteme befasst sich mit einem Softwareentwicklungsprozess, der speziell auf die Spezifika von Echtzeitsystemen zugeschnitten ist. Dieser Softwareentwicklungsprozess wird im weiteren Verlauf während der Übungen in Ausschnitten durchlebt und vertieft. Der Schwerpunkt liegt dabei auf dem Einsatz objektorientierter Techniken. In diesem Zusammenhang wird das echtzeitspezifische CASE Tool Rose Realtime vorgestellt und eingesetzt. Des weiteren werden grundlegende Charakteristika von Echtzeitsystemen und Systemarchitekturen eingeführt. Auf Basis der Einführung von Schedulingalgorithmen werden Einblicke in Echtzeitbetriebssysteme gewährt. Die Veranstaltung wird durch eine Gegenüberstellung der Programmiersprache Java und deren Erweiterung für Echtzeitsysteme (RT-Java) abgerundet."
+												"details": "Die Vorlesung Echtzeitsysteme befasst sich mit einem Softwareentwicklungsprozess, der speziell auf die Spezifika von Echtzeitsystemen zugeschnitten ist. Dieser Softwareentwicklungsprozess wird im weiteren Verlauf während der Übungen in Ausschnitten durchlebt und vertieft. Der Schwerpunkt liegt dabei auf dem Einsatz objektorientierter Techniken. In diesem Zusammenhang wird das echtzeitspezifische CASE Tool Rhapsody vorgestellt und eingesetzt. Des weiteren werden grundlegende Charakteristika von Echtzeitsystemen und Systemarchitekturen eingeführt. Auf Basis der Einführung von Schedulingalgorithmen werden Einblicke in Echtzeitbetriebssysteme gewährt. Die Veranstaltung wird durch eine Gegenüberstellung der Programmiersprache Java und deren Erweiterung für Echtzeitsysteme (RT-Java) abgerundet."
 											},
 											{
 												"title": "Qualifikationsziele / Lernergebnisse",
@@ -546,7 +657,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "Grundkennntisse des Software-Engineerings sowie Kenntnisse einer objektorientierten Programmiersprache<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									},
 									{
 										"text": "20-00-0701 Fortgeschrittener Compilerbau (SoSe 2016)",
@@ -596,7 +708,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "Erfolgreicher Besuch der Veranstaltung &#x201C;Einführung in den Compilerbau&#x201D;<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 5
 									},
 									{
 										"text": "20-00-0956 Grundlagen der Prozessorarchitektur und der Ein-/Ausgabe (SoSe 2016)",
@@ -638,7 +751,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "Empfohlen: Erfolgreicher Besuch der Vorlesungen &#x201E;Digitaltechnik&#x201C;, &#x201E;Rechnerorganisation&#x201C; .<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									}
 								]
 							}
@@ -702,7 +816,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "Grundlegende Algorithmen und Datenstrukturen<br><br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									},
 									{
 										"text": "20-00-0598 Algorithmen in der Sprachtechnologie (SoSe 2016)",
@@ -756,7 +871,8 @@
 												"title": "Notenverbesserung nach §25 (2)",
 												"details": "In dieser Vorlesung findet eine Anrechnung von vorlesungsbegleitenden Leistungen statt, die lt. §25(2) der 5. Novelle der APB und den vom FB 20 am 02.10.2012 beschlossenen Anrechnungsregeln zu einer Notenverbesserung um bis zu 1.0 führen kann.<br><br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									},
 									{
 										"text": "20-00-0947 Deep Learning für Natural Language Processing (SoSe 2016)",
@@ -798,7 +914,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "Grundlegende Mathematik- und Programmierkenntnisse<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									}
 								]
 							}
@@ -866,7 +983,8 @@
 												"title": "Notenverbesserung nach §25 (2)",
 												"details": "In dieser Vorlesung findet eine Anrechnung von vorlesungsbegleitenden Leistungen statt, die lt. §25(2) der 5. Novelle der APB und den vom FB 20 am 02.10.2012 beschlossenen Anrechnungsregeln zu einer Notenverbesserung um bis zu 1.0 führen kann.<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									},
 									{
 										"text": "20-00-0362 Formale Methoden der Informationssicherheit (SoSe 2016)",
@@ -920,7 +1038,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "Informatik- und Mathematikkenntnisse entsprechend den ersten 4 Semestern des Bachelorstudiengangs Informatik, insbesondere grundlegende Logikkenntnisse und Fähigkeit mit formalen Sprachen und Kalkülen umzugehen<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 9
 									}
 								]
 							}
@@ -988,7 +1107,8 @@
 												"title": "Notenverbesserung nach §25 (2)",
 												"details": "In dieser Vorlesung findet eine Anrechnung von vorlesungsbegleitenden Leistungen statt, die lt. §25(2) der 5. Novelle der APB und den vom FB 20 am 02.10.2012 beschlossenen Anrechnungsregeln zu einer Notenverbesserung um bis zu 1.0 führen kann.<br><br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									},
 									{
 										"text": "20-00-0155 Medizinische Bildverarbeitung (SoSe 2016)",
@@ -1038,7 +1158,8 @@
 												"title": "Verwendbarkeit",
 												"details": "B.Sc. Informatik<br>M.Sc. Informatik<br>B.Sc. Computational Engineering<br>M.Sc. Computational Engineering<br>M.Sc. Wirtschaftsinformatik<br>B.Sc. Psychologie in IT<br>Joint B.A. Informatik<br>B.Sc. Sportwissenschaft und Informatik<br>M.Sc. Sportwissenschaft und Informatik<br><br>Kann im Rahmen fachübergreifender Angebote auch in anderen Studiengängen verwendet werden.<br><br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 3
 									},
 									{
 										"text": "20-00-0160 Virtuelle und Erweiterte Realität (SoSe 2016)",
@@ -1092,7 +1213,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "Grundlagen der Graphischen Datenverarbeitung (GDV)<br><br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									},
 									{
 										"text": "20-00-0358 Statistisches Maschinelles Lernen (SoSe 2016)",
@@ -1146,7 +1268,8 @@
 												"title": "Notenverbesserung nach §25 (2)",
 												"details": "In dieser Vorlesung findet eine Anrechnung von vorlesungsbegleitenden Leistungen statt, die lt. §25(2) der 5. Novelle der APB und den vom FB 20 am 02.10.2012 beschlossenen Anrechnungsregeln zu einer Notenverbesserung um bis zu 1.0 führen kann.<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									},
 									{
 										"text": "20-00-0366 Serious Games (SoSe 2016)",
@@ -1200,7 +1323,8 @@
 												"title": "Notenverbesserung nach §25 (2)",
 												"details": "In dieser Vorlesung findet eine Anrechnung von vorlesungsbegleitenden Leistungen statt, die lt. §25(2) der 5. Novelle der APB und den vom FB 20 am 02.10.2012 beschlossenen Anrechnungsregeln zu einer Notenverbesserung um bis zu 1.0 führen kann.<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									},
 									{
 										"text": "20-00-0401 Computer Vision II (SoSe 2016)",
@@ -1250,7 +1374,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "Besuch von Visual Computing und Computer Vision I ist empfohlen.<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									},
 									{
 										"text": "20-00-0467 Medizinische Visualisierung (SoSe 2016)",
@@ -1308,7 +1433,8 @@
 												"title": "Notenverbesserung nach §25 (2)",
 												"details": "In dieser Vorlesung findet eine Anrechnung von vorlesungsbegleitenden Leistungen statt, die lt. §25(2) der 5. Novelle der APB und den vom FB 20 am 02.10.2012 beschlossenen Anrechnungsregeln zu einer Notenverbesserung um bis zu 1.0 führen kann.<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									},
 									{
 										"text": "20-00-0535 TK2: Human Computer Interaction (SoSe 2016)",
@@ -1362,7 +1488,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "<br><br><br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 3
 									},
 									{
 										"text": "20-00-0489 Capturing Reality (SoSe 2016)",
@@ -1420,53 +1547,8 @@
 												"title": "Notenverbesserung nach §25 (2)",
 												"details": "In dieser Vorlesung findet eine Anrechnung von vorlesungsbegleitenden Leistungen statt, die lt. §25(2) der 5. Novelle der APB und den vom FB 20 am 02.10.2012 beschlossenen Anrechnungsregeln zu einer Notenverbesserung um bis zu 1.0 führen kann.<br><br><!-- End Descriptions -->"
 											}
-										]
-									},
-									{
-										"text": "20-00-0737 Interdisziplinäre Entwicklung von Urban Health Games (SoSe 2016)",
-										"children": [],
-										"details": [
-											{
-												"title": "Modulverantwortliche:",
-												"details": "<span id=\"dozenten\">Dr. Stefan Peter Göbel; Prof. Dr.-Ing. Martin Knöll; Prof. Dr. Josef Wiemeyer</span>"
-											},
-											{
-												"title": "Anzeige im Stundenplan:",
-												"details": "UHG"
-											},
-											{
-												"title": "Dauer:",
-												"details": "1"
-											},
-											{
-												"title": "Anzahl Wahlkurse:",
-												"details": "0"
-											},
-											{
-												"title": "Credits:",
-												"details": "8,0"
-											},
-											{
-												"title": "Startsemester:",
-												"details": "SoSe 2016                                 <br><br><!-- Start participant selection --><!-- End participant selection --><!-- Start Descriptions -->"
-											},
-											{
-												"title": "Lehrinhalte",
-												"details": "Die interdisziplinäre Lehrveranstaltung richtet sich speziell an Studierende der Fachbereiche<br>- FB 03 (Psychologie),<br>- FB 15 (Architektur),<br>- FB 18 (etit),<br>- FB 20 (Informatik)<br><br>Folgende Inhalte werden in studentischen Teams mit Betreuung durch wissenschaftliche Tutoren bearbeitet:<br>- Anforderungsanalyse für Urban Health Game Design<br>- Active (Street) Design und Urban Planning<br>- Messbarkeit, Messmethoden für Vitalparameter<br>- Mobile Game Design und mobile Game Entwicklung<br>- Test, Einsatz und Dokumentation des Prototypen<br>- Projektmanagement und Teamkompetenz<br><br>Die studentischen Teams werden mit Mitgliedern der drei Fachdisziplinen (Architektur, Psychologie und Informatik/etit) besetzt, die jeweils ihre Fachschwerpunkte beitragen und im interdisziplinären Kontext voneinander profitieren. Die Entwicklung eines neuartigen Prototypen, unterstützt durch die Betreuer und Dozenten der jeweiligen Disziplinen (d.h. der Serious Games Gruppe am Lehrstuhl Multimedia Kommunikation, der AG Kognitionspsychologie in der Psychologie und der UNICO Gruppe Digitale Stadtspiele in der Architektur), vermittelt alle Kompetenzen der interdisziplinären Zusammenarbeit."
-											},
-											{
-												"title": "Qualifikationsziele / Lernergebnisse",
-												"details": "Mit ihrer erfolgreichen Teilnahme an der Veranstaltung erwerben die Studenten praktisches Wissen im Bereich des Projektmanagements, dass sie nicht nur auf ihr eigenes Thema anwenden, sondern auch auf zukünftige &#x2013; interdisziplinäre &#x2013; Projekte transferieren können. Sie erhalten Kenntnisse über das Vorgehen bei der interdisziplinären Konzeption und Erstellung von &#x201E;Urban Health Games&#x201C; und können dieses auf konkrete Projekte anwenden. Sie kennen Analysemethoden und können diese zur Bewertung der von ihnen erstellten Anwendung anwenden. Au&#xDF;erdem können sie die von ihnen erzielten Ergebnisse einem Publikum unter Anwendung von verschiedenen Präsentationstechniken vorstellen sowie eine dazugehörige Fachdiskussion aktiv bestreiten."
-											},
-											{
-												"title": "Verwendbarkeit",
-												"details": "B.Sc. Informatik<br>M.Sc. Informatik<br>B.Sc. Computational Engineering<br>M.Sc. Computational Engineering<br>M.Sc. Wirtschaftsinformatik<br>B.Sc. Psychologie in IT<br>Joint B.A. Informatik<br>B.Sc. Sportwissenschaft und Informatik<br>M.Sc. Sportwissenschaft und Informatik<br><br>Kann im Rahmen fachübergreifender Angebote auch in anderen Studiengängen verwendet werden."
-											},
-											{
-												"title": "Voraussetzung für die Teilnahme",
-												"details": "Abgeschlossene Bachelor-/Studienarbeit oder sonstige Erfahrung mit Softwareentwicklung (FB 18/20) oder Stadtentwicklung (FB 15) oder Messinstrumenten/Messreihen (FB 03) wird empfohlen.<br>Die Lehrveranstaltung richtet sich an Studierende der Informatik und Informatik-naher Master- und Diplomstudiengänge, z.B. Elektrotechnik und Informationstechnik, ebenso wie an Studierende der Architektur und Studierende der Psychologie, bspw. Kognitionspsychologie. Diese sollten Interesse am Design von Computerspielen im Kontext von Urban Health Games und am Ausbau ihrer Projektmanagement-Kompetenzen haben.<br><br><!-- End Descriptions -->"
-											}
-										]
+										],
+										"credits": 6
 									},
 									{
 										"text": "20-00-0761 Visualisierung in Naturwissenschaft und Technik (SoSe 2016)",
@@ -1516,7 +1598,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "Vorlesung: GDV I<br>Lineare Algebra, Analysis<br>C++ und OpenGL<br>Algorithmen und Datenstrukturen<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									},
 									{
 										"text": "20-00-0793 User-Centered Design in Visual Computing (SoSe 2016)",
@@ -1562,7 +1645,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "&#x2022; Grundlagen des Visual Computing, wie sie beispielsweise in der kanonischen Einführungsveranstaltung HCS und in der Vorlesung GDV I vermittelt werden<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 3
 									}
 								]
 							}
@@ -1622,7 +1706,8 @@
 												"title": "Notenverbesserung nach §25 (2)",
 												"details": "Ein Bonus in Höhe von 0,3 oder 0,7 Notenstufen kann erlangt werden.<br>Für den 0,3-Bonus gilt: 7 von 9 Übungen müssen bestmöglich gelöst werden. Das bedeutet, dass jede Frage beantwortet sein sollte. Es muss jedoch nicht jede Antwort absolut korrekt sein, damit ein Übungsblatt als korrekt akzeptiert wird. Zusätzlich muss mindestens ein Wiki-Artikel verfasst oder ein Applet vorgestellt werden aus dem Themengebiet der Vorlesung.<br>Für den 0,7-Bonus gilt: Es muss eine Präsenz-Übung präsentiert werden und drei statt einem Wiki-Artikel verfasst werden oder fünf Wiki-Artikel verfasst werden.<br>Eine mündliche Prüfung, das Fachgespräch wird abschlie&#xDF;end abgenommen. Die Teilnahem daran ist zwingend notwendig für den Erhalt des Bonus. Der Bonus kommt nur zur Anwendung, wenn bei der eigentlichen Prüfung eine 4,0 oder besser erreicht wird.<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									},
 									{
 										"text": "20-00-0056 Netz-, Verkehrs- und Qualitäts-Management für Internet Services (SoSe 2016)",
@@ -1676,7 +1761,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "Vorwissen: Grundlegende Kenntnisse der Informatik und Internet-Anwendungen werden vorausgesetzt. Die Vorlesungen Kommunikationsnetze I und II sind empfohlen.<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 3
 									},
 									{
 										"text": "20-00-0120 TK3: Ubiquitous / Mobile Computing (SoSe 2016)",
@@ -1734,7 +1820,8 @@
 												"title": "Notenverbesserung nach §25 (2)",
 												"details": "In dieser Vorlesung findet eine Anrechnung von vorlesungsbegleitenden Leistungen statt, die lt. §25(2) der 5. Novelle der APB und den vom FB 20 am 02.10.2012 beschlossenen Anrechnungsregeln zu einer Notenverbesserung um bis zu 1.0 führen kann.<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									},
 									{
 										"text": "18-hh-2010 Peer-to-Peer Systeme und Anwendungen (SoSe 2016)",
@@ -1784,7 +1871,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "Grundlegende Kurse der ersten 4 Semester werden benötigt. Die Vorlesungen in Kommunikationsnetze I und II werden empfohlen.<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									}
 								]
 							}
@@ -1840,7 +1928,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "Interest and initial experience in Formal Methods<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 3
 									},
 									{
 										"text": "20-00-0808 Software-Kompositions-Paradigmen (SoSe 2016)",
@@ -1886,7 +1975,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "Vertrautheit mit der objekt-orientierten Programmiermethode auf Niveau eines Informatik-Bachelor Abschlusses.<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 3
 									},
 									{
 										"text": "20-00-0949 Applied Static Analysis (SoSe 2016)",
@@ -1928,7 +2018,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "The lecture is targeted towards Master students with a very high degree of interest in reading, analyzing and also writing code. Basic knowledge in compiler construction is helpful. Deep knowledge of object-oriented programming concepts and in particular of object-oriented programming in Java is required. Interest in learning new programming languages (in particular Scala) is required.<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 3
 									},
 									{
 										"text": "20-00-0951 Concepts and Technologies for Distributed Systems and Big Data Processing (SoSe 2016)",
@@ -1970,7 +2061,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "This course is targeted at master students.<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 3
 									}
 								]
 							}
@@ -2030,7 +2122,8 @@
 												"title": "Verwendbarkeit",
 												"details": "B.Sc. Informatik<br>M.Sc. Informatik<br>M.Sc. Wirtschaftsinformatik<br>B.Sc. Psychologie in IT<br>Joint B.A. Informatik<br>B.Sc. Sportwissenschaft und Informatik<br><br>Kann im Rahmen fachübergreifender Angebote auch in anderen Studiengängen verwendet werden.<br><br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									},
 									{
 										"text": "20-00-0096 Virtuelle Private Netze (SoSe 2016)",
@@ -2084,7 +2177,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "<br>Grundstudium in Informatik Kryptographie, Netze, IT-Sicherheit<br><br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 3
 									},
 									{
 										"text": "20-00-0093 Sicherheit in Multimedia Systemen und Anwendungen (SoSe 2016)",
@@ -2142,7 +2236,8 @@
 												"title": "Notenverbesserung nach §25 (2)",
 												"details": "In dieser Vorlesung findet eine Anrechnung von vorlesungsbegleitenden Leistungen statt, die lt. §25(2) der 5. Novelle der APB und den vom FB 20 am 02.10.2012 beschlossenen Anrechnungsregeln zu einer Notenverbesserung um bis zu 1.0 führen kann.<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									},
 									{
 										"text": "20-00-0219 IT Sicherheit (SoSe 2016)",
@@ -2200,7 +2295,8 @@
 												"title": "Notenverbesserung nach §25 (2)",
 												"details": "In dieser Vorlesung findet eine Anrechnung von vorlesungsbegleitenden Leistungen statt, die lt. §25(2) der 5. Novelle der APB und den vom FB 20 am 02.10.2012 beschlossenen Anrechnungsregeln zu einer Notenverbesserung um bis zu 1.0 führen kann.<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									},
 									{
 										"text": "20-00-0378 Operating Systems II: Dependability and Trust (SoSe 2016)",
@@ -2254,7 +2350,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "Empfohlen: Grundlagen der Information 1-3<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 8
 									},
 									{
 										"text": "20-00-0512 Netzsicherheit (SoSe 2016)",
@@ -2312,7 +2409,8 @@
 												"title": "Notenverbesserung nach §25 (2)",
 												"details": "In dieser Vorlesung findet eine Anrechnung von vorlesungsbegleitenden Leistungen statt, die lt. §25(2) der 5. Novelle der APB und den vom FB 20 am 02.10.2012 beschlossenen Anrechnungsregeln zu einer Notenverbesserung um bis zu 0,7 führen kann.<br><br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									},
 									{
 										"text": "20-00-0581 Embedded System Security (SoSe 2016)",
@@ -2366,7 +2464,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "Grundlagen der Kryptographie<br><br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									},
 									{
 										"text": "20-00-0583 Sichere Mobile Systeme (SoSe 2016)",
@@ -2420,7 +2519,8 @@
 												"title": "Notenverbesserung nach §25 (2)",
 												"details": "In dieser Vorlesung findet eine Anrechnung von vorlesungsbegleitenden Leistungen statt, die lt. §25(2) der 5. Novelle der APB und den vom FB 20 am 02.10.2012 beschlossenen Anrechnungsregeln zu einer Notenverbesserung um bis zu 1.0 führen kann.<br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 3
 									},
 									{
 										"text": "20-00-0585 Kryptoplexität (SoSe 2016)",
@@ -2474,7 +2574,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "Einführung in die Kryptographie<br><br><!-- End Descriptions -->"
 											}
-										]
+										],
+										"credits": 6
 									},
 									{
 										"text": "20-00-0632 Post-Quantum Kryptographie (SoSe 2016)",
@@ -2516,53 +2617,8 @@
 												"title": "Voraussetzung für die Teilnahme",
 												"details": "Lineare Algebra, Einführung in die Kryptographie<br><br><!-- End Descriptions -->"
 											}
-										]
-									},
-									{
-										"text": "20-00-0805 Zivile Sicherheit (SoSe 2016)",
-										"children": [],
-										"details": [
-											{
-												"title": "Modulverantwortliche:",
-												"details": "<span id=\"dozenten\">Dr. Martin Steinebach</span>"
-											},
-											{
-												"title": "Anzeige im Stundenplan:",
-												"details": "Zivile Sicherheit"
-											},
-											{
-												"title": "Dauer:",
-												"details": "1"
-											},
-											{
-												"title": "Anzahl Wahlkurse:",
-												"details": "0"
-											},
-											{
-												"title": "Credits:",
-												"details": "6,0"
-											},
-											{
-												"title": "Startsemester:",
-												"details": "SoSe 2016                                 <br><br><!-- Start participant selection --><!-- End participant selection --><!-- Start Descriptions -->"
-											},
-											{
-												"title": "Lehrinhalte",
-												"details": "Unter dem Begriff &quot;zivile Sicherheit&quot; versteht man neben Katastrophenschutz und Terrorismusbekämpfung auch die Aspekte der Sicherheit, die einen direkten Bezug zum Bürger und dessen Alltag aufweisen. Sie ist also auch dann bedroht, wenn der Bürger im täglichen Leben eine latente Unsicherheit hinsichtlich gewöhnlicher Handlungen verspürt.<br>In dieser Veranstaltung werden drei ausgewählte Szenarien der zivilen Sicherheit adressiert, die einen Bezug zur IT haben: Medikamentenhandel über das Internet, Versicherungsbetrug und Geldwäsche sowie Handel mit Antiken aus Raubgrabungen über das Internet. Dabei sind sowohl die Methoden der Betrüger als auch die der Betrugsaufdeckung von Interesse. Basis für diese Themen sind die BMBF Forschungsprogramme zur Wirtschaftskriminalität und zur organisierten Kriminalität. Es sollen Technologien entwickelt, Dunkelfeldforschung betrieben sowie interdisziplinäre Eigenschaften bezüglich beispielsweise Recht und Wirtschaft betrachtet werden.<br>Die Veranstaltung kombiniert Vorlesung und Seminar. Zu Beginn wird eine Einführung in die Thematik gegeben, in welcher unter anderem internationale Sicherheitsstrategien, computerisierte Methoden der Aufdeckung von Betrugsfällen und Aspekte des Datenschutzes behandelt werden.<br>In dem anschlie&#xDF;enden Seminar werden einzelne Themen vertieft betrachtet, wie beispielsweise:<br>&#x2022; Umschlagplätze für Medikamente im Internet<br>&#x2022; Bildmanipulationen als Grundlage für Versicherungsbetrug<br>&#x2022; Forensische Erkennung von Identitäten<br>&#x2022; &#xC4;hnlichkeitssuche: Welche Methoden für Bild und Text werden in der Praxis genutzt<br>&#x2022; Wie schützen sich Auktionsplattformen vor illegalen Angeboten?<br>Die Vertiefung geschieht auf Basis empfohlener Publikationen, von denen ausgehend der Teilnehmer einen Seminarvortrag und eine begleitende Ausarbeitung erstellt und diese mit den übrigen Teilnehmern der Veranstaltung diskutiert."
-											},
-											{
-												"title": "Qualifikationsziele / Lernergebnisse",
-												"details": "- Erstellen von wissenschaftlichen Kurzvorträgen<br>- Verwendung von Zitaten<br>- Interdisziplinäre Sicherheitsbetrachtung<br>- Einsatz von Methoden der Betrugserkennung"
-											},
-											{
-												"title": "Verwendbarkeit",
-												"details": "B.Sc. Informatik<br>M.Sc. Informatik<br>M.Sc. Wirtschaftsinformatik<br>B.Sc. Psychologie in IT<br>M.Sc. Psychologie in IT<br>Joint B.A. Informatik<br>B.Sc. Sportwissenschaft und Informatik<br>M.Sc. Sportwissenschaft und Informatik<br><br>Kann im Rahmen fachübergreifender Angebote auch in anderen Studiengängen verwendet werden."
-											},
-											{
-												"title": "Voraussetzung für die Teilnahme",
-												"details": "Hilfreich sind Grundkenntnisse in Internettechnologie und IT Security.<br>Für einzelne Seminarthemen werden in der Veranstaltungen weitere Empfehlungen hinsichtlich der Vorkenntnisse ausgesprochen.<br><!-- End Descriptions -->"
-											}
-										]
+										],
+										"credits": 6
 									}
 								]
 							}
@@ -2626,7 +2682,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "- Grundlagen der Informatik 3<br>- Grundkenntnisse der Differentialalgebra im Hinblick auf Ableitungen (Kettenregel, Gradienten, Jacobi-Matrix)<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0791 Heterogenes Paralleles Programmieren (SoSe 2016)",
@@ -2672,7 +2729,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "- Grundlagen von CUDA/OpenCL, OpenMP und MPI<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0802 Parallele Programmierung (SoSe 2016)",
@@ -2718,7 +2776,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "&#x2022; Kennnisse in paralleler Programmierung<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											}
 										]
 									},
@@ -2777,7 +2836,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "- grundlegende Fachkenntnisse und methodische Fähigkeiten in der Robotik, wie diese durch die Lehrveranstaltung &#x201C;Grundlagen der Robotik&#x201D; vermittelt werden<br>- spezifische Programmierkenntnisse je nach Aufgabenstellung<br>- Teilnahme am ersten Teil &#x201C;Integriertes Robotik-Projekt 1&#x201D;<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "20-00-0753 Lernende Roboter: Integriertes Projekt - Teil 1 (SoSe 2016)",
@@ -2823,7 +2883,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Gleichzeitige oder vorherherige Besuch der Vorlesung &quot;Lernende Roboter&quot;.<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "20-00-0754 Lernende Roboter: Integriertes Projekt - Teil 2 (SoSe 2016)",
@@ -2869,53 +2930,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Gleichzeitige oder vorherherige Besuch der Vorlesung &quot;Lernende Roboter&quot;.<br><!-- End Descriptions -->"
 													}
-												]
-											},
-											{
-												"text": "20-00-0803 Multicore Programmierung (SoSe 2016)",
-												"children": [],
-												"details": [
-													{
-														"title": "Modulverantwortliche:",
-														"details": "<span id=\"dozenten\">Prof. Dr. rer. nat. Felix Wolf</span>"
-													},
-													{
-														"title": "Anzeige im Stundenplan:",
-														"details": "MCPROG"
-													},
-													{
-														"title": "Dauer:",
-														"details": "1"
-													},
-													{
-														"title": "Anzahl Wahlkurse:",
-														"details": "0"
-													},
-													{
-														"title": "Credits:",
-														"details": "6,0"
-													},
-													{
-														"title": "Startsemester:",
-														"details": "SoSe 2016                                 <br><br><!-- Start participant selection --><!-- End participant selection --><!-- Start Descriptions -->"
-													},
-													{
-														"title": "Lehrinhalte",
-														"details": "&#x2022; Einführung in für das Praktikum relevante parallele Programmiermodelle sowie benötigte Methoden und Werkzeuge<br>&#x2022; Entwicklung eines grö&#xDF;eren parallelen Programms für Mehrkernarchitekturen, einschlie&#xDF;lich Anforderungsdefinition, Entwurf, Umsetzung, Tests, Fehlersuche und Dokumentation<br>&#x2022; Projektpräsentation"
-													},
-													{
-														"title": "Qualifikationsziele / Lernergebnisse",
-														"details": "&#x2022; Korrekte und effiziente Programme für Mehrkernarchitekturen systematisch entwickeln<br>&#x2022; In einem Team arbeiten<br>&#x2022; Effektiv kommunizieren<br>&#x2022; Projektergebnisse einem grö&#xDF;eren Publikum präsentieren"
-													},
-													{
-														"title": "Verwendbarkeit",
-														"details": "B.Sc. Informatik<br>M.Sc. Informatik<br>M.Sc. Wirtschaftsinformatik<br>B.Sc. Psychologie in IT<br>M.Sc. Psychologie in IT<br>Joint B.A. Informatik<br>B.Sc. Sportwissenschaft und Informatik<br>M.Sc. Sportwissenschaft und Informatik<br><br>Kann im Rahmen fachübergreifender Angebote auch in anderen Studiengängen verwendet werden."
-													},
-													{
-														"title": "Voraussetzung für die Teilnahme",
-														"details": "&#x2022; Kennnisse in paralleler Programmierung und Softwaretechnik<br><!-- End Descriptions -->"
-													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "20-00-0945 Praktische Anwendungen zu Neuronale Informationsverarbeitung für Gehirn-Computer Schnittstellen (SoSe 2016)",
@@ -2957,7 +2973,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "<br>Vorherige erfolgreiche Teilname an der Vorlesung &quot;Neuronale Informationsverarbeitung für Gehirn-Computer Schnittstellen&quot;<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											}
 										]
 									},
@@ -3024,7 +3041,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "- grundlegende Fachkenntnisse und methodische Fähigkeiten in der Robotik, wie diese durch die Lehrveranstaltung &#x201C;Grundlagen der Robotik&#x201D; vermittelt werden<br>- spezifische Programmierkenntnisse je nach Aufgabenstellung<br><br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 9
 											}
 										]
 									}
@@ -3084,15 +3102,15 @@
 													},
 													{
 														"title": "Lehrinhalte",
-														"details": "Die sechs Praktikumstage werden in zwei Abschnitte unterteilt.<br>In den ersten vier Tagen des Praktikums werden durch praktische Aufgaben und Vorträge die Grundkonzepte der Programmiersprachen C und C++ vermittelt. Sämtliche Aspekte werden durch ausgedehnte praktische Arbeiten unter Aufsicht am Rechner vertieft. Aufbauend auf den grundlegenden Sprachkonstrukten werden manuelle Speicherverwaltung und dynamische Datenstrukturen, sowohl unter prozeduralen als auch unter objektorientierten Aspekten, behandelt. Der objektorientierte Ansatz wird ausgedehnt behandelt durch Mehrfachvererbung, Polymorphie und parametrische Poylmorphie.<br>In den letzten beiden Tagen des Praktikums geht es um die Programmierung eines Mikrokontrollers in der Programmiersprache C inklusive der Programmierung einer verteilten Anwendung (via CAN-Bus). Die dafür nötigen Evaluationsboards (SK-16FX-EUROScope) werden von der Firma Fujitsu gesponsert."
+														"details": "Die sechs Praktikumstage werden in zwei Abschnitte unterteilt.<br>In den ersten vier Tagen des Praktikums werden durch praktische Aufgaben und Vorträge die Grundkonzepte der Programmiersprachen C und C++ vermittelt. Sämtliche Aspekte werden durch ausgedehnte praktische Arbeiten unter Aufsicht am Rechner vertieft. Aufbauend auf den grundlegenden Sprachkonstrukten werden manuelle Speicherverwaltung und dynamische Datenstrukturen, sowohl unter prozeduralen als auch unter objektorientierten Aspekten, behandelt. Der objektorientierte Ansatz wird ausgedehnt behandelt durch Mehrfachvererbung, Polymorphie und parametrische Polymorphie.<br>In den letzten beiden Tagen des Praktikums geht es um die Programmierung eines Microcontrollers in der Programmiersprache C inklusive der Möglichkeit zur Programmierung einer verteilten Anwendung (via CAN-Bus)."
 													},
 													{
 														"title": "Qualifikationsziele / Lernergebnisse",
-														"details": "Die Studenten erwerben während des Praktikums Kenntnisse der grundlegenden Sprachkonstrukte von C++. Dabei wird sowohl der prozedurale als auch der objektorientierte Charakter der Sprache betont sowie besonderer Wert auf das Erlernen von Konzepten der hardwarenahe Programmierung gelegt. Es wird ein Gespür für die Gefahren im Umgang mit der Sprache vermittelt und es werden geeignete Lösungen zu ihrer Vermeidung verinnerlicht."
+														"details": "Die Studenten erwerben während des Praktikums Kenntnisse der grundlegenden Sprachkonstrukte von C und C++. Dabei wird sowohl der prozedurale als auch der objektorientierte Programmierstil betont sowie besonderer Wert auf das Erlernen von Konzepten der hardwarenahe Programmierung gelegt. Es wird ein Gespür für die Gefahren im Umgang mit der Sprache insbesondere bei der Entwicklung eingebetteter Systemsoftware vermittelt und es werden geeignete Lösungen zu ihrer Vermeidung verinnerlicht."
 													},
 													{
 														"title": "Literatur",
-														"details": "<a href=\"http://www.es.tu-darmstadt.de/lehre/cpp\">www.es.tu-darmstadt.de/lehre/cpp</a>"
+														"details": "<a href=\"http://www.es.tu-darmstadt.de/lehre/aktuelle-veranstaltungen/c-und-c-p\">http://www.es.tu-darmstadt.de/lehre/aktuelle-veranstaltungen/c-und-c-p</a>"
 													},
 													{
 														"title": "Verwendbarkeit",
@@ -3102,7 +3120,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Java-Kenntnisse<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0647 Praktikum zu Technischer Informatik (SoSe 2016)",
@@ -3152,7 +3171,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Hängt von der konkreten Aufgabe ab. Typische empfohlene Veranstaltungen sind &#x201C;Digitaltechnik&#x201D;, &#x201C;Rechnerorganisation&#x201D;, &#x201C;Architekturen und Entwurf von Rechnersystemen&#x201D; und/oder &#x201C;Einführung in Compilerbau&#x201D; und &#x201C;Fortgeschrittener Compilerbau&#x201D;<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "20-00-0958 Hardware-Entwurf für die Videoverarbeitung (SoSe 2016)",
@@ -3194,7 +3214,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Empfohlen: Erfolgreicher Besuch der Vorlesungen &#x201E;Digitaltechnik&#x201C;, &#x201E;Rechnerorganisation&#x201C;, &#x201E;Architektur und Entwurf von Rechnersystemen&#x201C; und idealerweise auch &#x201E;Visual Computing&#x201C; und &#x201E;Computational Engineering und Robotik&#x201C; oder vergleichbare Kenntnisse aus anderen Studiengängen.<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "20-00-0959 Embedded System Hands-On 1: Entwurf und Realisierung von Hardware/Software-Systemen (SoSe 2016)",
@@ -3236,7 +3257,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Empfohlen: Erfolgreicher Besuch der Vorlesungen &#x201E;Digitaltechnik&#x201C;, &#x201E;Rechnerorganisation&#x201C;, &#x201E;Architektur und Entwurf von Rechnersystemen&#x201C;, &#x201E;Betriebssysteme&#x201C; und &#x201E;Systemnahe und Parallele Programmierung&#x201C; oder vergleichbare Kenntnisse aus anderen Studiengängen.<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											}
 										]
 									},
@@ -3317,7 +3339,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Grundwissen in Machine Learning und Data Mining<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0596 Text Analytics (SoSe 2016)",
@@ -3363,7 +3386,8 @@
 														"title": "Verwendbarkeit",
 														"details": "B.Sc. Informatik<br>M.Sc. Informatik<br>M.Sc. Wirtschaftsinformatik<br>B.Sc. Psychologie in IT<br>Joint B.A. Informatik<br>B.Sc. Sportwissenschaft und Informatik<br>M.Sc. Sportwissenschaft und Informatik<br><br>Kann im Rahmen fachübergreifender Angebote auch in anderen Studiengängen verwendet werden.<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0785 Adaptive Informationsaufbereitung aus heterogenen Quellen (SoSe 2016)",
@@ -3405,7 +3429,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "keine<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": null
 											},
 											{
 												"text": "20-00-0923 UKP Oberseminar (SoSe 2016)",
@@ -3443,7 +3468,8 @@
 														"title": "Qualifikationsziele / Lernergebnisse",
 														"details": "Nachdem Studierende die Veranstaltung besucht haben, können sie<br>&#x2022; aktuelle Forschungsfragen aus dem Bereich der automatischen Sprachverarbeitung benennen und erläutern,<br>&#x2022; wissenschaftliche Veröffentlichungen verstehen, kritisch beurteilen und untereinander diskutieren,<br>&#x2022; ihre eigenen Forschungsarbeiten und Resultate präsentieren und verteidigen,<br>&#x2022; die Grundlagen des selbständigen wissenschaftlichen Arbeitens anwenden.<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": null
 											}
 										]
 									},
@@ -3494,7 +3520,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Grundlegendes Wissen in Künstlicher Intelligenz<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "20-00-0755 Praktikum Frage-Antwort-Systeme (SoSe 2016)",
@@ -3544,7 +3571,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Empfohlen:<br>- Programmierung in Java<br>- Erfahrung mit Apache UIMA (z.B. durch Besuch NLP4Web. Es wird eine kurze Einführung geben)<br>Von Vorteil:<br>- Grundwissen Maschinelles Lernen und Ranking<br>- Grundwissen Sprachtechnologie<br>- Grundwissen Semantic Web Technologien<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 9
 											}
 										]
 									},
@@ -3599,7 +3627,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "- Programmierkenntnisse (Scala, Java oder Python)<br>- Interesse mit Texten aus natürlicher Sprache zu arbeiten<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 9
 											}
 										]
 									}
@@ -3668,7 +3697,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Vorlesung über Algorithmen<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0798 Seitenkanalangriffe gegen Software (SoSe 2016)",
@@ -3714,7 +3744,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Informatik- und Mathematikkenntnisse entsprechend den ersten 4 Semestern des Bachelorstudiengangs Informatik<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0955 Parallele Algorithmen (SoSe 2016)",
@@ -3756,7 +3787,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "&#x2022; Kennnisse in Rechnerarchitektur, Programmierung, Grundlagen von parallelen Systemen<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0960 Aktuelle Themen zu Nebenläufigkeit und Parallelität (SoSe 2016)",
@@ -3798,7 +3830,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Informatikkenntnisse entsprechend der ersten vier Semester des Bachelorstudiengangs Informatik.<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											}
 										]
 									},
@@ -3857,7 +3890,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "- Kenntnis einer geeigneten Programmiersprache (z.B. Java / C++)<br>- Vorwissen über grundlegende Algorithmen und Datenstrukturen<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "20-00-0276 Praktikum Algorithmen II (Vertiefung) (SoSe 2016)",
@@ -3911,7 +3945,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Baut auf Praktikum Algorithmen auf<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "20-00-0799 Zuverlässige Softwaresicherheit für mobile Endgeräte (SoSe 2016)",
@@ -3957,7 +3992,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Informatik- und Mathematikkenntnisse entsprechend den ersten 4 Semestern des Bachelorstudiengangs Informatik, insbesondere Programmierkenntnisse in Java und die Fähigkeit mit formalen Sprachen und Kalkülen umzugehen.<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											}
 										]
 									},
@@ -3971,54 +4007,7 @@
 									},
 									{
 										"text": "FOC Projektpraktika",
-										"children": [
-											{
-												"text": "20-00-0797 Dynamische Kontrolle von Systemanforderungen (SoSe 2016)",
-												"children": [],
-												"details": [
-													{
-														"title": "Modulverantwortliche:",
-														"details": "<span id=\"dozenten\">Prof. Dr.-Ing. Heiko Mantel</span>"
-													},
-													{
-														"title": "Anzeige im Stundenplan:",
-														"details": "Dynamo-Lab"
-													},
-													{
-														"title": "Dauer:",
-														"details": "1"
-													},
-													{
-														"title": "Anzahl Wahlkurse:",
-														"details": "0"
-													},
-													{
-														"title": "Credits:",
-														"details": "9,0"
-													},
-													{
-														"title": "Startsemester:",
-														"details": "SoSe 2016                                 <br><br><!-- Start participant selection --><!-- End participant selection --><!-- Start Descriptions -->"
-													},
-													{
-														"title": "Lehrinhalte",
-														"details": "- grundlegende Konzepte der dynamischen Kontrolle in verteilten Systemen<br>- Einführung in Werkzeuge zur Laufzeitkontrolle wie CliSeAu, JavaMOP und Polymer<br>- Spezifikation von Systemanforderungen in unterschiedlichen Formalismen<br>- Kombination von dynamischen Kontrollmechanismen mit Zielprogrammen<br>- zentrale vs dezentrale Kontrolle in verteilten Systemen<br>- Protokolle zur Koordination zwischen dezentralen Kontrollmechanismen in verteilten Systemen<br>- eigenständige Adaption von dynamischen Kontrollmechanismen für Zielprogramme<br>- eigenständige Erweiterung einer bestehenden Infrastruktur zur dynamischen Kontrolle von Anforderungen in verteilten Systemen und Evaluation von Erweiterungen"
-													},
-													{
-														"title": "Qualifikationsziele / Lernergebnisse",
-														"details": "Nach erfolgreicher Teilnahme an der Veranstaltung kennen Studierende<br>grundlegende Konzepte der dynamischen Kontrolle in verteilten Systemen.<br>Sie verstehen wie Schwachstellen in verteilten Softwaresystemen, wie z.B. Sicherheitslücken, mit Hilfe von dynamischen Kontrollen beseitigt werden können. Sie verstehen, wie Anforderungen als Politiken formalisiert werden können und können solche Formalisierungen von Anforderungen in verschiedenen Sprachen durchführen. Sie können Mechanismen zur dynamischen Kontrolle für konkrete Systeme und Anforderungen einsetzen und adaptieren. Sie können Mechanismen zur dynamischen Kontrolle entwickeln, evaluieren und mit anderen Mechanismen integrieren."
-													},
-													{
-														"title": "Verwendbarkeit",
-														"details": "B.Sc. Informatik<br>M.Sc. Informatik<br>M.Sc. Wirtschaftsinformatik<br>B.Sc. Psychologie in IT<br>M.Sc. Psychologie in IT<br>Joint B.A. Informatik<br>B.Sc. Sportwissenschaft und Informatik<br>M.Sc. Sportwissenschaft und Informatik<br><br>Kann im Rahmen fachübergreifender Angebote auch in anderen Studiengängen verwendet werden."
-													},
-													{
-														"title": "Voraussetzung für die Teilnahme",
-														"details": "Informatik- und Mathematikkenntnisse entsprechend den ersten 4 Semestern des Bachelorstudiengangs Informatik, insbesondere Programmierkenntnisse in Java und die Fähigkeit, mit formalen Sprachen umzugehen<br><!-- End Descriptions -->"
-													}
-												]
-											}
-										]
+										"children": []
 									}
 								]
 							}
@@ -4085,7 +4074,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Interesse sich mit einer graphisch-analytischen Fragestellung bzw. Anwendung aus der aktuellen Fachliteratur zu befassen. Vorkenntnisse in Graphischer Datenverarbeitung, Informationssysteme oder Informationsvisualisierung<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0287 Multimodale Interaktion mit Intelligenten Umgebungen (SoSe 2016)",
@@ -4139,7 +4129,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Empfohlen:<br>Besuch der Vorlesungen &#x201E;Ambient Intelligence&#x201C;,&#x201C;Human Computer Interaction&#x201C;<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0328 Serious Games Seminar (SoSe 2016)",
@@ -4189,7 +4180,8 @@
 														"title": "Verwendbarkeit",
 														"details": "B.Sc. Informatik<br>M.Sc. Informatik<br>B.Sc. Computational Engineering<br>M.Sc. Computational Engineering<br>M.Sc. Wirtschaftsinformatik<br>B.Sc. Psychologie in IT<br>Joint B.A. Informatik<br>B.Sc. Sportwissenschaft und Informatik<br>M.Sc. Sportwissenschaft und Informatik<br><br>Kann im Rahmen fachübergreifender Angebote auch in anderen Studiengängen verwendet werden.<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 4
 											},
 											{
 												"text": "20-00-0469 Skalenraum- und PDE-Methoden in der Bildanalyse und -verarbeitung (SoSe 2016)",
@@ -4239,7 +4231,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Da Bildanalyse und -verarbeitung eine Mischung aus verschiedenen Disziplinen, wie Physik, Mathematik, Vision, Informatik und Engineering, ist, ist dieser Kurs gezielt auf ein breites Publikum zugeschnitten. Daher werden nur Grundkenntnisse in Analysis angenommen. Weitere notwendige mathematische Werkzeuge werden in den Sitzungen skizziert.<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0468 Aktuelle Trends in Medical Computing (SoSe 2016)",
@@ -4293,7 +4286,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Bachelor ab 4. Semester, Master ab 1. Semester.<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0604 Fortgeschrittene Themen in der Computergraphik (SoSe 2016)",
@@ -4343,7 +4337,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Teilnehmer sollten Grundkenntnisse in Computergraphik besitzen (z.B. durch Besuch von Graphische Datenverarbeitung I).<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0645 Fortgeschrittene Themen in Computer Vision und Maschinellem Lernen (SoSe 2016)",
@@ -4393,7 +4388,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Teilnehmer sollten Grundkenntnisse in Computer Vision, sowie idealerweise maschinellem Lernen besitzen (z.B. durch Besuch von Computer Vision I, Maschinelles Lernen: Statistische Verfahren I).<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0724 Angewandte Themen der Computergraphik (SoSe 2016)",
@@ -4443,7 +4439,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Vorkenntnisse in GDV oder Geom. Methoden CAD/CAE sind vorteilhaft<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0804 Weiterführende Themen im Maschinellen Lernen (SoSe 2016)",
@@ -4489,7 +4486,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Vorherherige Belegung der Vorlesung &quot;Machine Learning: Statistische Methoden 1&quot;.<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 4
 											}
 										]
 									},
@@ -4548,7 +4546,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Programmierkenntnisse (die Programmiersprache ist jeweils abhängig von Thema und kann teilweise frei gewählt werden).<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "20-00-0344 Visualisierung und Animation von Algorithmen und Datenstrukturen (SoSe 2016)",
@@ -4590,7 +4589,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Die Teilnehmer benötigen neben guten Java-Kenntnissen Verständnis für die Algorithmen und Datenstruktur, die meist in GdI 2 gelehrt werden.<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "20-00-0418 Praktikum Visual Computing (SoSe 2016)",
@@ -4640,7 +4640,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Praktische Programmierkenntnisse, z. B. in Java, C++<br>Grundkenntnisse oder Interesse, sich mit Fragestellungen des Visual Computing zu befassen<br>Empfohlen wird der Besuch mindestens einer der Einführungsvorlesungen im Bereich Visual Computing<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "20-00-0537 Fortgeschrittenes Praktikum Visual Computing (SoSe 2016)",
@@ -4694,7 +4695,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "praktische Programmierkenntnisse, z. B. in Java, C++<br>Grundkenntnisse in Visual Computing zu befassen<br>Empfohlen wird der Besuch mindestens einer der Einführungsvorlesungen im Bereich Visual Computing sowie des Praktikums Visual Computing<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "20-00-0570 Advanced User Interfaces (SoSe 2016)",
@@ -4748,7 +4750,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "- Interesse an neuen, innovativen Benutzungsschnittstellen<br>- Wünschenswert sind Grundkenntnisse der Human Computer Interaction<br>- gute Programmierkenntnisse (C#/WPF und/oder Java)<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "20-00-0758 Simulation in der Computergraphik (SoSe 2016)",
@@ -4798,7 +4801,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Gute Kenntnisse und praktische Erfahrungen mit C/C++ und objektorientierter Programmierung; grundlegende Kenntnisse von Numerik, Algorithmen, Datenstrukturen und Computergraphik (z.B. GDV I)<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											}
 										]
 									},
@@ -4857,7 +4861,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Visual Computing<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 5
 											},
 											{
 												"text": "20-00-0954 Praktikum in der Lehre - Graphische Datenverarbeitung II (SoSe 2016)",
@@ -4899,7 +4904,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Der Vorlesungsinhalt von &#x201E;Graphische Datenverarbeitung II&#x201C;<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 5
 											}
 										]
 									},
@@ -4954,7 +4960,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Programmierkenntnisse (die Programmiersprache ist jeweils abhängig von Thema und kann teilweise frei gewählt werden).<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 9
 											},
 											{
 												"text": "20-00-0763 Projektpraktikum Programmierung Massiv-Paralleler Systeme (SoSe 2016)",
@@ -5004,7 +5011,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Gute Programmierkenntnisse in C/C++<br>Grundlagen der massiv-parallelen Programmierung (z.B. aus der Veranstaltung Programmierung Massiv-Paralleler Prozessoren)<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 9
 											},
 											{
 												"text": "20-00-0764 Projektpraktikum Capturing Reality (SoSe 2016)",
@@ -5054,7 +5062,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Empfohlen wird der Besuch der Veranstaltung Capturing Reality sowie grundlegende Programmierkenntnisse in C/C++<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 9
 											},
 											{
 												"text": "20-00-0946 Cybathlon Projekt (SoSe 2016)",
@@ -5096,7 +5105,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Vorhergehende Belegung von Neuronale Informationsverarbeitung für Gehirn-Computer Schnittstellen<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 9
 											}
 										]
 									}
@@ -5165,7 +5175,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Solide Kenntnisse in Computer Kommunikationsnetzen. Die Vorlesungen Kommunikationsnetze I und II werden empfohlen.<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 4
 											},
 											{
 												"text": "20-00-0130 Seminar Telekooperation (SoSe 2016)",
@@ -5219,7 +5230,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Allgemeine Informatik-&#xAD;Kenntnisse aus dem Grundstudium .<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0454 Oberseminar Telekooperation (SoSe 2016)",
@@ -5257,7 +5269,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Das Oberseminar richtet sich an Doktoranden/innen sowie an Studierende im Hauptstudium, die im Bereich Telekooperation ihre Diplom-, Master- oder Bachelorarbeit anfertigen möchten.<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": null
 											},
 											{
 												"text": "18-sm-2300 Seminar Multimedia Kommunikation I (SoSe 2016)",
@@ -5303,7 +5316,8 @@
 														"title": "Verwendbarkeit",
 														"details": "CS, WiCS, ETiT, Wi-ETiT, BSc/MSc iST<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 4
 											},
 											{
 												"text": "20-00-0582 Seminar zu Netzen, Sicherheit, Mobilität und Drahtloser Kommunikation (SoSe 2016)",
@@ -5353,7 +5367,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Erfolgreiche Teilnahme an einer Integrierten Veranstaltung des Fachgebiets SEEMOO<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0648 Seminar Multimedia-Technologie (SoSe 2016)",
@@ -5403,7 +5418,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Mindestens vier Semester Studium der Informatik oder verwandter Fächer<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "18-hh-2060 Seminar Software Defined Networking (SoSe 2016)",
@@ -5453,7 +5469,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Grundlegende Kurse der ersten 4 Semester werden benötigt. Die Vorlesungen in Kommunikationsnetze I und II werden empfohlen.<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 4
 											}
 										]
 									},
@@ -5508,7 +5525,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Das Interesse grundlegenden Themen aktueller Kommunikations- und Multimedia Technologien zu erkunden. Au&#xDF;erdem erwarten wir:<br><ul><br><li>Erfahrungen in der Programmierung mit Java/C# (C/C++)<br></li><li>Kenntnisse in Computer Kommunikationsnetzen. Die Vorlesungen Kommunikationsnetze I und/oder Net Centric Systems werden empfohlen.<br></li></ul><br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "18-sm-2070 Praktikum Multimedia Kommunikation II (SoSe 2016)",
@@ -5558,7 +5576,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Das Interesse sich mit herausfordernden Themen der aktuellen Technologien und der Forschung auseinanderzusetzen. Au&#xDF;erdem erwarten wir:<br><ul><br><li>Solide Erfahrungen in der Programmierung mit Java und/oder C# (C/C++)<br></li><li>Solide Kenntnisse von Objekt-Orientierter Analyse und Design Techniken<br></li><li>Solide Kenntnisse in Computer Kommunikationsnetzen werden empfohlen<br></li><li>Die Vorlesungen in Kommunikationsnetze I (II, III, oder IV) sind von Vorteil<br></li></ul><br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "20-00-0131 Internet - Praktikum Telekooperation (SoSe 2016)",
@@ -5612,7 +5631,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Net Centric Systems <br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "20-00-0552 Praktikum Sichere Mobile Netze (SoSe 2016)",
@@ -5662,7 +5682,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Erfolgreiche Teilnahme an einer Integrierten Veranstaltung des Fachgebiets SEEMOO<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "18-hh-2030 Praktikum Advanced Topics in Communication Networks (SoSe 2016)",
@@ -5712,7 +5733,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Das Interesse herausfordernde Lösungen für Kommunikationsnetze und Anwendungen zu entwickeln. Au&#xDF;erdem erwarten wir:<br><ul><br><li>Solide Erfahrungen in der Programmierung mit Java und/oder Objective-C (C/C++).<br></li><li>Solide Kenntnisse von Kommunikationsprotokollen.<br></li><li>Die Vorlesungen in Kommunikationsnetze I und II werden empfohlen.<br></li></ul><br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											}
 										]
 									},
@@ -5763,7 +5785,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Grundlegende Kenntnisse im Bereich &quot;Ubiquitous Computing&quot; sind hilfreich (z.B. durch die Vorlesungen P2P, TK1, TK3, KN1, KN2, HCI o.ä.) . Es werden au&#xDF;erdem grundlegende Kenntnisse in einer Programmiersprache (z.B. Java, C# o.ä.) vorrausgesetzt. Darüber hinaus ist aber besonders die Motivation zur selbstständigen Arbeit und das Interesse an aktuellen Forschungsfragen relevant.<br><br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 12
 											}
 										]
 									},
@@ -5818,7 +5841,8 @@
 														"title": "Verwendbarkeit",
 														"details": "B.Sc. Informatik<br>M.Sc. Informatik<br>M.Sc. Wirtschaftsinformatik<br>B.Sc. Psychologie in IT<br>Joint B.A. Informatik<br>B.Sc. Sportwissenschaft und Informatik<br>M.Sc. Sportwissenschaft und Informatik<br><br>Kann im Rahmen fachübergreifender Angebote auch in anderen Studiengängen verwendet werden.<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 9
 											},
 											{
 												"text": "20-00-0553 Projektpraktikum Sichere Mobile Netze (SoSe 2016)",
@@ -5872,7 +5896,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Erfolgreiche Teilnahme an einer Integrierten Veranstaltung des Fachgebiets SEEMOO<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 9
 											},
 											{
 												"text": "18-sm-2130 Projektpraktikum Multimedia Kommunikation II (SoSe 2016)",
@@ -5926,7 +5951,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Das Interesse herausfordernde Lösungen und Anwendungen in aktuellen Multimedia Kommunikationssystemen zu entwickeln und unter Verwendung wissenschaftlicher Methoden zu erforschen. Au&#xDF;erdem erwarten wir:<br><ul><br><li>Solide Erfahrungen in der Programmierung mit Java und/oder C# (C/C++).<br></li><li>Solide Kenntnisse von Objekt-Orientierten Analyse- und Design-Techniken.<br></li><li>Grundkenntnisse in Design Patterns, Refactorings, und Projekt Management.<br></li><li>Solide Kenntnisse in Computer Kommunikationsnetzen werden empfohlen.<br></li><li>Die Vorlesungen &#x201E;Kommunikationsnetze I&#x201C; und &#x201E;Kommunikationsnetze II&#x201C; werden empfohlen.<br></li></ul><br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 9
 											}
 										]
 									}
@@ -5973,7 +5999,7 @@
 													},
 													{
 														"title": "Lehrinhalte",
-														"details": "In diesem Seminar werden von den Studenten wissenschaftliche Ausarbeitungen aus wechselnden Themenbereichen angefertigt. Dies umfasst die Einarbeitung in ein aktuelles Thema der IT-Systementwicklung mit schriftlicher Präsentation in Form einer Ausarbeitung und mündlicher Präsentation in Form eines Vortrages. Die Themen bewegen sich im Bereich der Hardware- und Softwaretestens, Monitorings, Testen von nichtfunktionalen Anforderungen und verwandten Bereichen der Qualitätssicherung."
+														"details": "In diesem Seminar werden von den Studenten wissenschaftliche Ausarbeitungen aus wechselnden Themenbereichen angefertigt. Dies umfasst die Einarbeitung in ein aktuelles Thema der IT-Systementwicklung mit schriftlicher Präsentation in Form einer Ausarbeitung und mündlicher Präsentation in Form eines Vortrages.  Die Themen des aktuellen Semesters sind der Webseite der Lehrveranstaltung zu entnehmen&#xA0;<a href=\"http://www.es.tu-darmstadt.de/lehre/sst\">www.es.tu-darmstadt.de/lehre/sst</a>."
 													},
 													{
 														"title": "Qualifikationsziele / Lernergebnisse",
@@ -5991,7 +6017,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Grundkenntnisse der Softwaretechnik sowie Programmiersprachenkenntnisse<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 4
 											},
 											{
 												"text": "20-00-0182 Design und Implementierung moderner Programmiersprachen (SoSe 2016)",
@@ -6029,7 +6056,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Vordiplom oder gleichwertige Qualifikation (d.h. fachlicher Kenntnisstand nach den ersten vier Semestern des Bachelor-Studiengangs Informatik). Das Seminar kann auch zur Einarbeitung z.B. für Studien-, Semester-, Bachelor-, Master- oder Diplomarbeiten dienen.<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0776 Software Engineering mit formalen Methoden (Oberseminar) (SoSe 2016)",
@@ -6071,7 +6099,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Wissen in den Bereichen:<br>Logik, Programmverifikation und -spezifikation, Modellierung und formale Spezifikation verteilter Systeme<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": null
 											},
 											{
 												"text": "20-00-0792 Formale Modelle für Verteilte Programme (SoSe 2016)",
@@ -6117,7 +6146,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "\\\\Talk\\\\<br>This seminar would like to introduce you theoretical computer science and how to proceed a scientific work with formal methods. Each participant is thus required to give a talk about the topic chosen. This talk will be given during a Blockseminar at the end of the term.<br><br>All talks have to be 20 minutes long if given by a single person, and 30 minutes or 35 minutes when given by a group of two or three, respectively. (Each member of the group should have an equal share in it.) Please practice your talk several times; in particular, make sure that you do not miss the time.<br><br>Consequently, if a talk is shorter or longer, then this fact will have a (negative) impact on the presenters&apos; grade.<br><br>How to give a good research talk by Simon L Peyton Jones, John Hughes, and John Launchbury<br><br>\\\\Term Paper\\\\<br>In addition to giving scientific talks, we want to introduce you to the process of writing and publishing research papers. In other words: you will have to write a term paper. The following notes may guide you in this process:<br><br>Introduction: You will introduce the background of the chosen topic, and summarise your contributions of this paper.<br><br>Theme: You will introduce the main contributions (e.g. process calculus, type system, comparing different calculi, comparing different methods, etc..) that you established.<br><br>Conclusion: You conclude your work and what you have learned from this seminar.<br><br>Note:<br>You should try to write the paper on your own words and examples.<br><br>You need to cite/quote the papers if you write similar sentences/ideas which appear in them.<br><br>You are not allowed to only copy others&#x2019; works.<br>We expect at least 2 to 3 related references done by every author.<br><br>We expect about 6 pages of the term paper if there is only one author. For a paper has 2-3 authors, 8-10 pages of the term paper is expected.<br><br>To make the term papers&apos; length comparable, all participants are required to use the ACM SIGPLAN Proceedings Template, preferably in its LaTeX incarnation (default font size, 9pt).<br><br>Reading a computer science research paper by Philip W.L. Fong<br><br>Grading<br>The overall grade for the seminar is determined by two factors: the talk given and the term paper handed in. Furthermore, we will consider your participation in the discussion following each talk. The two factors are weighted 35 : 65, respectively.<br><br>Please note that it is possible, due to the fact that each participants&#x2019; talks are graded individually, that different members of a group are assigned different overall grades.<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0796 Typsysteme von Programmiersprachen (SoSe 2016)",
@@ -6163,7 +6193,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Grundkenntnisse in Mathematik und formalen Methoden.<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0952 Formale Spezifikation und deduktive Verifikation verteilter oder nebenläufiger Software (SoSe 2016)",
@@ -6205,7 +6236,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Grundlegendes Wissen in den Gebieten:<br>i) formalen Spezifikation sequentieller Programme<br>ii) deduktiver Verifikation (Hoare Kalkül, Dynamische Logik o.ä.)<br><br>Interesse und Neugier am Thema<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											}
 										]
 									},
@@ -6242,11 +6274,11 @@
 													},
 													{
 														"title": "Lehrinhalte",
-														"details": "In dieser Lehrveranstaltung wird die Technik der modellbasierten Softwareentwicklung anhand von jährlich wechselnden Anwendungsgebieten erlernt. Bei diesen handelt es sich um reine Softwaresysteme wie CASE-, Analyse-, Test- oder Simulationswerkzeuge, die wiederum für die Softwareentwicklung eingesetzt werden. Teilnehmer arbeiten dazu in aller Regel in gemischten Gruppen (ETiT-, iST und Informatik-Studierende) an jeweils einem individuellen Teilprojekt. Dabei führt jedes Team den gesamten Entwicklungszyklus von der Projektplanung bis zur Endabnahme aus. Dabei wird allerdings der Themenkomplex der Qualitätssicherungsma&#xDF;nahmen weitgehend ausgeklammert und der Schwerpunkt auf Analyse- und Design-Aktivtäten gelegt."
+														"details": "In dieser Lehrveranstaltung wird die Technik der modellbasierten Softwareentwicklung anhand von jährlich wechselnden Aufgabenstellungen erlernt, die von einem Industriepartner vorgegeben werden. Diese Aufgabenstellungen umfassen den Entwurf einer eigenen domänenspezifischen Modellierungssprache mit zugehörigen Analysewerkzeugen und Codegeneratoren, die anschlie&#xDF;end zur modellbasierten Entwicklung einer vorgegebenen Anwendung eingesetzt werden. Teilnehmer arbeiten dazu in aller Regel in gemischten Gruppen (ETiT-, iST und Informatik-Studierende) an jeweils einem individuellen Teilprojekt. Dabei führt jedes Team den gesamten Entwicklungszyklus von der Projektplanung bis zur Endabnahme aus. Dabei wird allerdings der Themenkomplex der Qualitätssicherungsma&#xDF;nahmen weitgehend ausgeklammert und der Schwerpunkt auf Analyse- und Design-Aktivitäten gelegt. Die Lehrveranstaltung ist von ihrer Form her eine Mischung aus einem klassischen Praktikum (Projektseminar) und einer Vorlesung."
 													},
 													{
 														"title": "Qualifikationsziele / Lernergebnisse",
-														"details": "Studenten, die an diesem Projektseminar erfolgreich teilgenommen haben, sind in der Lage, zu einer vorgegebenen Problemstellung ein kleineres Softwareprojekt im Team eigenständig zu organisieren und auszuführen. Die Teilnehmer erwerben folgende Fähigkeiten:<br><ul><br><li>Zielgerichtete Literaturrecherche<br></li><li>Kundenorientierte Erstellung von Anforderungsspezifikationen nach dem Prinzip &quot;Design by Contract&quot;<br></li><li>einfacher Einsatz von Werkzeugen zur Versions-, Konfiguration- und &#xC4;nderungsverwaltung<br></li><li>modellbasierte Entwicklung von Software mit entsprechenden CASE-Tools<br></li><li>Vertiefung der Präsentationstechniken<br></li><li>Zusammenarbeit und Kommunikation in einem Team<br></li></ul>"
+														"details": "Studenten, die an diesem Projektseminar erfolgreich teilgenommen haben, sind in der Lage, zu einer vorgegebenen Problemstellung ein kleineres Softwareprojekt im Team eigenständig zu organisieren und auszuführen. Die Teilnehmer erwerben folgende Fähigkeiten:<br><ul><br><li>Zielgerichtete Literaturrecherche<br></li><li>Kundenorientierte Erstellung von Anforderungsspezifikationen nach dem Prinzip &quot;Design by Contract&quot;<br></li><li>einfacher Einsatz von Werkzeugen zur Versions-, Konfiguration- und &#xC4;nderungsverwaltung<br></li><li>modellbasierte Entwicklung von Software mit entsprechenden CASE-Tools<br></li><li>Vertiefung der PräsentationstechnikenZusammenarbeit und Kommunikation in einem Team<br></li></ul>"
 													},
 													{
 														"title": "Literatur",
@@ -6260,7 +6292,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Grundkenntnisse der Softwaretechnik und solide Programmiersprachenkenntnisse (insbesondere Java)<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "20-00-0306 Implementierung von Programmiersprachen (SoSe 2016)",
@@ -6314,7 +6347,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "<br>Es wird kein Vorwissen vorausgesetzt. Jedoch sind gute Programmiererfahrungen sowie Kenntnisse über Kompilerbau und virtuelle Maschinen von Vorteil.<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "20-00-0541 Teamleitung im Bachelorpraktikum (SoSe 2016)",
@@ -6368,7 +6402,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "<br>vertiefte Kenntnisse im Bereiche Software Engineering<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "20-00-0911 Praktikum Compilerbau (SoSe 2016)",
@@ -6418,7 +6453,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Empfohlen: Erfolgreicher Besuch der Vorlesungen &#x201E;Rechnerorganisation&#x201C;, &#x201E;Einführung in den Compilerbau&#x201C; und &#x201E;Fortgeschrittener Compilerbau&#x201C; bzw. entsprechende Kenntnisse aus anderen Studiengängen<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											}
 										]
 									},
@@ -6465,7 +6501,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Vordiplom / Grundstudium<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 5
 											}
 										]
 									},
@@ -6506,11 +6543,15 @@
 													},
 													{
 														"title": "Lehrinhalte",
-														"details": "Praktische Programmiererfahrung in einer objektorientierten Programmiersprache<br>Softwareentwicklung unter Einsatz diverser &#x201C;CASE-Tools&#x201C;<br>Erfahrung mit Dokumentation und Testen eines nicht trivialen Systems<br>Erfahrung mit SCM (Source Code Management) Systemen, Zeiterfassungswerkzeugen und sonstigen<br>Projektmanagement-Tools<br>Teamtreffen, Zeitplanung und Zeitmanagement<br>Ergebnisse präsentieren, Vorträge halten"
+														"details": "Der Kurs bearbeitet aktuelle Entwicklungsthemen aus dem Bereich der modellbasierten bzw. objekt-orientierten Softwareentwicklung. Neben einem generellen Überblick wird ein tiefgehender Einblick in ein spezielles Entwicklungsgebiet vermittelt. Die Themen bestimmen sich aus den spezifischen Arbeitsgebieten der Mitarbeiter und vermitteln technische und einleitende wissenschaftliche Kompetenzen in einem oder mehreren der folgenden Gebiete:<br><ul><br><li>Modellierung und Modellsynchronisierung<br></li><li>Modelltransformation<br></li><li>Objekt-orientierte Refaktorisierung<br></li><li>Programmvariabilität (Software Product Lines)<br></li><li>Analyse von Feature-Modellen<br></li></ul><br>Zusätzliche Informationen und Themenbeschreibung für das aktuelle Semester: <a href=\"http://www.es.tu-darmstadt.de/lehre/aktuelle-veranstaltungen/projektseminar-softwaresysteme/\">http://www.es.tu-darmstadt.de/lehre/aktuelle-veranstaltungen/projektseminar-softwaresysteme/</a>"
 													},
 													{
 														"title": "Qualifikationsziele / Lernergebnisse",
-														"details": "Der Studierende soll praktische Erfahrung in der (Weiter-)Entwicklung eines komplexeren Softwaresystems sammeln. Dabei lernt er in Teamarbeit eine umfangreiche Aufgabe zu bewältigen. Darüber hinaus wird geübt, in der Gruppe vorhandenes theoretisches Wissen (aus anderen Lehrveranstaltungen wie insbesondere Software-Engineering &#x2013; Einführung / Design / Wartung Qualitätssicherung) gezielt zur Lösung der praktischen Aufgabe einzusetzen.<br>Studenten, die an diesem Projektseminar erfolgreich teilgenommen haben, sind in der Lage, zu einer vorgegebenen Problemstellung ein grö&#xDF;eres Softwareprojekt im Team eigenständig zu organisieren und auszuführen. Die Teilnehmer erwerben folgende Fähigkeiten im Detail:<br><ul><br><li>Realistische Zeitplanung und Resourceneinteilung (Projektmanagement)<br></li><li>Umfangreicherer Einsatz von Werkzeugen zur Versions-, Konfiguration- und &#xC4;nderungsverwaltung<br></li><li>Einsatz von &#x201E;CASE-Tools&#x201C; für die modellbasierte Entwicklung<br></li><li>Planung und Durchführung umfangreicherer Qualtitätssicherungsma&#xDF;nahmen<br></li><li>Zusammenarbeit und Kommunikation in und zwischen mehreren Teams<br></li></ul>"
+														"details": "Der Studierende soll praktische Erfahrung in der (Weiter-)Entwicklung eines komplexeren Softwaresystems sammeln. Dabei lernt er in Teamarbeit eine umfangreiche Aufgabe zu bewältigen. Darüber hinaus wird geübt, in der Gruppe vorhandenes theoretisches Wissen (aus anderen Lehrveranstaltungen wie insbesondere Software-Engineering &#x2013; Einführung) gezielt zur Lösung der praktischen Aufgabe einzusetzen.<br>Studenten, die an diesem Projektseminar erfolgreich teilgenommen haben, sind in der Lage zu einer vorgegebenen Problemstellung ein grö&#xDF;eres Softwareprojekt eigenständig zu organisieren und auszuführen. Die Teilnehmer erwerben folgende Fähigkeiten im Detail:<br><ul><br><li>Realistische Zeitplanung und Resourceneinteilung (Projektmanagement)<br></li><li>Umfangreicherer Einsatz von Werkzeugen zur Versions-, Konfiguration- und &#xC4;nderungsverwaltung<br></li><li>Einsatz von &#x201E;CASE-Tools&#x201C; für die modellbasierte Entwicklung<br></li><li>Planung und Durchführung von Qualtitätssicherungsma&#xDF;nahmen<br></li></ul>"
+													},
+													{
+														"title": "Literatur",
+														"details": "Die Literatur besteht aus einer Auswahl an Fachartikeln zu den einzelnen Themen."
 													},
 													{
 														"title": "Verwendbarkeit",
@@ -6518,9 +6559,10 @@
 													},
 													{
 														"title": "Voraussetzung für die Teilnahme",
-														"details": "Verpflichtend: Grundlegende Softwaretechnik-Kenntnisse sowie vertiefte Kenntnisse objektorientierter Programmiersprachen (insbesondere: Java)<br><!-- End Descriptions -->"
+														"details": "Verpflichtend: Grundlegende Softwaretechnik-Kenntnisse sowie vertiefte Kenntnisse objektorientierter Programmiersprachen<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 9
 											}
 										]
 									}
@@ -6573,7 +6615,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "./.<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": null
 											},
 											{
 												"text": "20-00-0510 Aktuelle Forschungsthemen in Mobilen Netzen (SoSe 2016)",
@@ -6627,7 +6670,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Solide Kenntnisse in Kommunikationsnetzen (z.B. durch Besuch der <br>Vorlesungen Mobilität in Netzen; Kommunikationsnetze I, II, III, IV; <br>Telekooperation I, II, III). Hohes Interesse fortgeschrittene Themen im<br> Gebiet Mobile Netze zu erforschen und zu durchdringen.<br><br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 4
 											},
 											{
 												"text": "20-00-0577 Security and the Cloud - The Issues and Metrics (SoSe 2016)",
@@ -6681,7 +6725,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "<br>Basics of computer networks, security and dependability<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 4
 											},
 											{
 												"text": "20-00-0591 Building and Breaking Complex Software Systems (SoSe 2016)",
@@ -6723,7 +6768,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "A basic understanding of operating system internals is required for participation; ideally students should have attended the operating systems lecture.<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 4
 											},
 											{
 												"text": "20-00-0652 Mobile Security (SoSe 2016)",
@@ -6773,7 +6819,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Grundlagen der Informatik<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0662 Kryptographie und Komplexitätstheorie (SoSe 2016)",
@@ -6815,7 +6862,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Einführung in die Kryptographie, Kryptoplexität<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": null
 											},
 											{
 												"text": "20-00-0740 Sicherheit von SDN (SoSe 2016)",
@@ -6865,7 +6913,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Hilfreich, aber nicht notwendig wäre es, folgende Lehrveranstaltungen besucht zu haben:<br>Network Security<br>Communication Networks I and II<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 4
 											},
 											{
 												"text": "20-00-0756 Cyber Security Seminar (SoSe 2016)",
@@ -6915,7 +6964,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Networking, Sicherheit, Kryptographie <br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 3
 											},
 											{
 												"text": "20-00-0789 Security, Usability, Society (SoSe 2016)",
@@ -6957,7 +7007,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Trusted Systems<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": null
 											},
 											{
 												"text": "20-00-0807 Privatheit & Anonymität in einer vernetzten Welt (SoSe 2016)",
@@ -7003,7 +7054,51 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Grundlegendes Verständnis der Computer-Sicherheit und Netzwerkprotokolle könnte hilfreich sein.<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 4
+											},
+											{
+												"text": "20-00-0961 Zivile Sicherheit (SoSe 2016)",
+												"children": [],
+												"details": [
+													{
+														"title": "Modulverantwortliche:",
+														"details": "<span id=\"dozenten\">Dr. Martin Steinebach</span>"
+													},
+													{
+														"title": "Anzeige im Stundenplan:",
+														"details": "Zivile Sicherheit"
+													},
+													{
+														"title": "Dauer:",
+														"details": "1"
+													},
+													{
+														"title": "Anzahl Wahlkurse:",
+														"details": "0"
+													},
+													{
+														"title": "Credits:",
+														"details": "4,0"
+													},
+													{
+														"title": "Startsemester:",
+														"details": "SoSe 2016                                 <br><br><!-- Start participant selection --><!-- End participant selection --><!-- Start Descriptions -->"
+													},
+													{
+														"title": "Lehrinhalte",
+														"details": "Unter dem Begriff &quot;zivile Sicherheit&quot; versteht man neben Katastrophenschutz und Terrorismusbekämpfung auch die Aspekte der Sicherheit, die einen direkten Bezug zum Bürger und dessen Alltag aufweisen. Sie ist also auch dann bedroht, wenn der Bürger im täglichen Leben eine latente Unsicherheit hinsichtlich gewöhnlicher Handlungen verspürt.<br>In dieser Veranstaltung werden drei ausgewählte Szenarien der zivilen Sicherheit adressiert, die einen Bezug zur IT haben: Medikamentenhandel über das Internet, Versicherungsbetrug und Geldwäsche sowie Handel mit Antiken aus Raubgrabungen über das Internet. Dabei sind sowohl die Methoden der Betrüger als auch die der Betrugsaufdeckung von Interesse. Basis für diese Themen sind die BMBF Forschungsprogramme zur Wirtschaftskriminalität und zur organisierten Kriminalität. Es sollen Technologien entwickelt, Dunkelfeldforschung betrieben sowie interdisziplinäre Eigenschaften bezüglich beispielsweise Recht und Wirtschaft betrachtet werden.<br>Die Veranstaltung kombiniert Vorlesung und Seminar. Zu Beginn wird eine Einführung in die Thematik gegeben, in welcher unter anderem internationale Sicherheitsstrategien, computerisierte Methoden der Aufdeckung von Betrugsfällen und Aspekte des Datenschutzes behandelt werden.<br>In dem anschlie&#xDF;enden Seminar werden einzelne Themen vertieft betrachtet, wie beispielsweise:<br>&#x2022; Umschlagplätze für Medikamente im Internet<br>&#x2022; Bildmanipulationen als Grundlage für Versicherungsbetrug<br>&#x2022; Forensische Erkennung von Identitäten<br>&#x2022; &#xC4;hnlichkeitssuche: Welche Methoden für Bild und Text werden in der Praxis genutzt<br>&#x2022; Wie schützen sich Auktionsplattformen vor illegalen Angeboten?<br>Die Vertiefung geschieht auf Basis empfohlener Publikationen, von denen ausgehend der Teilnehmer einen Seminarvortrag und eine begleitende Ausarbeitung erstellt und diese mit den übrigen Teilnehmern der Veranstaltung diskutiert."
+													},
+													{
+														"title": "Qualifikationsziele / Lernergebnisse",
+														"details": "- Erstellen von wissenschaftlichen Kurzvorträgen<br>- Verwendung von Zitaten<br>- Interdisziplinäre Sicherheitsbetrachtung<br>- Einsatz von Methoden der Betrugserkennung"
+													},
+													{
+														"title": "Voraussetzung für die Teilnahme",
+														"details": "Hilfreich sind Grundkenntnisse in Internettechnologie und IT Security.<br>Für einzelne Seminarthemen werden in der Veranstaltungen weitere Empfehlungen hinsichtlich der Vorkenntnisse ausgesprochen.<br><!-- End Descriptions -->"
+													}
+												],
+												"credits": 4
 											}
 										]
 									},
@@ -7062,7 +7157,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "- Kenntnisse der entsprechenden Programmiersprache bei Programmieraufgaben<br>- Grundlagen der Kryptographie<br>- Kenntnisse in IT-Sicherheit sind von Vorteil<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "20-00-0603 Implementierung in Forensik und Mediensicherheit (SoSe 2016)",
@@ -7108,7 +7204,8 @@
 														"title": "Verwendbarkeit",
 														"details": "B.Sc. Informatik<br>M.Sc. Informatik<br>M.Sc. Wirtschaftsinformatik<br>B.Sc. Psychologie in IT<br>Joint B.A. Informatik<br>B.Sc. Sportwissenschaft und Informatik<br><br>Kann im Rahmen fachübergreifender Angebote auch in anderen Studiengängen verwendet werden.<br><br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "20-00-0787 Usable Security und Usable Privacy (SoSe 2016)",
@@ -7154,7 +7251,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "- Kenntnisse der entsprechenden Programmiersprache<br>- Trusted Systems Vorlesung<br>- Interface Design<br>- Idealerweise: Kryptographie Grundkenntnisse<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											},
 											{
 												"text": "20-00-0929 Software Dependability Praktikum (SoSe 2016)",
@@ -7196,7 +7294,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Praktische Programmiererfahrung, beispielsweise mit Java, C oder C ++.<br>Grundkenntnisse im Bereich Software-Entwurf und -Testing.<br>Vorherige Erfahrung mit Software-Projekten (z.B. Bachelor-Projekt) ist von Vorteil.<br>Interesse daran neue Tools kennen zu lernen und kreatives Denken einzusetzen um Lösungen für interessante und herausfordernde Probleme zu finden.<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 6
 											}
 										]
 									},
@@ -7243,7 +7342,8 @@
 														"title": "Voraussetzung für die Teilnahme",
 														"details": "Erfolgreicher Besuch der SEEMOO Veranstaltung für die das PIDL durchgeführt wird.<br><!-- End Descriptions -->"
 													}
-												]
+												],
+												"credits": 5
 											}
 										]
 									},
@@ -7297,7 +7397,8 @@
 						"title": "Voraussetzung für die Teilnahme",
 						"details": "<ul><br><li>Grundlagen der Informatik I <br></li><li>Grundlagen der Informatik II <br></li><li>Einführung in Software Engineering <br></li><li>Parallel dazu Projektbegleitung (MHB 145)<br></li></ul><br><!-- End Descriptions -->"
 					}
-				]
+				],
+				"credits": 6
 			},
 			{
 				"text": "20-00-0145 Projektbegleitung (SoSe 2016)",
@@ -7351,7 +7452,8 @@
 						"title": "Voraussetzung für die Teilnahme",
 						"details": "<br>Grundlagen der Informatik 1 <br>Grundlagen der Informatik 2.<br>Einführung in Software Engineering <br>Die Prüfung in Einführung in Software Engineering sollte bereits abgelegt sein.<br><br><!-- End Descriptions -->"
 					}
-				]
+				],
+				"credits": 3
 			}
 		]
 	},
