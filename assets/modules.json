@@ -162,6 +162,37 @@
 					}
 				],
 				"credits": 9
+			},
+			{
+				"text": "04-99-0007 Mathematik III für Informatiker (SoSe 2015)",
+				"children": [],
+				"details": [
+					{
+						"title": "Modulverantwortliche:",
+						"details": "<span id=\"dozenten\">Prof. Dr. rer. nat. Stefan Ulbrich</span>"
+					},
+					{
+						"title": "Anzeige im Stundenplan:",
+						"details": "04-99-0007"
+					},
+					{
+						"title": "Dauer:",
+						"details": "3"
+					},
+					{
+						"title": "Anzahl Wahlkurse:",
+						"details": "0"
+					},
+					{
+						"title": "Credits:",
+						"details": "9,0"
+					},
+					{
+						"title": "Startsemester:",
+						"details": "SoSe 2015                                 <br><br><!-- Start participant selection --><!-- End participant selection --><!-- Start Descriptions --><!-- End Descriptions -->"
+					}
+				],
+				"credits": 9
 			}
 		]
 	},
