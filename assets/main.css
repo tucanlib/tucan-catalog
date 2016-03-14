@@ -593,6 +593,11 @@ header input {
     z-index: 99;
 }
 
+.ng-cloak,
+[ng-cloak] {
+    display: none;
+}
+
 .overlay h1 {
     margin-bottom: 28px;
 }

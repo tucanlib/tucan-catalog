@@ -1,6 +1,8 @@
 (function(angular, R) {
     'use strict';
 
+    var HIDE_DIALOG_KEY = 'hideDialog';
+
     var modules,
         parents;
 
@@ -24,6 +26,10 @@
             $scope.ALL_EXPANDED = 'ALL_EXPANDED';
             $scope.ALL_COLLAPSED = 'ALL_COLLAPSED';
 
+            $scope.config = {
+                showDialog: getFromLocalStorage(HIDE_DIALOG_KEY) !== 'true'
+            };
+
             $scope.treeOptions = {
                 dirSelectable: false,
                 level: 20,
@@ -32,20 +38,24 @@
                 }
             };
 
-            // Retrieve module data
-            $http
-                .get('assets/modules.json')
-                .success(function(data) {
-                    prepareData(data);
-                    $scope.data = data;
-                    $scope.toggleExpanded($scope.ALL_EXPANDED);
+            init();
 
-                    if(moduleToOpen) {
-                        var moduleData = getModuleById(moduleToOpen);
-                        $scope.showSelected(moduleData, true);
-                        $scope.selected = moduleData;
-                    }
-                });
+            function init() {
+                // Retrieve module data
+                $http
+                    .get('assets/modules.json')
+                    .success(function(data) {
+                        prepareData(data);
+                        $scope.data = data;
+                        $scope.toggleExpanded($scope.ALL_EXPANDED);
+
+                        if(moduleToOpen) {
+                            var moduleData = getModuleById(moduleToOpen);
+                            $scope.showSelected(moduleData, true);
+                            $scope.selected = moduleData;
+                        }
+                    });
+            }
 
             $scope.toggleExpanded = function(state) {
                 $scope.expandedNodes = (state === $scope.ALL_EXPANDED) ? parents : [];
@@ -53,10 +63,7 @@
 
             $scope.showSelected = function(node, selected) {
                 $scope.selectedNode = selected && node;
-
-                if(selected && node) {
-                    $location.search('module', node.text);
-                }
+                $location.search('module', (selected && node) ? node.text : '');
             };
 
             $scope.toggleAside = function() {
@@ -64,13 +71,25 @@
             };
 
             $scope.hideOverlay = function() {
-                $scope.overlayHidden = true;
+                $scope.config.showDialog = false;
+                if($scope.config.hideOverlayNextTime) {
+                    setLocalStorage(HIDE_DIALOG_KEY, true);
+                }
             };
 
             function getModuleById(moduleId) {
                 return R.find(R.propEq('text', moduleId), modules);
             }
         });
+
+    function getFromLocalStorage(key) {
+        return localStorage && localStorage.getItem(key);
+    }
+
+    function setLocalStorage(key, value_) {
+        var value = typeof value_ === 'object' ? JSON.stringify(value_) : value_;
+        localStorage.setItem(key, value);
+    }
 
     function flatten(test, list, acc) {
         if (!list.length) return acc;
