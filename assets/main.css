@@ -499,7 +499,6 @@ aside {
     right: 0;
     bottom: 0;
     width: 40%;
-    border-left: 1px solid #b1bd00;
     padding: 14px;
     top: 42px;
     overflow: auto;
@@ -546,11 +545,18 @@ header {
     background: white;
     z-index: 1;
     border-bottom: 1px solid #b1bd00;
+    height: 39px;
 }
 
 .buttons {
     float: right;
-    border-left: 1px solid #b1bd00;
+}
+
+.buttons > button {
+    height: 100%;
+    display: block;
+    float: left;
+    height: 39px;
 }
 
 button {
@@ -565,14 +571,10 @@ header button {
     border: none;
 }
 
-button:last-child {
-    border-left: 1px solid #b1bd00;
-}
-
 header input {
     border: none;
     margin: 0 0 10px;
-    width: 60%;
+    width: 65%;
     height: 30px;
     font-size: 14px;
     padding-left: 14px;
@@ -624,4 +626,20 @@ treecontrol li {
 treecontrol.tree-classic li .tree-selected {
     background: #b1bd00;
     color: white;
+}
+
+.border-left {
+    border-left: 1px solid #b1bd00;
+}
+
+.logo-tucan {
+    display: block;
+    float: right;
+    margin-left: 6px;
+    padding-left: 6px;
+}
+
+.logo-tucan img {
+    height: 35px;
+    width: auto;
 }

@@ -15,8 +15,9 @@
     <header class="fixed-top header" ng-cloak>
         <input ng-model="search" placeholder="Modul suchen" />
         <div class="buttons">
-            <button ng-click="toggleExpanded(ALL_EXPANDED)">+ Expand all</button>
-            <button ng-click="toggleExpanded(ALL_COLLAPSED)">- Collapse all</button>
+            <button class="border-left" ng-click="toggleExpanded(ALL_EXPANDED)">+ Expand all</button>
+            <button class="border-left" ng-click="toggleExpanded(ALL_COLLAPSED)">- Collapse all</button>
+            <a class="logo-tucan border-left" href="https://www.tucan.tu-darmstadt.de/" target="_blank"><img src="assets/logo-tucan.jpg"></a>
         </div>
     </header>
     <section class="overflow-auto" ng-cloak>
@@ -59,7 +60,7 @@
                     <button ng-click="hideOverlay()">Ja, bin gewarnt!</button>
                     <br/>
                     <br/>
-                    <span class="hint">(Tipp: Auf die Kurse klicken zeigt mehr Infos)</span>
+                    <span class="hint">(Man kann jetzt auch Links zu den einzelnen Kursen verschicken - siehe URL, wenn man auf nen Kurs klickt)</span>
                 </p>
         </div>
         </div>
