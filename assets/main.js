@@ -15,7 +15,12 @@
 
     angular
         .module('informatikModules', ['treeControl', 'ngSanitize'])
-        .controller('RootCtrl', function($scope, $http) {
+        .config(function($locationProvider) {
+            $locationProvider.html5Mode(true);
+        })
+        .controller('RootCtrl', function($scope, $http, $location) {
+            var urlParams = $location.search(),
+                moduleToOpen = urlParams.module;
             $scope.ALL_EXPANDED = 'ALL_EXPANDED';
             $scope.ALL_COLLAPSED = 'ALL_COLLAPSED';
 
@@ -34,6 +39,12 @@
                     prepareData(data);
                     $scope.data = data;
                     $scope.toggleExpanded($scope.ALL_EXPANDED);
+
+                    if(moduleToOpen) {
+                        var moduleData = getModuleById(moduleToOpen);
+                        $scope.showSelected(moduleData, true);
+                        $scope.selected = moduleData;
+                    }
                 });
 
             $scope.toggleExpanded = function(state) {
@@ -42,6 +53,10 @@
 
             $scope.showSelected = function(node, selected) {
                 $scope.selectedNode = selected && node;
+
+                if(selected && node) {
+                    $location.search('module', node.text);
+                }
             };
 
             $scope.toggleAside = function() {
@@ -51,6 +66,10 @@
             $scope.hideOverlay = function() {
                 $scope.overlayHidden = true;
             };
+
+            function getModuleById(moduleId) {
+                return R.find(R.propEq('text', moduleId), modules);
+            }
         });
 
     function flatten(test, list, acc) {

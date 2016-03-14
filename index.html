@@ -27,6 +27,7 @@
             filter-comparator="comparator"
             on-selection="showSelected(node, selected)"
             tree-model="data"
+            selected-node="selected"
             options="treeOptions">
             {{node.text}}
             <span class="credits" ng-if="node.credits">{{node.credits}} CP</span>
