@@ -445,9 +445,9 @@ h1 {
 }
 
 section {
-    padding: 14px;
+    padding: 28px;
     position: absolute;
-    top: 42px;
+    top: 28px;
     width: 100%;
     bottom: 0;
 }
@@ -482,7 +482,7 @@ section {
 }
 
 .aside-open section {
-    width: 60%;
+    width: 70%;
 }
 
 .aside-open.aside-big aside {
@@ -498,7 +498,7 @@ aside {
     position: fixed;
     right: 0;
     bottom: 0;
-    width: 40%;
+    width: 30%;
     padding: 14px;
     top: 42px;
     overflow: auto;
@@ -647,4 +647,21 @@ treecontrol.tree-classic li .tree-selected {
 .logo-tucan img {
     height: 35px;
     width: auto;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: white;
+    border-left: 1px solid #b1bd00;
+    border-top: 1px solid #b1bd00;
+    padding: 3px;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+footer b {
+    margin-right: 4px;
 }

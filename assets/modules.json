@@ -62,6 +62,45 @@
 				"credits": 10
 			},
 			{
+				"text": "20-00-0484 Technische Grundlagen der Informatik (WiSe 2014/15)",
+				"children": [],
+				"details": [
+					{
+						"title": "Modulverantwortliche:",
+						"details": "<span id=\"dozenten\">Prof. Ph. D. Jan Peters</span>"
+					},
+					{
+						"title": "Anzeige im Stundenplan:",
+						"details": "Technische Grundlage"
+					},
+					{
+						"title": "Dauer:",
+						"details": "5"
+					},
+					{
+						"title": "Anzahl Wahlkurse:",
+						"details": "0"
+					},
+					{
+						"title": "Credits:",
+						"details": "12,0                                                            <br>Hinweis: In Ihrer Prüfungsordnung können abweichende Credits festgelegt sein."
+					},
+					{
+						"title": "Startsemester:",
+						"details": "WiSe 2014/15                                 <br><br><!-- Start participant selection --><!-- End participant selection --><!-- Start Descriptions -->"
+					},
+					{
+						"title": "Lehrinhalte",
+						"details": "Digitale Abstraktion Kombinatorischer Logischer Entwurf Sequentieller Logischer Entwurf Hardware-Beschreibungssprachen Digitale Grundfunktionen Architektur Mikroarchitektur Speichersysteme Implementierung digitaler Systeme"
+					},
+					{
+						"title": "Qualifikationsziele / Lernergebnisse",
+						"details": "Lernziel ist der Erwerb von aktivem Wissen zum Thema der Lehrveranstaltung in Verbindung mit den Basiskompetenzen aus den anderen Pflichtlehrveranstaltungen. Insbesondere geht es um das Erwerben von Kenntnissen von Hardware-Strukturen als Grundlager digitaler Rechner.<br><!-- End Descriptions -->"
+					}
+				],
+				"credits": 12
+			},
+			{
 				"text": "04-00-0121 Formale Grundlagen der Informatik II: Logic for Computer Science (SoSe 2014)",
 				"children": [],
 				"details": [
@@ -442,65 +481,6 @@
 							{
 								"text": "CE Prüfungsleistungen",
 								"children": [
-									{
-										"text": "20-00-0186 Optimierung statischer und dynamischer Systeme (SoSe 2016)",
-										"children": [],
-										"details": [
-											{
-												"title": "Modulverantwortliche:",
-												"details": "<span id=\"dozenten\">Prof. Dr. rer. nat. Oskar von Stryk</span>"
-											},
-											{
-												"title": "Anzeige im Stundenplan:",
-												"details": "Optim. stat.+dyn. Sy"
-											},
-											{
-												"title": "Dauer:",
-												"details": "1"
-											},
-											{
-												"title": "Anzahl Wahlkurse:",
-												"details": "0"
-											},
-											{
-												"title": "Credits:",
-												"details": "10,0                                                            <br>Hinweis: In Ihrer Prüfungsordnung können abweichende Credits festgelegt sein."
-											},
-											{
-												"title": "Startsemester:",
-												"details": "SoSe 2016                                 <br><br><!-- Start participant selection --><!-- End participant selection --><!-- Start Descriptions -->"
-											},
-											{
-												"title": "Lehrinhalte",
-												"details": "Optimierung statischer Systeme:<br>- nichtlineare Optimierung ohne und mit Nebenbedingungen, notwendige Bedingungen<br>- numerische Newton-Typ- und SQP-Verfahren<br>- nichtlineare kleinste Quadrate<br>- gradientenfreie Optimierungsverfahren<br>- praktische Aspekte wie Problemformulierung, Approximation von Ableitungen, Verfahrensparameter, Bewertung einer berechneten Lösung<br><br>Optimierung dynamischer Systeme:<br>- Parameteroptimierungs- und Schätzprobleme<br>- optimale Steuerungsprobleme<br>- Maximumprinzip und notwendige Bedingungen<br>- numerische Verfahren zur Berechnung optimaler Trajektorien<br>- optimale Rückkopplungssteuerung<br>- linear-quadratischer Regulator<br><br>Anwendungen und Fallstudien aus den Ingenieurwissenschaften und der Robotik<br><br>Theoretische und praktische Übungen sowie Programmieraufgaben zur Vertiefung der Fachkenntnisse und methodischen Fähigkeiten"
-											},
-											{
-												"title": "Qualifikationsziele / Lernergebnisse",
-												"details": "Studierende besitzen nach erfolgreicher Teilnahme grundlegende Kenntnisse und methodische Fähigkeiten der Konzepte und Berechnungsverfahren der Optimierung statischer und dynamischer Systeme und deren Anwendungen bei Optimierungsaufgaben in den Ingenieurwissenschaften."
-											},
-											{
-												"title": "Literatur",
-												"details": "- vorlesungsbegleitende Folien<br><br>zu einzelnen Themen der Lehrveranstaltung:<br>- J. Nocedal, S.J. Wright: Numerical Optimization, Springer<br>- C.T. Kelley: Iterative Methods for Optimization, SIAM Frontiers in Applied Mathematics<br>- L.M. Rios, N.V. Sahinidis: Derivative-free optimization: a review of algorithms and comparison of software implementations, Journal of Global Optimization (2013) 56:1247-1293<br>- A.E. Bryson, Y.-C. Ho: Applied Optimal Control: Optimization, Estimation and Control, CRC Press<br>- J.T. Betts: Practical Methods for Optimal Control and Estimation Using Nonlinear Programming, SIAM Advances in Design and Control<br>"
-											},
-											{
-												"title": "Wahlmöglichkeiten",
-												"details": "<br>"
-											},
-											{
-												"title": "Verwendbarkeit",
-												"details": "B.Sc. Informatik<br>M.Sc. Informatik<br>B.Sc. Computational Engineering<br>M.Sc. Computational Engineering<br>M.Sc. Wirtschaftsinformatik<br>B.Sc. Psychologie in IT<br>Joint B.A. Informatik<br>B.Sc. Sportwissenschaft und Informatik<br>M.Sc. Sportwissenschaft und Informatik<br><br>Kann im Rahmen fachübergreifender Angebote auch in anderen Studiengängen verwendet werden."
-											},
-											{
-												"title": "Voraussetzung für die Teilnahme",
-												"details": "grundlegende mathematische Kenntnisse und Fähigkeiten in Linearer Algebra, Analysis mehrerer Veränderlicher und Grundlagen gewöhnlicher Differentialgleichungen"
-											},
-											{
-												"title": "Notenverbesserung nach §25 (2)",
-												"details": "In dieser Vorlesung findet eine Anrechnung von vorlesungsbegleitenden Leistungen statt, die lt. §25(2) der 5. Novelle der APB und den vom FB 20 am 02.10.2012 beschlossenen Anrechnungsregeln zu einer Notenverbesserung um bis zu 1.0 führen kann.<br><!-- End Descriptions -->"
-											}
-										],
-										"credits": 10
-									},
 									{
 										"text": "10-30-0036 Bioinformatik BB 36 VL+Ü (SoSe 2016)",
 										"children": [],
@@ -1151,7 +1131,7 @@
 											},
 											{
 												"title": "Anzeige im Stundenplan:",
-												"details": "Medizinische Bildver"
+												"details": "Bildverarbeitung"
 											},
 											{
 												"title": "Dauer:",
@@ -2155,61 +2135,6 @@
 											}
 										],
 										"credits": 6
-									},
-									{
-										"text": "20-00-0096 Virtuelle Private Netze (SoSe 2016)",
-										"children": [],
-										"details": [
-											{
-												"title": "Modulverantwortliche:",
-												"details": "<span id=\"dozenten\">Dr. Wolfgang Böhmer</span>"
-											},
-											{
-												"title": "Anzeige im Stundenplan:",
-												"details": "VPN"
-											},
-											{
-												"title": "Dauer:",
-												"details": "1"
-											},
-											{
-												"title": "Anzahl Wahlkurse:",
-												"details": "0"
-											},
-											{
-												"title": "Credits:",
-												"details": "3,0"
-											},
-											{
-												"title": "Startsemester:",
-												"details": "SoSe 2016                                 <br><br><!-- Start participant selection --><!-- End participant selection --><!-- Start Descriptions -->"
-											},
-											{
-												"title": "Lehrinhalte",
-												"details": "<ul><li> Verfahren der Kommunikationstechnik für ein VPN </li><li> Offene Kommunikation in Datennetzen</li><li> OSI-Referenzmodell </li><li> Dienste und Protokolle </li><li> Dienstgüten CoS und QoS in IP-Netzen (IntServ und DiffServ) </li><li> Multiprotokoll Label Switching (MPLS) </li><li> Fast-Paket-Switching (FPS) und Frame-Relay </li><li> MPLS über Frame-Relay </li><li> ATM-Referenzmodell  </li><li> MPLS über ATM-Verbindungen </li><li> Verfahren der IuK-Sicherheit </li><li> Vergleich zwischen CC und ITSEC </li><li> Sicherheitsarchitekturen offener Systeme </li><li> Verschlüsselungstechniken </li><li> Technologie zur Überbrückung der Luftschnittstelle </li><li> Zellenbasierte (2,5G und 3G) und Wireless-LAN-Lösungen (WLAN) </li><li> VPN über fremde Netze (IETF-Referenzmodelle) </li><li> Service Level Agreements (SLAs) </li><li> VPN-Klassifizierungen </li><li> Einsatz von virtuellen privaten Netzen </li><li> Planungsaspekte </li><li> Interessenkonflikte  </li><li> Randbedingungen </li></ul>"
-											},
-											{
-												"title": "Qualifikationsziele / Lernergebnisse",
-												"details": "<br><ul> <li> Wichtige Verfahren zur Absicherung virtueller (logischer) Netze verstehen und nachvollziehen können. Insbesondere wird ein Schwerpunkt auf IPSec gelegt.  </li><li> Einbettung der Kryptographie in die Übertragung in drahtgebundene und drahtlose Übertragungswege: Erkennen der Stärken und Schwächen.  </li><li> Verstehen der Diskrepanz zwischen formalen Richtlinien und Implementierungen. </li></ul>"
-											},
-											{
-												"title": "Literatur",
-												"details": "<br>"
-											},
-											{
-												"title": "Wahlmöglichkeiten",
-												"details": "<br>"
-											},
-											{
-												"title": "Verwendbarkeit",
-												"details": "<br>"
-											},
-											{
-												"title": "Voraussetzung für die Teilnahme",
-												"details": "<br>Grundstudium in Informatik Kryptographie, Netze, IT-Sicherheit<br><br><!-- End Descriptions -->"
-											}
-										],
-										"credits": 3
 									},
 									{
 										"text": "20-00-0093 Sicherheit in Multimedia Systemen und Anwendungen (SoSe 2016)",
@@ -5351,6 +5276,61 @@
 												"credits": 4
 											},
 											{
+												"text": "20-00-0549 Forschungsseminar zu Netzen, Sicherheit, Mobilität und Drahtloser Kommunikation (SoSe 2016)",
+												"children": [],
+												"details": [
+													{
+														"title": "Modulverantwortliche:",
+														"details": "<span id=\"dozenten\">Prof. Dr.-Ing. Matthias Hollick</span>"
+													},
+													{
+														"title": "Anzeige im Stundenplan:",
+														"details": "Forschungsseminar zu"
+													},
+													{
+														"title": "Dauer:",
+														"details": "1"
+													},
+													{
+														"title": "Anzahl Wahlkurse:",
+														"details": "0"
+													},
+													{
+														"title": "Credits:",
+														"details": "4,0"
+													},
+													{
+														"title": "Startsemester:",
+														"details": "SoSe 2016                                 <br><br><!-- Start participant selection --><!-- End participant selection --><!-- Start Descriptions -->"
+													},
+													{
+														"title": "Lehrinhalte",
+														"details": "Das Forschungsseminar zu Netzen, Sicherheit, Mobilität und Drahtloser Kommunikation erarbeitet aktuelle Fragstellungen, die als hoch-relevant für die zukünftige Entwicklung der genannten Themenfelder eingeschätzt werden. Es umfasst das Studium, die kritische Analyse und Diskussion, das Zusammenfassen und die Präsentation ausgewählter erstklassiger Forschungsbeiträge. Ein Einblick in wissenschaftliche Arbeitsweise wird vermittelt. Ein Kurzreferat und ein abschlie&#xDF;endes Referat sowie eine schriftliche Ausarbeitung werden erstellt.<br><br>Die Themen des Forschungsseminars speisen sich aus den aktuellen Forschungsthemen der Arbeitsgruppe SEEMOO.<br><br>Lernziele:<br>- Eigenständiges Einarbeiten in ein Thema auf dem Gebiet Kommunikationsnetze, Sicherheit, Mobilität und Drahtloser Kommunikation (i.d.R. englischsprachig)<br>- Eigene darüber hinausgehende Literaturrecherchen<br>- Interpretation und Einordnen der Ergebnisse der Literaturarbeit<br>- Erstellen eines einführenden und eines vertiefenden Vortrags über die Thematik einschlie&#xDF;lich Folienpräsentationen<br>- Halten der beiden Vorträge vor einem Publikum mit heterogenem Vorwissen<br>- Fachdiskussion nach jedem Vortrag<br>- Feedback an die Vortragenden zu den Vorträgen (u.a. betreffend Rhetorik, Präsentationstechniken) und zur Fachdiskussion<br>- Kennen des wissenschaftlichen Arbeitsprozesses und Publikationsprozesses"
+													},
+													{
+														"title": "Qualifikationsziele / Lernergebnisse",
+														"details": "Nach erfolgreicher Teilnahme an der Veranstaltung besitzen die Studierenden die Fähigkeit selbstständig wissenschaftlich neue Themen zu erschlie&#xDF;en. Sie haben ein tiefgreifendes Verständnis ausgewählter Basismechanismen, Methoden und Anwendungen in dem bearbeiteten Themenfeld erworben. Arbeitstechniken wie ausführliche Literaturrecherche, kritische Diskussion und Analyse wissenschaftlicher Artikel und die Presentation der erzielten Arbeitsergebnisse werden von den Studierenden beherrscht. Die Studierenden können ihre Arbeit vor einem kritischen Fachpublikum verteidigen."
+													},
+													{
+														"title": "Literatur",
+														"details": "Themenspezifisch ausgewählte, aktuelle wissenschaftliche Veröffentlichungen"
+													},
+													{
+														"title": "Wahlmöglichkeiten",
+														"details": "<br>"
+													},
+													{
+														"title": "Verwendbarkeit",
+														"details": "B.Sc. Informatik<br>M.Sc. Informatik<br>M.Sc. Wirtschaftsinformatik<br>B.Sc. Psychologie in IT<br>Joint B.A. Informatik<br>B.Sc. Sportwissenschaft und Informatik<br><br>Kann im Rahmen fachübergreifender Angebote auch in anderen Studiengängen verwendet werden."
+													},
+													{
+														"title": "Voraussetzung für die Teilnahme",
+														"details": "Erfolgreiche Teilnahme an einer Integrierten Veranstaltung des Fachgebiets SEEMOO<br><br><!-- End Descriptions -->"
+													}
+												],
+												"credits": 4
+											},
+											{
 												"text": "20-00-0582 Seminar zu Netzen, Sicherheit, Mobilität und Drahtloser Kommunikation (SoSe 2016)",
 												"children": [],
 												"details": [
@@ -5771,7 +5751,47 @@
 									},
 									{
 										"text": "NCS Praktika in der Lehre",
-										"children": []
+										"children": [
+											{
+												"text": "20-00-0962 Praktikum in der Lehre - Computernetzwerke und verteilte Systeme (SoSe 2016)",
+												"children": [],
+												"details": [
+													{
+														"title": "Modulverantwortliche:",
+														"details": "<span id=\"dozenten\">Dr. rer. nat. Sascha Hauke</span>"
+													},
+													{
+														"title": "Anzeige im Stundenplan:",
+														"details": "PidL CNuvS"
+													},
+													{
+														"title": "Dauer:",
+														"details": "1"
+													},
+													{
+														"title": "Anzahl Wahlkurse:",
+														"details": "0"
+													},
+													{
+														"title": "Credits:",
+														"details": "5,0"
+													},
+													{
+														"title": "Startsemester:",
+														"details": "SoSe 2016                                 <br><br><!-- Start participant selection --><!-- End participant selection --><!-- Start Descriptions -->"
+													},
+													{
+														"title": "Lehrinhalte",
+														"details": "Mitarbeit in der Ausrichtung der Lehrveranstaltung Computernetzwerke und verteilte Systeme (Übungskonzeption, Korrektur, Begleitung des Lernenden)<br>"
+													},
+													{
+														"title": "Voraussetzung für die Teilnahme",
+														"details": "Computernetzwerke und verteilte Systeme (ehemals NCS)<br><!-- End Descriptions -->"
+													}
+												],
+												"credits": 5
+											}
+										]
 									},
 									{
 										"text": "NCS Projekte",
@@ -6382,6 +6402,45 @@
 												"credits": 6
 											},
 											{
+												"text": "20-00-0453 Entwicklung von Lehr- und Lernsoftware (SoSe 2016)",
+												"children": [],
+												"details": [
+													{
+														"title": "Modulverantwortliche:",
+														"details": "<span id=\"dozenten\">Dr.-Ing. Jens Gallenbacher</span>"
+													},
+													{
+														"title": "Anzeige im Stundenplan:",
+														"details": "Lernsoftware"
+													},
+													{
+														"title": "Dauer:",
+														"details": "1"
+													},
+													{
+														"title": "Anzahl Wahlkurse:",
+														"details": "0"
+													},
+													{
+														"title": "Credits:",
+														"details": "6,0"
+													},
+													{
+														"title": "Startsemester:",
+														"details": "SoSe 2016                                 <br><br><!-- Start participant selection --><!-- End participant selection --><!-- Start Descriptions -->"
+													},
+													{
+														"title": "Lehrinhalte",
+														"details": "Entwicklung von Lehr- und Lernsoftware für den Einsatz in Universität und Schule"
+													},
+													{
+														"title": "Voraussetzung für die Teilnahme",
+														"details": "Grundlagen der Informatik 1,2 und 3<br>Einführung in Softwareengineering<br><!-- End Descriptions -->"
+													}
+												],
+												"credits": 6
+											},
+											{
 												"text": "20-00-0541 Teamleitung im Bachelorpraktikum (SoSe 2016)",
 												"children": [],
 												"details": [
@@ -6648,61 +6707,6 @@
 													}
 												],
 												"credits": null
-											},
-											{
-												"text": "20-00-0510 Aktuelle Forschungsthemen in Mobilen Netzen (SoSe 2016)",
-												"children": [],
-												"details": [
-													{
-														"title": "Modulverantwortliche:",
-														"details": "<span id=\"dozenten\">Prof. Dr.-Ing. Matthias Hollick</span>"
-													},
-													{
-														"title": "Anzeige im Stundenplan:",
-														"details": "Aktuelle Forschungst"
-													},
-													{
-														"title": "Dauer:",
-														"details": "1"
-													},
-													{
-														"title": "Anzahl Wahlkurse:",
-														"details": "0"
-													},
-													{
-														"title": "Credits:",
-														"details": "4,0"
-													},
-													{
-														"title": "Startsemester:",
-														"details": "SoSe 2016                                 <br><br><!-- Start participant selection --><!-- End participant selection --><!-- Start Descriptions -->"
-													},
-													{
-														"title": "Lehrinhalte",
-														"details": "<br> Das Seminar befasst sich mit aktuellen Forschungsergebnissen im Bereich  mobile Netze und Mobilkommunikation, die als hoch-relevant für die  zukünftige Entwicklung des Themenfeldes Kommunikation eingeschätzt  werden. Lernziel ist, das genannte Themenfeld durch das Studium, die kritische  Analyse und Diskussion, das Zusammenfassen und die Präsentation  ausgewählter erstklassiger Forschungsbeiträge zu erarbeiten.  Adressierte Themenbereiche umfassen: <ul><li>Mobilkommunikation</li><li>Drahtlose Kommunikation</li><li>Mobile Ad hoc Netze</li><li>Mobile und drahtlose Sensornetze</li><li>Drahtlose Mesh Netze</li><li>Mobilität im zukünftigen Internet</li><li>Sicherheit in drahtlosen und mobilen Netzen</li></ul>"
-													},
-													{
-														"title": "Qualifikationsziele / Lernergebnisse",
-														"details": "<br>Die Studierenden erarbeiten sich Wissen über aktuelle und aufkommende  Trends, die als relevant für die zukünftige Entwicklung der  Kommunikationstechnologie eingeschätzt werden. Sie erlangen hierbei  insbesondere fundierte Kenntnisse über Basismechanismen, Methoden und  Anwendungen im Bereich mobiler Netze. Arbeitstechniken wie sorgfältige  Literaturarbeit, die kritische Erarbeitung und Diskussion  wissenschaftlicher Artikel sowie die Präsentation der erarbeiteten  Ergebnisse werden von den Studierenden sicher beherrscht."
-													},
-													{
-														"title": "Literatur",
-														"details": "<br>"
-													},
-													{
-														"title": "Wahlmöglichkeiten",
-														"details": "<br>"
-													},
-													{
-														"title": "Verwendbarkeit",
-														"details": "<br>"
-													},
-													{
-														"title": "Voraussetzung für die Teilnahme",
-														"details": "Solide Kenntnisse in Kommunikationsnetzen (z.B. durch Besuch der <br>Vorlesungen Mobilität in Netzen; Kommunikationsnetze I, II, III, IV; <br>Telekooperation I, II, III). Hohes Interesse fortgeschrittene Themen im<br> Gebiet Mobile Netze zu erforschen und zu durchdringen.<br><br><br><!-- End Descriptions -->"
-													}
-												],
-												"credits": 4
 											},
 											{
 												"text": "20-00-0577 Security and the Cloud - The Issues and Metrics (SoSe 2016)",

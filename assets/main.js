@@ -9,7 +9,7 @@
     function prepareData(data) {
         // Returns only "modules" in the module tree that have children (= categories)
         parents = R.partial(flatten, R.path(['children', 'length']))(data, []);
-        // Returns only modules that have no children (= are modules)
+        // Returns only modules that have no children (= modules)
         modules = R.partial(flatten, function(curr) {
             return curr.details && curr.details.length;
         })(data, []);
@@ -27,12 +27,14 @@
             $scope.ALL_COLLAPSED = 'ALL_COLLAPSED';
 
             $scope.config = {
+                // object to string conversion/troll by localStorage
                 showDialog: getFromLocalStorage(HIDE_DIALOG_KEY) !== 'true'
             };
 
             $scope.treeOptions = {
                 dirSelectable: false,
                 level: 20,
+                // needed because there are nodes that have the same properties but are different
                 equality: function(n1, n2) {
                     return n1 === n2;
                 }
@@ -45,10 +47,16 @@
                 $http
                     .get('assets/modules.json')
                     .success(function(data) {
-                        prepareData(data);
                         $scope.data = data;
+                    })
+                    // prepare data (= get parents and modules)
+                    // open all items in the tree
+                    .then(function() {
+                        prepareData($scope.data);
                         $scope.toggleExpanded($scope.ALL_EXPANDED);
-
+                    })
+                    // If there is a module given in the url params (?module=....) open the corresponding module
+                    .then(function() {
                         if(moduleToOpen) {
                             var moduleData = getModuleById(moduleToOpen);
                             $scope.showSelected(moduleData, true);
