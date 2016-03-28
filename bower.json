@@ -1,5 +1,5 @@
 {
-  "name": "ajskdja",
+  "name": "tucan-catalog",
   "version": "0.0.0",
   "authors": [
     "David Gengenbach <davidgengenbach@gmx.de>"
@@ -15,12 +15,11 @@
   ],
   "dependencies": {
     "angular-tree-control": "0.2.23",
-    "angular-sanitize": "1.2.28",
-    "angular": "1.2.28",
-    "jquery": "*",
-    "ramda": "0.17.1"
+    "angular-sanitize": "*",
+    "angular": "*",
+    "ramda": "*"
   },
   "resolutions": {
-    "angular": "1.2.28"
+    "angular": "1.5.3"
   }
 }

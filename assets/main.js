@@ -8,23 +8,29 @@
 
     function prepareData(data) {
         // Returns only "modules" in the module tree that have children (= categories)
-        parents = R.partial(flatten, R.path(['children', 'length']))(data, []);
+        parents = flatten(R.path(['children', 'length']), data, []);
         // Returns only modules that have no children (= modules)
-        modules = R.partial(flatten, function(curr) {
+        modules = flatten(function(curr) {
             return curr.details && curr.details.length;
-        })(data, []);
+        }, data, []);
     }
 
     angular
         .module('informatikModules', ['treeControl', 'ngSanitize'])
         .config(function($locationProvider) {
-            $locationProvider.html5Mode(true);
+            $locationProvider.html5Mode({
+                enabled: true,
+                requireBase:false
+            });
         })
-        .controller('RootCtrl', function($scope, $http, $location) {
+        .controller('RootCtrl', function($scope, $http, $location, $timeout) {
             var urlParams = $location.search(),
                 moduleToOpen = urlParams.module;
+
             $scope.ALL_EXPANDED = 'ALL_EXPANDED';
             $scope.ALL_COLLAPSED = 'ALL_COLLAPSED';
+
+            $timeout(init, 0);
 
             $scope.config = {
                 // object to string conversion/troll by localStorage
@@ -33,37 +39,32 @@
 
             $scope.treeOptions = {
                 dirSelectable: false,
-                level: 20,
-                // needed because there are nodes that have the same properties but are different
-                equality: function(n1, n2) {
-                    return n1 === n2;
-                }
+                level: 20
             };
-
-            init();
 
             function init() {
                 // Retrieve module data
                 $http
                     .get('assets/modules.json')
+                    // prepare data (= get parents and modules)
                     .success(function(data) {
                         $scope.data = data;
-                    })
-                    // prepare data (= get parents and modules)
-                    // open all items in the tree
-                    .then(function() {
                         prepareData($scope.data);
-                        $scope.toggleExpanded($scope.ALL_EXPANDED);
                     })
-                    // If there is a module given in the url params (?module=....) open the corresponding module
-                    .then(function() {
-                        if(moduleToOpen) {
-                            var moduleData = getModuleById(moduleToOpen);
-                            $scope.showSelected(moduleData, true);
-                            $scope.selected = moduleData;
-                        }
-                    });
+                    // Open all items in the tree
+                    // $timeout needed because of angular-tree-module
+                    .then($timeout.bind(null, $scope.toggleExpanded.bind($scope, $scope.ALL_EXPANDED), 0))
+                    // Open module from url (if present)
+                    .then($timeout.bind(null, $scope.openModuleFromUrl, 0));
             }
+
+            $scope.openModuleFromUrl = function() {
+                if (moduleToOpen) {
+                    var moduleData = getModuleById(moduleToOpen);
+                    $scope.showSelected(moduleData, true);
+                    $scope.selected = moduleData;
+                }
+            };
 
             $scope.toggleExpanded = function(state) {
                 $scope.expandedNodes = (state === $scope.ALL_EXPANDED) ? parents : [];
@@ -80,14 +81,10 @@
 
             $scope.hideOverlay = function() {
                 $scope.config.showDialog = false;
-                if($scope.config.hideOverlayNextTime) {
+                if ($scope.config.hideOverlayNextTime) {
                     setLocalStorage(HIDE_DIALOG_KEY, true);
                 }
             };
-
-            function getModuleById(moduleId) {
-                return R.find(R.propEq('text', moduleId), modules);
-            }
         });
 
     function getFromLocalStorage(key) {
@@ -97,6 +94,10 @@
     function setLocalStorage(key, value_) {
         var value = typeof value_ === 'object' ? JSON.stringify(value_) : value_;
         localStorage.setItem(key, value);
+    }
+
+    function getModuleById(moduleId) {
+        return R.find(R.propEq('text', moduleId), modules);
     }
 
     function flatten(test, list, acc) {

@@ -502,6 +502,7 @@ aside {
     padding: 14px;
     top: 42px;
     overflow: auto;
+    border-left: 1px solid #b1bd00;
 }
 
 aside .module-detail {
