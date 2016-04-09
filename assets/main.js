@@ -14,7 +14,7 @@
             return curr.details && curr.details.length;
         }, data, []);
 
-        var closedParents = getClosedParentsFromLocationStorage();
+        var closedParents = getClosedParentsFromLocationStorage() || [];
         R.forEach(function(parent) {
             if(closedParents.indexOf(parent.text) >= 0) {
                 parent.collapsed = true;
@@ -97,6 +97,14 @@
                 if ($scope.config.hideOverlayNextTime) {
                     setLocalStorage(HIDE_DIALOG_KEY, true);
                 }
+            };
+
+            $scope.toggleExpanded = function(state) {
+                var collapsed = state === $scope.ALL_COLLAPSED;
+                R.forEach(function(parent) {
+                    parent.collapsed = collapsed;
+                }, parents);
+                saveCollapsedStatus();
             };
         });
 
