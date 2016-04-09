@@ -13,6 +13,13 @@
         modules = flatten(function(curr) {
             return curr.details && curr.details.length;
         }, data, []);
+
+        var closedParents = getClosedParentsFromLocationStorage();
+        R.forEach(function(parent) {
+            if(closedParents.indexOf(parent.text) >= 0) {
+                parent.collapsed = true;
+            }
+        }, parents);
     }
 
     angular
@@ -53,12 +60,17 @@
             function initTree() {
                 var lastNode;
                 $scope.treeSelectNodeLabel = $scope.tree.selectNodeLabel;
-
                 $scope.tree.selectNodeLabel = function(node) {
                     var isSameNode = node === lastNode;
                     $scope.showSelected(node, !isSameNode);
                     $scope.treeSelectNodeLabel(isSameNode ? {} : node);
                     lastNode = isSameNode ? null : node;
+                };
+
+                $scope.treeSelectNodeHead = $scope.tree.selectNodeHead;
+                $scope.tree.selectNodeHead = function(node) {
+                    $scope.treeSelectNodeHead(node);
+                    saveCollapsedStatus();
                 };
             }
 
@@ -87,6 +99,18 @@
                 }
             };
         });
+
+    function getClosedParentsFromLocationStorage() {
+        return JSON.parse(getFromLocalStorage('closedParents'));
+    }
+
+    function getClosedParents() {
+        return R.map(R.prop('text'), R.filter(R.prop('collapsed'), parents));
+    }
+
+    function saveCollapsedStatus() {
+        setLocalStorage('closedParents', getClosedParents());
+    }
 
     function getFromLocalStorage(key) {
         return localStorage && localStorage.getItem(key);

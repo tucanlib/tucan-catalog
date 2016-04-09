@@ -14,12 +14,10 @@
     "tests"
   ],
   "dependencies": {
-    "angular-tree-control": "0.2.23",
     "angular-sanitize": "*",
     "angular-animate": "1.5.3",
     "angular": "*",
     "ramda": "*",
-    "angular-treemendous": "^0.2.4",
     "angular-treeview": "git@github.com:davidgengenbach/angular.treeview.git"
   },
   "resolutions": {
