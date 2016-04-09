@@ -16,11 +16,11 @@
     }
 
     angular
-        .module('informatikModules', ['treeControl', 'ngSanitize'])
+        .module('informatikModules', ['angularTreeview', 'ngSanitize'])
         .config(function($locationProvider) {
             $locationProvider.html5Mode({
                 enabled: true,
-                requireBase:false
+                requireBase: false
             });
         })
         .controller('RootCtrl', function($scope, $http, $location, $timeout) {
@@ -37,37 +37,38 @@
                 showDialog: getFromLocalStorage(HIDE_DIALOG_KEY) !== 'true'
             };
 
-            $scope.treeOptions = {
-                dirSelectable: false,
-                level: 20
-            };
-
             function init() {
                 // Retrieve module data
                 $http
                     .get('assets/modules.json')
                     // prepare data (= get parents and modules)
                     .success(function(data) {
+                        prepareData(data);
                         $scope.data = data;
-                        prepareData($scope.data);
+                        $timeout(initTree);
                     })
-                    // Open all items in the tree
-                    // $timeout needed because of angular-tree-module
-                    .then($timeout.bind(null, $scope.toggleExpanded.bind($scope, $scope.ALL_EXPANDED), 0))
-                    // Open module from url (if present)
                     .then($timeout.bind(null, $scope.openModuleFromUrl, 0));
+            }
+
+            function initTree() {
+                var lastNode;
+                $scope.treeSelectNodeLabel = $scope.tree.selectNodeLabel;
+
+                $scope.tree.selectNodeLabel = function(node) {
+                    var isSameNode = node === lastNode;
+                    $scope.showSelected(node, !isSameNode);
+                    $scope.treeSelectNodeLabel(isSameNode ? {} : node);
+                    lastNode = isSameNode ? null : node;
+                };
             }
 
             $scope.openModuleFromUrl = function() {
                 if (moduleToOpen) {
                     var moduleData = getModuleById(moduleToOpen);
+                    $scope.treeSelectNodeLabel(moduleData);
                     $scope.showSelected(moduleData, true);
                     $scope.selected = moduleData;
                 }
-            };
-
-            $scope.toggleExpanded = function(state) {
-                $scope.expandedNodes = (state === $scope.ALL_EXPANDED) ? parents : [];
             };
 
             $scope.showSelected = function(node, selected) {

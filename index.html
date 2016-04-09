@@ -6,33 +6,26 @@
     <title>TUD Informatik Katalog</title>
     <meta name="description" content=":)">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="libs/angular-tree-control/css/tree-control.css">
+    <link rel="stylesheet" type="text/css" href="libs/angular-treeview/css/angular.treeview.css">
     <link rel="stylesheet" href="assets/main.css" />
 </head>
 <!-- Ey, raus aus meinem Quellcode! :D -->
 
 <body ng-app="informatikModules" ng-controller="RootCtrl" ng-class="{'aside-open': !!selectedNode, 'aside-big': bigAside }">
     <header class="fixed-top header" ng-cloak>
-        <input ng-model="search" placeholder="Modul suchen" />
-        <div class="buttons">
-            <button class="border-left" ng-click="toggleExpanded(ALL_EXPANDED)">+ Expand all</button>
-            <button class="border-left" ng-click="toggleExpanded(ALL_COLLAPSED)">- Collapse all</button>
-            <a class="logo-tucan border-left" href="https://www.tucan.tu-darmstadt.de/" target="_blank"><img src="assets/logo-tucan.jpg"></a>
-        </div>
+        <h2>TUD Informatik Bachelor VV SoSe 16</h2>
+        <a class="logo-tucan border-left" href="https://www.tucan.tu-darmstadt.de/" target="_blank"><img src="assets/logo-tucan.jpg"></a>
     </header>
     <section class="overflow-auto" ng-cloak>
-        <treecontrol
-            class="tree tree-classic"
-            expanded-nodes="expandedNodes"
-            filter-expression="search"
-            filter-comparator="comparator"
-            on-selection="showSelected(node, selected)"
-            tree-model="data"
-            selected-node="selected"
-            options="treeOptions">
-            {{node.text}}
-            <span class="credits" ng-if="node.credits">{{node.credits}} CP</span>
-        </treecontrol>
+        <div
+        data-angular-treeview="true"
+        data-tree-id="tree"
+        data-tree-model="data"
+        data-node-id="text"
+        data-node-label="text"
+        data-node-children="children"
+        data-label-template="((node.text))<span class='credits' ng-if='node.credits'>((node.credits)) CP</span>">
+    </div>
     </section>
     <aside ng-if="selectedNode" ng-cloak>
         <div class="close-button button" ng-click="showSelected()">x</div>
@@ -47,7 +40,7 @@
     </aside>
     <footer>
         <b>Benutzung auf eigene Gefahr!</b>
-        <span class="hint">Stand: 23.03.16</span>
+        <span class="hint">Stand: 01.04.16</span>
     </footer>
     <div class="overlay" ng-show="config.showDialog" ng-cloak>
         <div class="content">
@@ -75,8 +68,9 @@
         </div>
         </div>
         <script src="libs/angular/angular.min.js"></script>
+        <script src="libs/angular-animate/angular-animate.min.js"></script>
         <script src="libs/angular-sanitize/angular-sanitize.min.js"></script>
-        <script src="libs/angular-tree-control/angular-tree-control.js"></script>
+        <script src="libs/angular-treeview/angular.treeview.js"></script>
         <script src="libs/ramda/dist/ramda.min.js"></script>
         <script src="assets/main.js"></script>
 </body>

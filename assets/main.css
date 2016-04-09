@@ -460,15 +460,29 @@ section {
     position: relative;
 }
 
-.tree-label:hover {
-    color: #000;
+div[data-angular-treeview] li span:hover:not(.credits) {
+    /*color: #000;*/
 }
 
-
-
-.tree-selected .credits,
-.tree-label:hover .credits {
+div[data-angular-treeview] li span.selected .credits,
+div[data-angular-treeview] li span:hover .credits {
     opacity: 1;
+}
+
+div[data-angular-treeview] > ul > li {
+    padding-left: 0;
+}
+
+ div[data-angular-treeview] li {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 0 0 20px;
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+}
+
+div[data-angular-treeview] li span.selected {
+    background: #b1bd00;
+    color: white;
 }
 
 .credits {
@@ -566,6 +580,13 @@ button {
     padding: 10px;
 }
 
+header h2 {
+    margin: 0 10px;
+    margin-top: 3px;
+    float: left;
+    color: #b1bd00;
+}
+
 header button {
     height: 41px;
     background: none;
@@ -617,21 +638,6 @@ header input {
 
 input:focus {
     outline: none;
-}
-
-treecontrol > ul > li {
-    padding-left: 0;
-}
-
-treecontrol li {
-    font-size: 14px;
-    line-height: 24px;
-    padding: 0 0 0 20px;
-}
-
-treecontrol.tree-classic li .tree-selected {
-    background: #b1bd00;
-    color: white;
 }
 
 .border-left {
