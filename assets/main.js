@@ -14,12 +14,19 @@
             return curr.details && curr.details.length;
         }, data, []);
 
-        var closedParents = getClosedParentsFromLocationStorage() || [];
+        var closedParents = getClosedParentsFromLocalStorage() || [];
         R.forEach(function(parent) {
             if(closedParents.indexOf(parent.text) >= 0) {
                 parent.collapsed = true;
             }
         }, parents);
+
+        var hiddenCourses = getHiddenCoursesFromLocalStorage() || [];
+        R.forEach(function(module) {
+            if(hiddenCourses.indexOf(module.text) >= 0) {
+                module.hidden = true;
+            }
+        }, modules);
     }
 
     angular
@@ -106,18 +113,46 @@
                 }, parents);
                 saveCollapsedStatus();
             };
+
+            $scope.hideNode = function(node) {
+                node.hidden = true;
+                saveHiddenStatus();
+            };
+
+            $scope.showAllCourses = function() {
+                R.forEach(function(module) {
+                    module.hidden = false;
+                }, modules);
+                saveHiddenStatus();
+            };
+
+            $scope.hiddenCourses = function() {
+                return modules ? R.filter(R.prop('hidden'), modules) : 0;
+            };
         });
 
-    function getClosedParentsFromLocationStorage() {
-        return JSON.parse(getFromLocalStorage('closedParents'));
+    function getClosedParentsFromLocalStorage() {
+        return getObjectFromLocalStorage('closedParents');
     }
 
     function getClosedParents() {
         return R.map(R.prop('text'), R.filter(R.prop('collapsed'), parents));
     }
 
+    function getHiddenCoursesFromLocalStorage() {
+        return getObjectFromLocalStorage('hiddenCourses');
+    }
+
+    function saveHiddenStatus() {
+        setLocalStorage('hiddenCourses', R.map(R.prop('text'), R.filter(R.prop('hidden'), modules)));
+    }
+
     function saveCollapsedStatus() {
         setLocalStorage('closedParents', getClosedParents());
+    }
+
+    function getObjectFromLocalStorage(key) {
+        return JSON.parse(getFromLocalStorage(key));
     }
 
     function getFromLocalStorage(key) {

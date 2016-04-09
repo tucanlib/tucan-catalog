@@ -23,6 +23,7 @@
         <!--<a class="logo-tucan border-left" href="https://www.tucan.tu-darmstadt.de/" target="_blank"><img src="assets/logo-tucan.jpg"></a>-->
     </header>
     <section class="overflow-auto" ng-cloak>
+        <button class="button-show-hidden-courses" ng-if="hiddenCourses().length > 0" class="border-left" ng-click="showAllCourses()">{{hiddenCourses().length}} ausgeblendete Kurse anzeigen</button>
         <div
         data-angular-treeview="true"
         data-tree-id="tree"
@@ -30,13 +31,14 @@
         data-node-id="text"
         data-node-label="text"
         data-node-children="children"
-        data-label-template="((node.text))<span class='credits' ng-if='node.credits'>((node.credits)) CP</span>">
+        data-label-template="((node.text))<span class='credits' ng-if='node.credits' ng-click='fuckthat()'>((node.credits)) CP</span>">
     </div>
     </section>
     <aside ng-if="selectedNode" ng-cloak>
         <div class="close-button button" ng-click="showSelected()">x</div>
         <div class="resize-button button" ng-click="toggleAside()">{{bigAside ? '>' : '
             < '}}</div>
+        <button ng-click="hideNode(selectedNode); showSelected()">Diesen Kurs nicht mehr anzeigen</button>
         <h2>{{selectedNode.text}}</h2>
         <div class="module-detail" ng-repeat="detail in selectedNode.details">
             <b>{{detail.title}}</b>
