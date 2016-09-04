@@ -503,6 +503,10 @@ body {
     overflow: hidden;
 }
 
+a {
+    color: #444;
+}
+
 h1 {
     font-size: 24px;
 }
@@ -771,4 +775,39 @@ footer b {
      aside .resize-button {
         display: none;
      }
+}
+
+@media print {
+    html,
+    body {
+        background: red !important;
+        overflow: initial;
+        min-height: 100%;
+        font-size: 13px;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    section {
+        top: 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .credits {
+        color: #333;
+        font-weight: bold;
+    }
+
+    div[data-angular-treeview] li {
+        padding: 0 0 0 14px;
+        border: 1px solid #333;
+    }
+
 }

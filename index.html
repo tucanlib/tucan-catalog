@@ -9,11 +9,10 @@
     <link rel="stylesheet" type="text/css" href="libs/angular-treeview/css/angular.treeview.css">
     <link rel="stylesheet" href="assets/main.css" />
 </head>
-<!-- Ey, raus aus meinem Quellcode! :D -->
 
 <body ng-app="informatikModules" ng-controller="RootCtrl" ng-class="{'aside-open': !!selectedNode, 'aside-big': bigAside }">
     <header class="fixed-top header" ng-cloak>
-        <h2>TUD Informatik Bachelor VV SoSe 16</h2>
+        <h2>TUD Informatik Bachelor VV WS 16/17</h2>
        <div class="buttons">
             <button class="border-left" ng-click="toggleExpanded(ALL_EXPANDED)">+ Expand all</button>
             <button class="border-left" ng-click="toggleExpanded(ALL_COLLAPSED)">- Collapse all</button>
@@ -48,30 +47,32 @@
     </aside>
     <footer>
         <b>Benutzung auf eigene Gefahr!</b>
-        <span class="hint">Stand: 01.04.16</span>
+        <span class="hint">Stand: 02.09.16</span>
     </footer>
     <div class="overlay" ng-show="config.showDialog" ng-cloak>
         <div class="content">
-            <h1>TUD Informatik SoSe '16</h1>
+            <h1>TUD Informatik WiSe 16/17</h1>
                 <p>
-                    <b>Ganz wichtig:</b> Die Benutzung ist natürlich auf eigene Gefahr!
+                    <b>Ganz wichtig:</b> Benutzung auf eigene Gefahr!
                     <br/>
-                    <br/> Ich habe viel gegengetestet und nachgeprüft, aber da die Menge der Daten schwierig zu überblicken und testen ist, können sich Fehler einschleichen!
+                    <br/> Ich habe viel gegengetestet und nachgeprüft, aber da die Menge der Daten schwierig zu überblicken und testen ist, können sich Fehler einschleichen.
                     <br/>
-                    <br/> Also: du wurdest gewarnt :D
+                    <br/>
+                    Eine wichtige Sache noch: dieses VV gilt für Bachelor Informatik PO2009. Es kann sehr gut sein, dass ihr im Tucan mehr/weniger Fächer angezeigt bekommt! Schaut das am besten nach.
                     <br/>
                     <br/>
                     <button ng-click="hideOverlay()">Ja, bin gewarnt!</button>
+                    <br/><br/>
+                    Falls jemand Interesse an dem VV von einer neuen PO hat, bitte Becheid sagen: <a href="mailto:info@davidgengenbach.de">info@davidgengenbach.de</a>. Hier ist der <a href="https://github.com/davidgengenbach/tucan-catalog-crawler">Crawler</a>.
                     <br/>
                     <br/>
                     <input id="checkbox-hide-dialog" type="checkbox" ng-model="config.hideOverlayNextTime" />
-                    <label for="checkbox-hide-dialog">Ab jetzt kein Overlay mehr, bitte!</label>
-                    <br/>
+                    <label for="checkbox-hide-dialog">Ab jetzt diesen Overlay nicht mehr zeigen, bitte!</label>
                     <br/>
                     <br/>
                     <span class="hint">(Man kann jetzt auch Links zu den einzelnen Kursen verschicken - siehe URL, wenn man auf nen Kurs klickt)</span>
                     <br/>
-                    <span class="hint">Kann gut sein, dass alte Browser hier nicht funktionieren. Regt euch dann bitte nicht über die Seite sondern eher über eure Unfähigkeit, einen aktuellen Browser zu haben, auf ;)</span>
+                    <span class="hint">Kann gut sein, dass alte Browser hier nicht funktionieren. Regt euch dann bitte nicht über die Seite sondern eher über eure Unfähigkeit, einen aktuellen Browser zu installieren, auf ;)</span>
                 </p>
         </div>
         </div>
