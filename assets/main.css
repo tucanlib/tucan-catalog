@@ -512,11 +512,19 @@ h1 {
 }
 
 section {
-    padding: 28px;
+    padding: 14px;
     position: absolute;
     top: 39px;
     width: 100%;
     bottom: 0;
+}
+
+section {
+    padding-right: 31.5%;
+}
+
+.aside-open section {
+    padding-right: 14px;
 }
 
 .overflow-auto {
@@ -741,6 +749,30 @@ footer b {
     margin-bottom: 20px;
 }
 
+.no-wrap {
+    white-space: nowrap;
+}
+
+div[data-tree-model] li > span {
+    padding: 3px;
+    border-radius: 2px;
+}
+
+div[data-tree-model] li > i {
+    position: relative;
+    top: 3px;
+}
+
+
+div[data-tree-model] li .selected {
+    padding: 3px;
+    font-weight: normal;
+}
+
+div[data-angular-treeview] li {
+    padding: 0 0 0 16px;
+}
+
 @media (max-width: 800px) {
     header {
         height: auto;
@@ -786,10 +818,8 @@ footer b {
         font-size: 13px;
     }
 
-    footer {
-        display: none;
-    }
-
+    footer,
+    .button-show-hidden-courses,
     .buttons {
         display: none;
     }
@@ -798,6 +828,8 @@ footer b {
         top: 0;
         overflow: hidden;
         position: relative;
+        padding-right: 14px;
+        padding-top: 30px;
     }
 
     .credits {

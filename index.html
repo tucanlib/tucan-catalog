@@ -16,21 +16,22 @@
        <div class="buttons">
             <button class="border-left" ng-click="toggleExpanded(ALL_EXPANDED)">+ Expand all</button>
             <button class="border-left" ng-click="toggleExpanded(ALL_COLLAPSED)">- Collapse all</button>
+            <button class="border-left" ng-click="toggleTitleLengths(ALL_EXPANDED)">Toggle Titles</button>
             <a class="logo-tucan border-left" href="https://www.tucan.tu-darmstadt.de/" target="_blank"><img src="assets/logo-tucan.jpg"></a>
         </div>
 
         <!--<a class="logo-tucan border-left" href="https://www.tucan.tu-darmstadt.de/" target="_blank"><img src="assets/logo-tucan.jpg"></a>-->
     </header>
-    <section class="overflow-auto" ng-cloak>
+    <section class="overflow-auto" ng-cloak ng-init="f = {hidden: true}">
         <button class="button-show-hidden-courses" ng-if="hiddenCourses().length > 0" class="border-left" ng-click="showAllCourses()">{{hiddenCourses().length}} ausgeblendete Kurse anzeigen</button>
         <div
         data-angular-treeview="true"
         data-tree-id="tree"
         data-tree-model="data"
-        data-node-id="text"
-        data-node-label="text"
+        data-node-id="label"
+        data-node-label="label"
         data-node-children="children"
-        data-label-template="((node.text))<span class='credits' ng-if='node.credits'>((node.credits)) CP</span>">
+        data-label-template="((node.label)) (( labelForNode(node) ))<span class='credits no-wrap' ng-if='node.credits'>((node.credits)) CP</span>">
     </div>
     </section>
     <aside ng-if="selectedNode" ng-cloak>
@@ -38,7 +39,7 @@
         <div class="resize-button button" ng-click="toggleAside()">{{bigAside ? '>' : '
             < '}}</div>
         <button ng-click="hideNode(selectedNode); showSelected()">Diesen Kurs nicht mehr anzeigen</button>
-        <h2>{{selectedNode.text}}</h2>
+        <h2>{{selectedNode.oldText || selectedNode.text }}</h2>
         <div class="module-detail" ng-repeat="detail in selectedNode.details">
             <b>{{detail.title}}</b>
             <br/>
@@ -71,6 +72,8 @@
                     <br/>
                     <br/>
                     <span class="hint">(Man kann jetzt auch Links zu den einzelnen Kursen verschicken - siehe URL, wenn man auf nen Kurs klickt)</span>
+                    <br/>
+                    <span class="hint">(Wenn ihr 'H' drückt, werden die Modultitel etwas übersichtlicher)</span>
                     <br/>
                     <span class="hint">Kann gut sein, dass alte Browser hier nicht funktionieren. Regt euch dann bitte nicht über die Seite sondern eher über eure Unfähigkeit, einen aktuellen Browser zu installieren, auf ;)</span>
                 </p>
