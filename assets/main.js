@@ -44,6 +44,18 @@
                 requireBase: false
             });
         })
+        .directive('scrollTopOnChange', function() {
+            return {
+                scope: {
+                    scrollTopOnChange: '='
+                },
+                link: function($scope, element, attrs, controller) {
+                    $scope.$watch('scrollTopOnChange', function(newVal, oldVal) {
+                        element[0].scrollTop = 0;
+                    });
+                }
+            };
+        })
         .controller('RootCtrl', function($scope, $http, $location, $timeout) {
             var urlParams = $location.search(),
                 moduleToOpen = urlParams.module;

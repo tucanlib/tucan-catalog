@@ -34,7 +34,7 @@
         data-label-template="((node.label)) (( labelForNode(node) ))<span class='credits no-wrap' ng-if='node.credits'>((node.credits)) CP</span>">
     </div>
     </section>
-    <aside ng-if="selectedNode" ng-cloak>
+    <aside ng-if="selectedNode" scroll-top-on-change="selectedNode" ng-cloak>
         <div class="close-button button" ng-click="showSelected()">x</div>
         <div class="resize-button button" ng-click="toggleAside()">{{bigAside ? '>' : '
             < '}}</div>
