@@ -13,32 +13,24 @@
 <body ng-app="informatikModules" ng-controller="RootCtrl" ng-class="{'aside-open': !!selectedNode, 'aside-big': bigAside }">
     <header class="fixed-top header" ng-cloak>
         <h2>TUD Informatik Bachelor VV WS 16/17</h2>
-       <div class="buttons">
+        <div class="buttons">
             <button class="border-left" ng-click="toggleExpanded(ALL_EXPANDED)">+ Expand all</button>
             <button class="border-left" ng-click="toggleExpanded(ALL_COLLAPSED)">- Collapse all</button>
             <button class="border-left" ng-click="toggleTitleLengths(ALL_EXPANDED)">Toggle Titles</button>
             <a class="logo-tucan border-left" href="https://www.tucan.tu-darmstadt.de/" target="_blank"><img src="assets/logo-tucan.jpg"></a>
         </div>
-
-        <!--<a class="logo-tucan border-left" href="https://www.tucan.tu-darmstadt.de/" target="_blank"><img src="assets/logo-tucan.jpg"></a>-->
     </header>
     <section class="overflow-auto" ng-cloak ng-init="f = {hidden: true}">
-        <button class="button-show-hidden-courses" ng-if="hiddenCourses().length > 0" class="border-left" ng-click="showAllCourses()">{{hiddenCourses().length}} ausgeblendete Kurse anzeigen</button>
-        <div
-        data-angular-treeview="true"
-        data-tree-id="tree"
-        data-tree-model="data"
-        data-node-id="label"
-        data-node-label="label"
-        data-node-children="children"
-        data-label-template="((node.label)) (( labelForNode(node) ))<span class='credits no-wrap' ng-if='node.credits'>((node.credits)) CP</span>">
-    </div>
+        <!--<button class="button-show-hidden-courses" ng-if="hiddenCourses().length > 0" class="border-left" ng-click="showAllCourses()">{{hiddenCourses().length}} ausgeblendete Kurse anzeigen</button>-->
+        <button class="button-show-hidden-courses" ng-if="hiddenCourses().length > 0" class="border-left" ng-click="config.showHiddenCoursesDialog = true">{{hiddenCourses().length}} ausgeblendete Kurse anzeigen</button>
+        <div data-angular-treeview="true" data-tree-id="tree" data-tree-model="data" data-node-id="label" data-node-label="label" data-node-children="children" data-label-template="((node.label)) (( labelForNode(node) ))<span class='credits no-wrap' ng-if='node.credits'>((node.credits)) CP</span>">
+        </div>
     </section>
     <aside ng-if="selectedNode" scroll-top-on-change="selectedNode" ng-cloak>
-        <div class="close-button button" ng-click="showSelected()">x</div>
-        <div class="resize-button button" ng-click="toggleAside()">{{bigAside ? '>' : '
+        <div class="close-button button round-button" ng-click="showSelected()">x</div>
+        <div class="resize-button button round-button" ng-click="bigAside = !bigAside">{{bigAside ? '>' : '
             < '}}</div>
-        <button ng-click="hideNode(selectedNode); showSelected()">Diesen Kurs nicht mehr anzeigen</button>
+        <button ng-click="toggleNodeHiddenStatus(selectedNode, true); showSelected()">Diesen Kurs nicht mehr anzeigen</button>
         <h2>{{selectedNode.oldText || selectedNode.text }}</h2>
         <div class="module-detail" ng-repeat="detail in selectedNode.details">
             <b>{{detail.title}}</b>
@@ -46,45 +38,63 @@
             <span ng-bind-html="detail.details"></span>
         </div>
     </aside>
+
     <footer>
         <b>Benutzung auf eigene Gefahr!</b>
-        <span class="hint">Stand: 02.09.16</span>
+        <span class="hint">Stand: 07.09.16</span>
     </footer>
+
+    <div class="overlay overlay-hidden-courses" ng-if="config.showHiddenCoursesDialog && hiddenCourses().length > 0" ng-cloak>
+        <div class="content">
+            <div class="close-button round-button button" ng-click="config.showHiddenCoursesDialog = false">x</div>
+            <h1>Ausgeblendete Kurse</h1>
+            <ul class="unstyled">
+                <li ng-repeat="course in hiddenCourses()">
+                    <span>
+                        {{course.label}}
+                    </span>
+                    <button class="button-bordered button-small" ng-click="toggleNodeHiddenStatus(course, false)">Unhide Course</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
     <div class="overlay" ng-show="config.showDialog" ng-cloak>
         <div class="content">
             <h1>TUD Informatik WiSe 16/17</h1>
-                <p>
-                    <b>Ganz wichtig:</b> Benutzung auf eigene Gefahr!
-                    <br/>
-                    <br/> Ich habe viel gegengetestet und nachgeprüft, aber da die Menge der Daten schwierig zu überblicken und testen ist, können sich Fehler einschleichen.
-                    <br/>
-                    <br/>
-                    Eine wichtige Sache noch: dieses VV gilt für Bachelor Informatik PO2009. Es kann sehr gut sein, dass ihr im Tucan mehr/weniger Fächer angezeigt bekommt! Schaut das am besten nach.
-                    <br/>
-                    <br/>
-                    <button ng-click="hideOverlay()">Ja, bin gewarnt!</button>
-                    <br/><br/>
-                    Falls jemand Interesse an dem VV von einer neuen PO hat, bitte Becheid sagen: <a href="mailto:info@davidgengenbach.de">info@davidgengenbach.de</a>. Hier ist der <a href="https://github.com/davidgengenbach/tucan-catalog-crawler">Crawler</a>.
-                    <br/>
-                    <br/>
-                    <input id="checkbox-hide-dialog" type="checkbox" ng-model="config.hideOverlayNextTime" />
-                    <label for="checkbox-hide-dialog">Ab jetzt diesen Overlay nicht mehr zeigen, bitte!</label>
-                    <br/>
-                    <br/>
-                    <span class="hint">(Man kann jetzt auch Links zu den einzelnen Kursen verschicken - siehe URL, wenn man auf nen Kurs klickt)</span>
-                    <br/>
-                    <span class="hint">(Wenn ihr 'H' drückt, werden die Modultitel etwas übersichtlicher)</span>
-                    <br/>
-                    <span class="hint">Kann gut sein, dass alte Browser hier nicht funktionieren. Regt euch dann bitte nicht über die Seite sondern eher über eure Unfähigkeit, einen aktuellen Browser zu installieren, auf ;)</span>
-                </p>
+            <p>
+                <b>Ganz wichtig:</b> Benutzung auf eigene Gefahr!
+                <br/>
+                <br/> Ich habe viel gegengetestet und nachgeprüft, aber da die Menge der Daten schwierig zu überblicken und testen ist, können sich Fehler einschleichen.
+                <br/>
+                <br/>
+                Eine wichtige Sache noch: dieses VV gilt für Bachelor Informatik PO2009. Es kann sehr gut sein, dass ihr im Tucan mehr/weniger Fächer angezeigt bekommt! Schaut das am besten nach.
+                <br/>
+                <br/>
+                <button ng-click="hideOverlay()">Ja, bin gewarnt!</button>
+                <br/><br/>
+                Falls jemand Interesse an dem VV von einer neuen PO hat, bitte Becheid sagen: <a href="mailto:info@davidgengenbach.de">info@davidgengenbach.de</a>. Hier ist der <a href="https://github.com/davidgengenbach/tucan-catalog-crawler">Crawler</a>.
+                <br/>
+                <br/>
+                <input id="checkbox-hide-dialog" type="checkbox" ng-model="config.hideOverlayNextTime" />
+                <label for="checkbox-hide-dialog">Ab jetzt diesen Overlay nicht mehr zeigen, bitte!</label>
+                <br/>
+                <br/>
+                <span class="hint">(Man kann jetzt auch Links zu den einzelnen Kursen verschicken - siehe URL, wenn man auf nen Kurs klickt)</span>
+                <br/>
+                <span class="hint">(Wenn ihr 'H ' drückt, werden die Modultitel etwas übersichtlicher)</span>
+                <br/>
+                <span class="hint">Kann gut sein, dass alte Browser hier nicht funktionieren. Regt euch dann bitte nicht über die Seite sondern eher über eure Unfähigkeit, einen aktuellen Browser zu installieren, auf ;)</span>
+            </p>
         </div>
-        </div>
-        <script src="libs/angular/angular.min.js"></script>
-        <script src="libs/angular-animate/angular-animate.min.js"></script>
-        <script src="libs/angular-sanitize/angular-sanitize.min.js"></script>
-        <script src="libs/angular-treeview/angular.treeview.js"></script>
-        <script src="libs/ramda/dist/ramda.min.js"></script>
-        <script src="assets/main.js"></script>
+    </div>
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular-animate/angular-animate.min.js"></script>
+    <script src="libs/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="libs/angular-treeview/angular.treeview.js"></script>
+    <script src="libs/ramda/dist/ramda.min.js"></script>
+    <script src="assets/main.js"></script>
 </body>
 
 </html>

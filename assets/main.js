@@ -21,16 +21,18 @@
             }
         }));
 
+        data.forEach(addParentReferences);
+
         var closedParents = getClosedParentsFromLocalStorage() || [];
         R.forEach(function(parent) {
-            if (closedParents.indexOf(parent.text) >= 0) {
+            if (closedParents.indexOf(parent.title) >= 0) {
                 parent.collapsed = true;
             }
         }, parents);
 
         var hiddenCourses = getHiddenCoursesFromLocalStorage() || [];
         R.forEach(function(module) {
-            if (hiddenCourses.indexOf(module.text) >= 0) {
+            if (hiddenCourses.indexOf(module.title) >= 0) {
                 module.hidden = true;
             }
         }, modules);
@@ -58,20 +60,28 @@
         })
         .controller('RootCtrl', function($scope, $http, $location, $timeout) {
             var urlParams = $location.search(),
-                moduleToOpen = urlParams.module;
+                moduleToOpen = unsanitizeModuleID(urlParams.module);
 
             // ....
             document.onkeydown = function(evt) {
                 var ESC_KEY = 27;
                 var H_KEY = 72;
+                var J_KEY = 74;
 
                 var hotkeyMap = {};
                 hotkeyMap[ESC_KEY] = function() {
                     $scope.showSelected(null, false);
+                    $scope.config.showHiddenCoursesDialog = false;
+                    $scope.config.showDialog = false;
                 };
 
                 hotkeyMap[H_KEY] = function() {
                     toggleModuleNamePreAndSuffixes($scope.data);
+                };
+
+                hotkeyMap[J_KEY] = function() {
+                    $scope.toggleNodeHiddenStatus($scope.selectedNode, true);
+                    $scope.showSelected();
                 };
 
                 var action = hotkeyMap[evt.keyCode];
@@ -108,7 +118,7 @@
                 $scope.labelForNode = function(node) {
                     if (node.children && node.children.length) {
                         var filteredLength = node.children.filter(function(node) {
-                            return node.hidden;
+                            return !!node.hidden;
                         }).length;
                         if (filteredLength > 0) return '(Hidden: %)'.replace('%', filteredLength);
                     }
@@ -143,11 +153,7 @@
 
             $scope.showSelected = function(node, selected) {
                 $scope.selectedNode = selected && node;
-                $location.search('module', (selected && node) ? node.text : '');
-            };
-
-            $scope.toggleAside = function() {
-                $scope.bigAside = !$scope.bigAside;
+                $location.search('module', (selected && node) ? sanitizeModuleID(node.title) : '');
             };
 
             $scope.hideOverlay = function() {
@@ -165,8 +171,14 @@
                 saveCollapsedStatus();
             };
 
-            $scope.hideNode = function(node) {
-                node.hidden = true;
+            $scope.toggleNodeHiddenStatus = function(node, hidden) {
+                if(hidden === undefined) {
+                    hidden = !node.hidden;
+                }
+
+                if(!node) return;
+
+                node.hidden = hidden;
                 saveHiddenStatus();
             };
 
@@ -187,7 +199,7 @@
     }
 
     function getClosedParents() {
-        return R.map(R.prop('text'), R.filter(R.prop('collapsed'), parents));
+        return R.map(R.prop('title'), R.filter(R.prop('collapsed'), parents));
     }
 
     function getHiddenCoursesFromLocalStorage() {
@@ -195,7 +207,7 @@
     }
 
     function saveHiddenStatus() {
-        setLocalStorage('hiddenCourses', R.map(R.prop('text'), R.filter(R.prop('hidden'), modules)));
+        setLocalStorage('hiddenCourses', R.map(R.prop('title'), R.filter(R.prop('hidden'), modules)));
     }
 
     function saveCollapsedStatus() {
@@ -216,7 +228,15 @@
     }
 
     function getModuleById(moduleId) {
-        return R.find(R.propEq('text', moduleId), modules);
+        return R.find(R.propEq('title', moduleId), modules);
+    }
+
+    function addParentReferences(module) {
+        if (module.children && module.children.length)
+            module.children.forEach(function(m) {
+                m.parent = module;
+                addParentReferences(m);
+            });
     }
 
     function walkModules(fn, module) {
@@ -235,9 +255,9 @@
 
         modules.forEach(walkModules.bind(null, function(module) {
             if(!module.oldText) {
-                module.label = module.text;
-                module.oldText = module.text;
-                module.cleanText = cleanName(module.text);
+                module.label = module.title;
+                module.oldText = module.title;
+                module.cleanText = cleanName(module.title);
             }
 
             var currentlyActive = module.oldText === module.label;
@@ -247,6 +267,14 @@
                 module.label = module.oldText;
             }
         }));
+    }
+
+    function sanitizeModuleID(id) {
+        return id.replace(/\(/g, '//').replace(/\)/g, '\\\\');
+    }
+
+    function unsanitizeModuleID(id) {
+        return id ? id.replace('//', '(').replace('\\\\', ')') : undefined;
     }
 
     function flatten(test, list, acc) {

@@ -609,13 +609,18 @@ aside .resize-button {
 }
 
 aside .button {
+    width: 20px;
+    height: 20px;
+}
+
+.round-button {
     background: #b1bd00;
     color: white;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
     text-align: center;
     cursor: pointer;
+    height: 20px;
+    width: 20px;
 }
 
 .center {
@@ -653,6 +658,15 @@ button {
     padding: 8px;
 }
 
+.button-small {
+    padding: 4px;
+}
+
+.button-bordered {
+    border: 1px solid #b1bd00;
+    background-color: transparent;
+}
+
 header h2 {
     margin: 0 10px;
     margin-top: 3px;
@@ -688,12 +702,25 @@ header input {
     z-index: 99;
 }
 
+.overlay .content {
+    position: relative;
+    overflow: auto;
+    max-height: 100%;
+}
+
+.overlay .close-button {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+}
+
 .ng-cloak,
 [ng-cloak] {
     display: none;
 }
 
 .overlay h1 {
+    margin-top: 0;
     margin-bottom: 28px;
 }
 
@@ -841,4 +868,28 @@ div[data-angular-treeview] li {
         padding: 0 0 0 14px;
     }
 
+}
+
+ul.unstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.overlay-hidden-courses ul li {
+    margin: 10px 0;
+    border-bottom: 1px solid #b1bd00;
+}
+
+.overlay-hidden-courses ul li span {
+    display: inline-block;
+    text-overflow: ellipsis;
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.overlay-hidden-courses ul li button {
+    float: right;
+    line-height: 14px;
 }
