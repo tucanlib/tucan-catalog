@@ -264,11 +264,7 @@
             }
 
             var currentlyActive = module.oldText === module.label;
-            if(currentlyActive) {
-                module.label = module.cleanText;
-            } else {
-                module.label = module.oldText;
-            }
+            module.label = currentlyActive ? module.cleanText : module.oldText;
         }));
     }
 
