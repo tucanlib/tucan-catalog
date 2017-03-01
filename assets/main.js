@@ -39,7 +39,7 @@
     }
 
     angular
-        .module('informatikModules', ['angularTreeview', 'ngSanitize'])
+        .module('informatikModules', ['angularTreeview', 'ngSanitize', 'informatikModulesConstants'])
         .config(function($locationProvider) {
             $locationProvider.html5Mode({
                 enabled: true,
@@ -58,7 +58,7 @@
                 }
             };
         })
-        .controller('RootCtrl', function($scope, $http, $location, $timeout) {
+        .controller('RootCtrl', function($scope, $http, $location, $timeout, SEMESTER, LAST_UPDATED) {
             var urlParams = $location.search(),
                 moduleToOpen = unsanitizeModuleID(urlParams.module);
 
@@ -89,8 +89,11 @@
                     $scope.$apply(action);
                 }
             };
+
             $scope.ALL_EXPANDED = 'ALL_EXPANDED';
             $scope.ALL_COLLAPSED = 'ALL_COLLAPSED';
+            $scope.semester = SEMESTER;
+            $scope.last_updated = LAST_UPDATED;
 
             $timeout(init, 0);
 
