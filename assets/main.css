@@ -515,12 +515,7 @@ section {
     padding: 14px;
     position: absolute;
     top: 39px;
-    width: 100%;
     bottom: 0;
-}
-
-section {
-    padding-right: 31.5%;
 }
 
 .aside-open section {
@@ -571,7 +566,6 @@ div[data-angular-treeview] li span.selected {
 }
 
 .aside-open section {
-    width: 70%;
 }
 
 .aside-open.aside-big aside {
@@ -584,14 +578,30 @@ div[data-angular-treeview] li span.selected {
 
 aside {
     background: white;
-    position: fixed;
     right: 0;
     bottom: 0;
-    width: 30%;
     padding: 14px;
     top: 42px;
     overflow: auto;
     border-left: 1px solid #b1bd00;
+    margin-top: 42px;
+}
+
+aside .module-detail table {
+    width: 100%;
+}
+
+aside .module-detail table tr td {
+    padding: 4px;
+}
+
+aside .module-detail table tr:first-child {
+    border-bottom: 1px solid #b1bd00;
+    margin-bottom: 14px;
+}
+
+aside .module-detail table tr td:last-child {
+    display: none;
 }
 
 aside .module-detail {
@@ -600,7 +610,7 @@ aside .module-detail {
 
 aside .close-button {
     position: absolute;
-    right: 5px;
+    right: 30px;
 }
 
 aside .resize-button {
@@ -609,8 +619,9 @@ aside .resize-button {
 }
 
 aside .button {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
 }
 
 .round-button {
@@ -619,8 +630,8 @@ aside .button {
     border-radius: 50%;
     text-align: center;
     cursor: pointer;
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
 }
 
 .center {
@@ -790,7 +801,6 @@ div[data-tree-model] li > i {
     top: 3px;
 }
 
-
 div[data-tree-model] li .selected {
     padding: 3px;
     font-weight: normal;
@@ -804,7 +814,6 @@ div[data-angular-treeview] li {
     header {
         height: auto;
     }
-
     header h2 {
         font-size: 100%;
     }
@@ -815,25 +824,22 @@ div[data-angular-treeview] li {
     section {
         top: 70px;
     }
-
-     aside {
+    aside {
         width: 100%;
         top: 70px;
-     }
-
-     aside .close-button,
-     aside .resize-button {
+    }
+    aside .close-button,
+    aside .resize-button {
         width: 40px;
         height: 40px;
         line-height: 40px;
         float: left;
         margin-right: 10px;
         margin-bottom: 10px;
-     }
-
-     aside .resize-button {
+    }
+    aside .resize-button {
         display: none;
-     }
+    }
 }
 
 @media print {
@@ -844,13 +850,11 @@ div[data-angular-treeview] li {
         min-height: 100%;
         font-size: 13px;
     }
-
     footer,
     .button-show-hidden-courses,
     .buttons {
         display: none;
     }
-
     section {
         top: 0;
         overflow: hidden;
@@ -858,16 +862,13 @@ div[data-angular-treeview] li {
         padding-right: 14px;
         padding-top: 30px;
     }
-
     .credits {
         color: #333;
         font-weight: bold;
     }
-
     div[data-angular-treeview] li {
         padding: 0 0 0 14px;
     }
-
 }
 
 ul.unstyled {
@@ -892,4 +893,112 @@ ul.unstyled {
 .overlay-hidden-courses ul li button {
     float: right;
     line-height: 14px;
+}
+
+aside {
+    flex: 1;
+}
+
+section {
+    flex: 1;
+    display: flex;
+}
+
+.aside-open section {
+    flex: 0 0 60%;
+}
+
+body {
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.rg-right {
+    width: 14px !important;
+    border-left: 1px solid #b1bd00;
+}
+
+.rg-right span {
+    width: 6px !important;
+    left: 3px;
+    height: 30px !important;
+    margin-top: -15px !important;
+}
+
+/* RESIZEABLE */
+.resizable {
+    position: relative;
+}
+
+.rg-right,
+.rg-left,
+.rg-top,
+.rg-bottom {
+    display: block;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.rg-right span,
+.rg-left span,
+.rg-top span,
+.rg-bottom span {
+    position: absolute;
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid #ccc;
+}
+
+.rg-right span,
+.rg-left span {
+    border-width: 0 1px;
+    top: 50%;
+    margin-top: -10px;
+    margin: -10px 0 0 10px/4;
+    height: 20px;
+    width: 5px;
+}
+
+.rg-top span,
+.rg-bottom span {
+    border-width: 1px 0;
+    left: 50%;
+    margin: 10px/4 0 0 -10px;
+    width: 20px;
+    height: 5px;
+}
+
+.rg-top {
+    cursor: row-resize;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-top: -5px;
+}
+
+.rg-right {
+    cursor: col-resize;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+.rg-bottom {
+    cursor: row-resize;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -5px;
+}
+
+.rg-left {
+    cursor: col-resize;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin-left: -10px;
 }

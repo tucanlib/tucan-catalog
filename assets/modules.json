@@ -18,7 +18,7 @@
         "title": "12-34-5678 Wie man Noten richtig zu ernst nimmt (SoSe 2017)",
         "credits": 1,
         "details": [{
-            "details": "König W",
+            "details": "Prof. Ach So",
             "title": "Modulverantwortliche"
         }, {
             "details": "1,0",
@@ -26,6 +26,9 @@
         }, {
             "details": "SoSe 2014<br/>",
             "title": "Startsemester"
+        }, {
+            "details": "<table class=\"tb list\">\n<caption>Termine</caption>\n<tr>\n<td class=\"tbsubhead\"></td>\n<td class=\"tbsubhead\" style=\"width:120px;\">Datum</td>\n<td class=\"tbsubhead\">Von</td>\n<td class=\"tbsubhead\">Bis</td>\n<td class=\"tbsubhead\">Raum</td>\n<td class=\"tbsubhead\">Lehrende</td>\n</tr>\n<tr>\n<td class=\"tbdata\">1</td>\n<td class=\"tbdata\" name=\"appointmentDate\">Di, 18. Apr. 2017</td>\n<td class=\"tbdata\" name=\"appointmentTimeFrom\">13:30</td>\n<td class=\"tbdata\" name=\"appointmentDateTo\">15:10 </td>\n<td class=\"tbdata\">\n<a href=\"\" name=\"appointmentRooms\">S111/C234</a>\n</td>\n<td class=\"tbdata\" name=\"appointmentInstructors\">\r\n                                                                    Prof. Dr. Yes\r\n                                                    </td>\n</tr>\n<tr>\n<td class=\"tbdata\">2</td>\n<td class=\"tbdata\" name=\"appointmentDate\">Mi, 19. Apr. 2017</td>\n<td class=\"tbdata\" name=\"appointmentTimeFrom\">08:00</td>\n<td class=\"tbdata\" name=\"appointmentDateTo\">09:40 </td>\n<td class=\"tbdata\">\n<a href=\"\" name=\"appointmentRooms\">S111/C234</a>\n</td>\n<td class=\"tbdata\" name=\"appointmentInstructors\">\r\n                                                                    Prof. Dr. rer. nat. Yes\r\n                                                    </td>\n</tr></table>",
+            "title": "Kurs 0"
         }]
     }],
     "title": "Grundstudium"
@@ -36,7 +39,7 @@
             "title": "12-34-5678 Bitching über schwere Klausuren (SoSe 2017)",
             "credits": 4,
             "details": [{
-                "details": "König W",
+                "details": "Prof. Ach So",
                 "title": "Modulverantwortliche"
             }, {
                 "details": "4,0",
