@@ -4,9 +4,6 @@
         "title": "12-34-5678 Geistige Gesundheit erhalten (SoSe 2017)",
         "credits": -6,
         "details": [{
-            "details": "Scheinst es ja zu schlaiken",
-            "title": "Modulverantwortliche"
-        }, {
             "details": "-6,0<br/><br/>Hinweis: In Ihrer Pr\u00fcfungsordnung k\u00f6nnen abweichende Credits festgelegt sein.<br/>",
             "title": "Credits"
         }, {
@@ -36,7 +33,7 @@
     "children": [{
         "children": [{
             "children": [],
-            "title": "12-34-5678 Bitching über schwere Klausuren (SoSe 2017)",
+            "title": "12-34-5678 Ach So (SoSe 2017)",
             "credits": 4,
             "details": [{
                 "details": "Prof. Ach So",
@@ -45,7 +42,7 @@
                 "details": "4,0",
                 "title": "Credits"
             }, {
-                "details": "Manche sind mit der Fähigkeit geboren zu bitchen. Für alle Anderen ist dieser Kurs gedacht.",
+                "details": "Ja",
                 "title": "Auchgut"
             }, {
                 "details": "SoSe 2014<br/>",
