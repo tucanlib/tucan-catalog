@@ -516,6 +516,7 @@ section {
     position: absolute;
     top: 39px;
     bottom: 0;
+    margin-bottom: 70px;
 }
 
 .aside-open section {
