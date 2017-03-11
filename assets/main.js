@@ -58,7 +58,7 @@
                 }
             };
         })
-        .controller('RootCtrl', function($scope, $http, $location, $timeout, SEMESTER, LAST_UPDATED) {
+        .controller('RootCtrl', function($scope, $http, $location, $timeout, $window, SEMESTER, LAST_UPDATED) {
             var urlParams = $location.search(),
                 moduleToOpen = unsanitizeModuleID(urlParams.module);
 
@@ -140,6 +140,13 @@
                     saveCollapsedStatus();
                 };
             }
+
+            $scope.clearStorage = function() {
+                if('localStorage' in $window) {
+                    localStorage.clear();
+                    init();
+                }
+            };
 
             $scope.toggleTitleLengths = function() {
                 toggleModuleNamePreAndSuffixes($scope.data);
