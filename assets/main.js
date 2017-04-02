@@ -15,11 +15,12 @@
         }, data, []);
 
         // Hide all empty and non-details modules
-        data.forEach(walkModules.bind(null, function(module) {
+        data.forEach(walkModules.bind(null, function(module, parent) {
+            module.parent = parent;
             if (!module.children.length && (!module.details ||  (module.details && !module.details.length))) {
                 module.hidden = true;
             }
-        }));
+        }, null));
 
         data.forEach(addParentReferences);
 
@@ -146,6 +147,21 @@
                     localStorage.clear();
                     init();
                 }
+            };
+
+            $scope.getParents = function(module, withCurrent) {
+                
+                var parents = [];
+                if(withCurrent) {
+                    parents.push(module.label);
+                }
+                module = module.parent;
+                while(module.parent) {
+                    parents.push(module.label);
+                    module = module.parent;
+                }
+                parents.push(module.title);
+                return parents.reverse().join(' // ');
             };
 
             $scope.toggleTitleLengths = function() {
@@ -389,10 +405,10 @@
             });
     }
 
-    function walkModules(fn, module) {
-        fn(module);
+    function walkModules(fn, parent, module) {
+        fn(module, parent);
         if (module.children && module.children.length)
-            module.children.forEach(walkModules.bind(null, fn));
+            module.children.forEach(walkModules.bind(null, fn, module));
     }
 
     function toggleModuleNamePreAndSuffixes(modules) {
@@ -412,7 +428,7 @@
 
             var currentlyActive = module.oldText === module.label;
             module.label = currentlyActive ? module.cleanText : module.oldText;
-        }));
+        }, null));
     }
 
     function sanitizeModuleID(id) {

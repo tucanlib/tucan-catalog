@@ -588,6 +588,12 @@ aside {
     margin-top: 42px;
 }
 
+aside .parents {
+    display: block;
+    color: black;
+    margin-bottom: 16px;
+}
+
 aside .module-detail table {
     width: 100%;
 }
@@ -811,7 +817,7 @@ div[data-angular-treeview] li {
     padding: 0 0 0 16px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
     header {
         height: auto;
     }

@@ -33,11 +33,19 @@
         <div class="close-button button round-button" ng-click="showSelected()">x</div>
         <!--<div class="resize-button button round-button" ng-click="bigAside = !bigAside">{{bigAside ? '>' : '
             < '}}</div>-->
+
         <button ng-click="toggleNodeHiddenStatus(selectedNode, true); showSelected()">Diesen Kurs nicht mehr anzeigen</button>
         <h2>{{selectedNode.oldText || selectedNode.text }}</h2>
+        <div class="module-detail">
+            <b>Pfad</b>
+            <br/>
+            <span>{{getParents(selectedNode, true)}}</span>
+        </div>
+        <br/>
         <div class="module-detail" ng-repeat="detail in selectedNode.details">
             <b>{{detail.title}}</b>
             <br/>
+            
             <span ng-bind-html="detail.details"></span>
         </div>
         <span class="hint"><- (Die Breite dieses Panes lässt sich ändern)</span>
