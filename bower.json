@@ -18,7 +18,8 @@
     "angular-animate": "1.5.3",
     "angular": "*",
     "ramda": "*",
-    "angular-treeview": "git@github.com:davidgengenbach/angular.treeview.git"
+    "angular-treeview": "git@github.com:davidgengenbach/angular.treeview.git",
+    "js-md5": "^2.7.0"
   },
   "resolutions": {
     "angular": "1.5.3",

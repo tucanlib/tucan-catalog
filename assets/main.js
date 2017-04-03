@@ -1,4 +1,4 @@
-(function(angular, R) {
+(function(angular, R, md5) {
     'use strict';
 
     var HIDE_DIALOG_KEY = 'hideDialog';
@@ -17,6 +17,13 @@
         // Hide all empty and non-details modules
         data.forEach(walkModules.bind(null, function(module, parent) {
             module.parent = parent;
+            var hash = module.title;
+            if(parent && parent.title) {
+                hash += '_' + parent.title;
+            }
+
+            module.hash = md5(hash);
+
             if (!module.children.length && (!module.details ||  (module.details && !module.details.length))) {
                 module.hidden = true;
             }
@@ -170,7 +177,11 @@
 
             $scope.openModuleFromUrl = function() {
                 if (moduleToOpen) {
-                    var moduleData = getModuleById(moduleToOpen);
+                    var moduleData = getModuleByHash(moduleToOpen);
+                    if(!moduleData) {
+                        return;
+                    }
+                    //var moduleData = getModuleById(moduleToOpen);
                     $scope.treeSelectNodeLabel(moduleData);
                     $scope.showSelected(moduleData, true);
                     $scope.selected = moduleData;
@@ -179,7 +190,8 @@
 
             $scope.showSelected = function(node, selected) {
                 $scope.selectedNode = selected && node;
-                $location.search('module', (selected && node) ? sanitizeModuleID(node.title) : '');
+                $location.search('module', (selected && node) ? node.hash : '');
+                //$location.search('module', (selected && node) ? sanitizeModuleID(node.title) : '');
             };
 
             $scope.hideOverlay = function() {
@@ -394,7 +406,15 @@
     }
 
     function getModuleById(moduleId) {
-        return R.find(R.propEq('title', moduleId), modules);
+        return getModuleBy('title', moduleId);
+    }
+
+    function getModuleByHash(moduleHash) {
+        return getModuleBy('hash', moduleHash);
+    }
+
+    function getModuleBy(attr, target) {
+        return R.find(R.propEq(attr, target), modules);
     }
 
     function addParentReferences(module) {
@@ -447,4 +467,4 @@
             return curr.children.length ? flatten(test, curr.children, acc) : acc;
         }, acc, list);
     }
-})(angular, R);
+})(angular, R, md5);
