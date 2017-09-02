@@ -177,11 +177,14 @@
 
             $scope.openModuleFromUrl = function() {
                 if (moduleToOpen) {
-                    var moduleData = getModuleByHash(moduleToOpen);
+                    var moduleData = getModuleBy('hash', moduleToOpen);
+                    if(!moduleData) {
+                        moduleData = getModuleBy('title', moduleToOpen);
+                    }
                     if(!moduleData) {
                         return;
                     }
-                    //var moduleData = getModuleById(moduleToOpen);
+
                     $scope.treeSelectNodeLabel(moduleData);
                     $scope.showSelected(moduleData, true);
                     $scope.selected = moduleData;

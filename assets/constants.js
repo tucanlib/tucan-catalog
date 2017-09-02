@@ -2,6 +2,6 @@
     'use strict';
     angular
         .module('informatikModulesConstants', [])
-        .constant('SEMESTER', 'SoSe 17')
-        .constant('LAST_UPDATED', '01.03.17');
+        .constant('SEMESTER', 'WiSe 17/18')
+        .constant('LAST_UPDATED', '01.09.17');
 })(angular);
