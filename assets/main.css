@@ -511,16 +511,26 @@ h1 {
     font-size: 24px;
 }
 
+.flex {
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
 section {
-    padding: 14px;
-    position: absolute;
+    padding: 10px 0 10px 10px;
+    margin-bottom: 10px;
     top: 39px;
     bottom: 0;
-    margin-bottom: 70px;
+    width: 100%;
+    position: relative;
+}
+
+section > div {
+    width: 100%;
 }
 
 .aside-open section {
-    padding-right: 14px;
 }
 
 .overflow-auto {

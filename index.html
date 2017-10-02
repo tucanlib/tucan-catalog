@@ -21,35 +21,41 @@
             <a class="logo-tucan border-left" href="https://www.tucan.tu-darmstadt.de/" target="_blank"><img src="assets/logo-tucan.jpg"></a>
         </div>
     </header>
-    <section class="overflow-auto" ng-cloak ng-init="f = {hidden: true}" resizable r-directions="['right']" r-flex="true">
-        <!--<button class="button-show-hidden-courses" ng-if="hiddenCourses().length > 0" class="border-left" ng-click="showAllCourses()">{{hiddenCourses().length}} ausgeblendete Kurse anzeigen</button>-->
-        <button class="button-show-hidden-courses" ng-if="hiddenCourses().length > 0" class="border-left" ng-click="config.showHiddenCoursesDialog = true">{{hiddenCourses().length}} ausgeblendete Kurse anzeigen</button>
-        <div data-angular-treeview="true" data-tree-id="tree" data-tree-model="data" data-node-id="label" data-node-label="label" data-node-children="children" data-label-template="((node.label)) (( labelForNode(node) ))<span class='credits no-wrap' ng-if='node.credits'>((node.credits)) CP</span>">
-        </div>
-    </section>
 
+    <div class="flex">
+        <section class="overflow-auto" ng-cloak>
+            <div class="overflow-auto" ng-cloak>
+                <!--<button class="button-show-hidden-courses" ng-if="hiddenCourses().length > 0" class="border-left" ng-click="showAllCourses()">{{hiddenCourses().length}} ausgeblendete Kurse anzeigen</button>-->
+                <button class="button-show-hidden-courses" ng-if="hiddenCourses().length > 0" class="border-left" ng-click="config.showHiddenCoursesDialog = true">
+                    {{hiddenCourses().length}} ausgeblendete Kurse anzeigen
+                </button>
+                
+                <div data-angular-treeview="true" data-tree-id="tree" data-tree-model="data" data-node-id="label" data-node-label="label" data-node-children="children" data-label-template="((node.label)) (( labelForNode(node) ))<span class='credits no-wrap' ng-if='node.credits'>((node.credits)) CP</span>">
+                </div>
+            </div>
+        </section>
+        <aside ng-if="selectedNode" scroll-top-on-change="selectedNode" ng-cloak>
+            <div class="close-button button round-button" ng-click="showSelected()">x</div>
+            <!--<div class="resize-button button round-button" ng-click="bigAside = !bigAside">{{bigAside ? '>' : '
+                < '}}</div>-->
 
-    <aside ng-if="selectedNode" scroll-top-on-change="selectedNode" ng-cloak>
-        <div class="close-button button round-button" ng-click="showSelected()">x</div>
-        <!--<div class="resize-button button round-button" ng-click="bigAside = !bigAside">{{bigAside ? '>' : '
-            < '}}</div>-->
-
-        <button ng-click="toggleNodeHiddenStatus(selectedNode, true); showSelected()">Diesen Kurs nicht mehr anzeigen</button>
-        <h2>{{selectedNode.oldText || selectedNode.text }}</h2>
-        <div class="module-detail">
-            <b>Pfad</b>
+            <button ng-click="toggleNodeHiddenStatus(selectedNode, true); showSelected()">Diesen Kurs nicht mehr anzeigen</button>
+            <h2>{{selectedNode.oldText || selectedNode.text }}</h2>
+            <div class="module-detail">
+                <b>Pfad</b>
+                <br/>
+                <span>{{getParents(selectedNode, true)}}</span>
+            </div>
             <br/>
-            <span>{{getParents(selectedNode, true)}}</span>
-        </div>
-        <br/>
-        <div class="module-detail" ng-repeat="detail in selectedNode.details">
-            <b>{{detail.title}}</b>
-            <br/>
-            
-            <span ng-bind-html="detail.details"></span>
-        </div>
-        <span class="hint"><- (Die Breite dieses Panes lässt sich ändern)</span>
-    </aside>
+            <div class="module-detail" ng-repeat="detail in selectedNode.details">
+                <b>{{detail.title}}</b>
+                <br/>
+                
+                <span ng-bind-html="detail.details"></span>
+            </div>
+            <span class="hint"><- (Die Breite dieses Panes lässt sich ändern)</span>
+        </aside>
+    </div>
 
     <footer>
         <b>Benutzung auf eigene Gefahr!</b>
