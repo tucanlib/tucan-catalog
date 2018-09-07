@@ -522,6 +522,7 @@ section {
     margin-bottom: 10px;
     top: 39px;
     bottom: 0;
+    padding-bottom: 39px;
     width: 100%;
     position: relative;
 }

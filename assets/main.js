@@ -14,22 +14,22 @@
             return curr.details && curr.details.length;
         }, data, []);
 
-        // Hide all empty and non-details modules
-        data.forEach(walkModules.bind(null, function(module, parent) {
-            module.parent = parent;
+        function getHash(module, parent) {
             var hash = module.title;
             if(parent && parent.title) {
                 hash += '_' + parent.title;
             }
 
-            module.hash = md5(hash);
+            return md5(hash);
+        }
 
-            if (!module.children.length && (!module.details ||  (module.details && !module.details.length))) {
-                module.hidden = true;
-            }
+        data.forEach(walkModules.bind(null, function(module, parent) {
+            module.parent = parent;
+            module.hash = getHash(module, parent)
+
+            var isHidden = !module.children.length && (!module.details ||  (module.details && !module.details.length));
+            module.hidden = isHidden;
         }, null));
-
-        data.forEach(addParentReferences);
 
         var closedParents = getClosedParentsFromLocalStorage() || [];
         R.forEach(function(parent) {
@@ -53,18 +53,6 @@
                 enabled: true,
                 requireBase: false
             });
-        })
-        .directive('scrollTopOnChange', function() {
-            return {
-                scope: {
-                    scrollTopOnChange: '='
-                },
-                link: function($scope, element, attrs, controller) {
-                    $scope.$watch('scrollTopOnChange', function(newVal, oldVal) {
-                        element[0].scrollTop = 0;
-                    });
-                }
-            };
         })
         .controller('RootCtrl', function($scope, $http, $location, $timeout, $window, SEMESTER, LAST_UPDATED) {
             var urlParams = $location.search(),
@@ -115,7 +103,8 @@
                 $http
                     .get('assets/modules.json')
                     // prepare data (= get parents and modules)
-                    .success(function(data) {
+                    .then(function(res) {
+                        var data = res.data;
                         prepareData(data);
                         $scope.data = data;
                         $scope.toggleTitleLengths();
@@ -177,13 +166,8 @@
 
             $scope.openModuleFromUrl = function() {
                 if (moduleToOpen) {
-                    var moduleData = getModuleBy('hash', moduleToOpen);
-                    if(!moduleData) {
-                        moduleData = getModuleBy('title', moduleToOpen);
-                    }
-                    if(!moduleData) {
-                        return;
-                    }
+                    var moduleData = getModuleBy('hash', moduleToOpen) || getModuleBy('title', moduleToOpen);
+                    if(!moduleData) return;
 
                     $scope.treeSelectNodeLabel(moduleData);
                     $scope.showSelected(moduleData, true);
@@ -213,12 +197,8 @@
             };
 
             $scope.toggleNodeHiddenStatus = function(node, hidden) {
-                if (hidden === undefined) {
-                    hidden = !node.hidden;
-                }
-
                 if (!node) return;
-
+                hidden = hidden === undefined ? !node.hidden : hidden;
                 node.hidden = hidden;
                 saveHiddenStatus();
             };
@@ -232,6 +212,18 @@
 
             $scope.hiddenCourses = function() {
                 return modules ? R.filter(R.prop('hidden'), modules) : 0;
+            };
+        })
+        .directive('scrollTopOnChange', function() {
+            return {
+                scope: {
+                    scrollTopOnChange: '='
+                },
+                link: function($scope, element, attrs, controller) {
+                    $scope.$watch('scrollTopOnChange', function(newVal, oldVal) {
+                        element[0].scrollTop = 0;
+                    });
+                }
             };
         })
         //  @see http://codepen.io/anon/pen/LWNNKY
@@ -418,14 +410,6 @@
 
     function getModuleBy(attr, target) {
         return R.find(R.propEq(attr, target), modules);
-    }
-
-    function addParentReferences(module) {
-        if (module.children && module.children.length)
-            module.children.forEach(function(m) {
-                m.parent = module;
-                addParentReferences(m);
-            });
     }
 
     function walkModules(fn, parent, module) {

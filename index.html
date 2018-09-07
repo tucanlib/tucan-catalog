@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -41,6 +42,11 @@
 
             <button ng-click="toggleNodeHiddenStatus(selectedNode, true); showSelected()">Diesen Kurs nicht mehr anzeigen</button>
             <h2>{{selectedNode.oldText || selectedNode.text }}</h2>
+            Search: 
+            <a ng-href="https://www.google.de/search?q=TU%20Darmstadt%20%20{{selectedNode.label}}" target="_blank">Google</a>
+            <a ng-href="https://moodle.tu-darmstadt.de/course/search.php?search={{selectedNode.label}}" target="_blank">Moodle</a>
+            <a ng-href="https://moodle.informatik.tu-darmstadt.de/course/search.php?search={{selectedNode.label}}" target="_blank">Moodle Informatik</a>
+            <br/><br/>
             <div class="module-detail">
                 <b>Pfad</b>
                 <br/>
