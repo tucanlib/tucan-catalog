@@ -14,11 +14,11 @@
     "tests"
   ],
   "dependencies": {
-    "angular-sanitize": "*",
+    "angular-sanitize": "1.5.3",
     "angular-animate": "1.5.3",
-    "angular": "*",
-    "ramda": "*",
-    "angular-treeview": "git@github.com:davidgengenbach/angular.treeview.git",
+    "angular": "1.5.3",
+    "ramda": "0.25.0",
+    "angular-treeview": "https://github.com/davidgengenbach/angular.treeview.git",
     "js-md5": "^2.7.0"
   },
   "resolutions": {
