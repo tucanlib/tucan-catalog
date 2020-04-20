@@ -27,7 +27,7 @@
                 <button class="button-show-hidden-courses" ng-if="hiddenCourses().length > 0" class="border-left" ng-click="config.showHiddenCoursesDialog = true">
                     {{hiddenCourses().length}} ausgeblendete Kurse anzeigen
                 </button>
-                <div data-angular-treeview="true" data-tree-id="tree" data-tree-model="data" data-node-id="label" data-node-label="label" data-node-children="children" data-label-template="((node.label)) (( labelForNode(node) ))<span class='credits no-wrap' ng-if='node.credits'>((node.credits)) CP</span>">
+                <div data-angular-treeview="true" data-tree-id="tree" data-tree-model="data" data-node-id="label" data-node-label="label" data-node-children="children" data-label-template="((node.label)) (( labelForNode(node) ))<span class='credits no-wrap credits-((node.credits))' ng-if='node.credits'>((node.credits)) CP</span>">
                 </div>
             </div>
         </section>
