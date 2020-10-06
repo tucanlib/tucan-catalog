@@ -44,6 +44,13 @@
                 module.hidden = true;
             }
         }, modules);
+
+        var annotations = getAnnotationsFromLocalStorage() || {};
+        R.forEach(function(module) {
+            if (module.title in annotations) {
+                module.annotation = annotations[module.title];
+            }
+        }, modules);
     }
 
     angular
@@ -201,6 +208,13 @@
                 saveHiddenStatus();
             };
 
+            $scope.setAnnotation = function(node, annotation) {
+                if (!node) return;
+                annotation = annotation === node.annotation ? 0 : annotation;
+                node.annotation = annotation;
+                saveAnnotations();
+            }
+
             $scope.showAllCourses = function() {
                 R.forEach(function(module) {
                     module.hidden = false;
@@ -210,6 +224,10 @@
 
             $scope.hiddenCourses = function() {
                 return modules ? R.filter(R.prop('hidden'), modules) : 0;
+            };
+
+            $scope.annotations = function() {
+                return modules ? R.filter(R.prop('annotation'), modules) : 0;
             };
         })
         .directive('scrollTopOnChange', function() {
@@ -239,6 +257,19 @@
 
     function saveHiddenStatus() {
         setLocalStorage('hiddenCourses', R.map(R.prop('title'), R.filter(R.prop('hidden'), modules)));
+    }
+
+    function saveAnnotations() {
+        var annotations = {};
+        R.filter(R.prop('annotation'), modules).forEach(function(module) {
+            annotations[module.title] = module.annotation;
+        });
+
+        setLocalStorage('annotations', annotations);
+    }
+
+    function getAnnotationsFromLocalStorage() {
+        return getObjectFromLocalStorage('annotations');
     }
 
     function saveCollapsedStatus() {
