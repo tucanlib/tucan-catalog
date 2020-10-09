@@ -1023,13 +1023,13 @@ body {
 
 
 /********** ANNOTATIONS ****/
-.annotation        { outline: 0; border: 3px solid white; }
-.annotation-active { border: 3px solid #b1bd00; }
-.annotation-1      { background: #fdaaaa; }
-.annotation-2      { background: #b4f5a1; }
-.annotation-3      { background: #9bb1ec; }
-.annotation-4      { background: #eb96e6; }
-.annotation-5      { background: #f1f094; }
+.annotation-button        { outline: 0; border: 3px solid white; }
+.annotation-button-active { border: 3px solid #b1bd00; }
+.annotation-1             { background: #fdaaaa; }
+.annotation-2             { background: #b4f5a1; }
+.annotation-3             { background: #9bb1ec; }
+.annotation-4             { background: #eb96e6; }
+.annotation-5             { background: #f1f094; }
 
 /********** CREDITS ****/
 .credits-1      { background: #17c800; }

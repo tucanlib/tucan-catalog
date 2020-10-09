@@ -34,12 +34,8 @@
         <aside ng-if="selectedNode" scroll-top-on-change="selectedNode" ng-cloak>
             <div class="close-button button round-button" ng-click="showSelected()">x</div>
             <button ng-click="toggleNodeHiddenStatus(selectedNode, true); showSelected()">Diesen Kurs nicht mehr anzeigen</button>
+            <button ng-repeat="annotationStyle in ANNOTATION_STYLES" ng-click="setAnnotation(selectedNode, annotationStyle)" class="annotation-button annotation-{{annotationStyle}}" ng-class="{'annotation-button-active': selectedNode.annotation === annotationStyle}" title="Kurs markieren">&nbsp;</button>
 
-            <button ng-click="setAnnotation(selectedNode, 1)" class="annotation annotation-1" ng-class="{'annotation-active': selectedNode.annotation === 1}">&nbsp;</button>
-            <button ng-click="setAnnotation(selectedNode, 2)" class="annotation annotation-2" ng-class="{'annotation-active': selectedNode.annotation === 2}">&nbsp;</button>
-            <button ng-click="setAnnotation(selectedNode, 3)" class="annotation annotation-3" ng-class="{'annotation-active': selectedNode.annotation === 3}">&nbsp;</button>
-            <button ng-click="setAnnotation(selectedNode, 4)" class="annotation annotation-4" ng-class="{'annotation-active': selectedNode.annotation === 4}">&nbsp;</button>
-            <button ng-click="setAnnotation(selectedNode, 5)" class="annotation annotation-5" ng-class="{'annotation-active': selectedNode.annotation === 5}">&nbsp;</button>
             <h2>{{selectedNode.oldText || selectedNode.text }}</h2>
             <b>Suche</b>
             <br/>

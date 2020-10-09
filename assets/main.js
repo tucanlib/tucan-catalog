@@ -2,6 +2,7 @@
     'use strict';
 
     var HIDE_DIALOG_KEY = 'hideDialog';
+    var ANNOTATIONS_KEY = 'annotations';
 
     var modules,
         parents;
@@ -95,6 +96,7 @@
 
             $scope.ALL_EXPANDED = 'ALL_EXPANDED';
             $scope.ALL_COLLAPSED = 'ALL_COLLAPSED';
+            $scope.ANNOTATION_STYLES = [1, 2, 3, 4, 5];
             $scope.semester = SEMESTER;
             $scope.last_updated = LAST_UPDATED;
 
@@ -265,11 +267,11 @@
             annotations[module.title] = module.annotation;
         });
 
-        setLocalStorage('annotations', annotations);
+        setLocalStorage(ANNOTATIONS_KEY, annotations);
     }
 
     function getAnnotationsFromLocalStorage() {
-        return getObjectFromLocalStorage('annotations');
+        return getObjectFromLocalStorage(ANNOTATIONS_KEY);
     }
 
     function saveCollapsedStatus() {
