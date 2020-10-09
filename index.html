@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="assets/main.css" />
 </head>
 
-<body ng-app="informatikModules" ng-controller="RootCtrl" ng-class="{'aside-open': !!selectedNode, 'aside-big': bigAside }">
+<body ng-app="informatikModules" ng-controller="RootCtrl"
+    ng-class="{'aside-open': !!selectedNode, 'aside-big': bigAside }">
     <header class="fixed-top header" ng-cloak>
         <h2>TUD Informatik Bachelor VV {{semester}}</h2>
         <div class="buttons">
@@ -18,53 +19,72 @@
             <button class="border-left" ng-click="toggleExpanded(ALL_COLLAPSED)">- Collapse all</button>
             <button class="border-left" ng-click="toggleTitleLengths(ALL_EXPANDED)">Toggle Titles</button>
             <button class="border-left" ng-click="clearStorage()">Clear prefs</button>
-            <a class="logo-tucan border-left" href="https://www.tucan.tu-darmstadt.de/" target="_blank"><img src="assets/logo-tucan.jpg"></a>
+            <a class="logo-tucan border-left" href="https://www.tucan.tu-darmstadt.de/" target="_blank"><img
+                    src="assets/logo-tucan.jpg"></a>
         </div>
     </header>
     <div class="flex">
         <section class="overflow-auto" ng-cloak>
             <div class="overflow-auto" ng-cloak>
-                <button class="button-show-hidden-courses" ng-if="hiddenCourses().length > 0" class="border-left" ng-click="config.showHiddenCoursesDialog = true">
+                <button class="button-show-hidden-courses" ng-if="hiddenCourses().length > 0" class="border-left"
+                    ng-click="config.showHiddenCoursesDialog = true">
                     {{hiddenCourses().length}} ausgeblendete Kurse anzeigen
                 </button>
-                <div data-angular-treeview="true" data-tree-id="tree" data-tree-model="data" data-node-id="label" data-node-label="label" data-node-children="children" data-label-template="<span class='annotation-((node.annotation))'>((node.label)) (( labelForNode(node) ))</span><span class='credits no-wrap credits-((node.credits))' ng-if='node.credits'>((node.credits)) CP</span>">
+                <div data-angular-treeview="true" data-tree-id="tree" data-tree-model="data" data-node-id="label"
+                    data-node-label="label" data-node-children="children" data-label-template="
+                        <span class='annotation-((node.annotation))'>
+                            ((node.label)) (( labelForNode(node) ))
+                        </span>
+                        <span class='credits no-wrap credits-((node.credits))' ng-if='node.credits'>
+                            ((node.credits)) CP
+                        </span>">
                 </div>
             </div>
         </section>
         <aside ng-if="selectedNode" scroll-top-on-change="selectedNode" ng-cloak>
             <div class="close-button button round-button" ng-click="showSelected()">x</div>
-            <button ng-click="toggleNodeHiddenStatus(selectedNode, true); showSelected()">Diesen Kurs nicht mehr anzeigen</button>
-            <button ng-repeat="annotationStyle in ANNOTATION_STYLES" ng-click="setAnnotation(selectedNode, annotationStyle)" class="annotation-button annotation-{{annotationStyle}}" ng-class="{'annotation-button-active': selectedNode.annotation === annotationStyle}" title="Kurs markieren">&nbsp;</button>
+            <button ng-click="toggleNodeHiddenStatus(selectedNode, true); showSelected()">Diesen Kurs nicht mehr
+                anzeigen</button>
+            <button ng-repeat="annotationStyle in ANNOTATION_STYLES"
+                ng-click="setAnnotation(selectedNode, annotationStyle)"
+                class="annotation-button annotation-{{annotationStyle}}"
+                ng-class="{'annotation-button-active': selectedNode.annotation === annotationStyle}"
+                title="Kurs markieren">&nbsp;</button>
 
             <h2>{{selectedNode.oldText || selectedNode.text }}</h2>
             <b>Suche</b>
-            <br/>
-            <a ng-href="https://www.google.de/search?q=TU%20Darmstadt%20%20{{selectedNode.label}}" target="_blank">Google</a>
-            <br/>
-            <a ng-href="https://moodle.tu-darmstadt.de/course/search.php?search={{selectedNode.label}}" target="_blank">Moodle</a>
-            <br/>
-            <a ng-href="https://moodle.informatik.tu-darmstadt.de/course/search.php?search={{selectedNode.label}}" target="_blank">Moodle Informatik</a>
-            <br/>
-            <br/>
+            <br />
+            <a ng-href="https://www.google.de/search?q=TU%20Darmstadt%20%20{{selectedNode.label}}"
+                target="_blank">Google</a>
+            <br />
+            <a ng-href="https://moodle.tu-darmstadt.de/course/search.php?search={{selectedNode.label}}"
+                target="_blank">Moodle</a>
+            <br />
+            <a ng-href="https://moodle.informatik.tu-darmstadt.de/course/search.php?search={{selectedNode.label}}"
+                target="_blank">Moodle Informatik</a>
+            <br />
+            <br />
             <div class="module-detail">
                 <b>Pfad</b>
-                <br/>
+                <br />
                 <span>{{getParents(selectedNode, true)}}</span>
             </div>
-            <br/>
+            <br />
             <div class="module-detail" ng-repeat="detail in selectedNode.details">
                 <b>{{detail.title}}</b>
-                <br/>
+                <br />
                 <span ng-bind-html="detail.details"></span>
             </div>
-            <span class="hint"><- (Die Breite dieses Panes lässt sich ändern)</span>
+            <span class="hint">
+                <- (Die Breite dieses Panes lässt sich ändern)</span>
         </aside>
     </div>
     <footer>
         <b>Benutzung auf eigene Gefahr!</b>
         <span class="hint">Stand: {{last_updated}}</span>
     </footer>
-    <div class="overlay overlay-hidden-courses" ng-if="config.showHiddenCoursesDialog && hiddenCourses().length > 0" ng-cloak>
+    <div class="overlay overlay-hidden-courses" ng-if="config.showHiddenCoursesDialog && hiddenCourses().length > 0"
+        ng-cloak>
         <div class="content">
             <div class="close-button round-button button" ng-click="config.showHiddenCoursesDialog = false">x</div>
             <h1>Ausgeblendete Kurse</h1>
@@ -73,7 +93,8 @@
                     <span>
                         {{course.label}}
                     </span>
-                    <button class="button-bordered button-small" ng-click="toggleNodeHiddenStatus(course, false)">Unhide Course</button>
+                    <button class="button-bordered button-small" ng-click="toggleNodeHiddenStatus(course, false)">Unhide
+                        Course</button>
                 </li>
             </ul>
         </div>
@@ -83,26 +104,33 @@
             <h1>TUD Informatik {{semester}}</h1>
             <p>
                 <b>Ganz wichtig:</b> Benutzung auf eigene Gefahr!
-                <br/>
-                <br/> Ich habe viel gegengetestet und nachgeprüft, aber da die Menge der Daten schwierig zu überblicken und testen ist, können sich Fehler einschleichen.
-                <br/>
-                <br/> Eine wichtige Sache noch: dieses VV gilt für Bachelor Informatik PO2009. Es kann sehr gut sein, dass ihr im Tucan mehr/weniger Fächer angezeigt bekommt! Schaut das am besten nach.
-                <br/>
-                <br/>
+                <br />
+                <br /> Ich habe viel gegengetestet und nachgeprüft, aber da die Menge der Daten schwierig zu überblicken
+                und testen ist, können sich Fehler einschleichen.
+                <br />
+                <br /> Eine wichtige Sache noch: dieses VV gilt für Bachelor Informatik PO2009. Es kann sehr gut sein,
+                dass ihr im Tucan mehr/weniger Fächer angezeigt bekommt! Schaut das am besten nach.
+                <br />
+                <br />
                 <button ng-click="hideOverlay()">Ja, bin gewarnt!</button>
-                <br/>
-                <br/> Falls jemand Interesse an dem VV von einer neuen PO hat, bitte Becheid sagen: <a href="mailto:info@davidgengenbach.de">info@davidgengenbach.de</a>. Hier ist der <a href="https://github.com/davidgengenbach/tucan-tools">Crawler</a>.
-                <br/>
-                <br/>
+                <br />
+                <br /> Falls jemand Interesse an dem VV von einer neuen PO hat, bitte Becheid sagen: <a
+                    href="mailto:info@davidgengenbach.de">info@davidgengenbach.de</a>. Hier ist der <a
+                    href="https://github.com/davidgengenbach/tucan-tools">Crawler</a>.
+                <br />
+                <br />
                 <input id="checkbox-hide-dialog" type="checkbox" ng-model="config.hideOverlayNextTime" />
                 <label for="checkbox-hide-dialog">Ab jetzt diesen Overlay nicht mehr zeigen, bitte!</label>
-                <br/>
-                <br/>
-                <span class="hint">(Man kann jetzt auch Links zu den einzelnen Kursen verschicken - siehe URL, wenn man auf nen Kurs klickt)</span>
-                <br/>
+                <br />
+                <br />
+                <span class="hint">(Man kann jetzt auch Links zu den einzelnen Kursen verschicken - siehe URL, wenn man
+                    auf nen Kurs klickt)</span>
+                <br />
                 <span class="hint">(Wenn ihr 'H ' drückt, werden die Modultitel etwas übersichtlicher)</span>
-                <br/>
-                <span class="hint">Kann gut sein, dass alte Browser hier nicht funktionieren. Regt euch dann bitte nicht über die Seite sondern eher über eure Unfähigkeit, einen aktuellen Browser zu installieren, auf ;)</span>
+                <br />
+                <span class="hint">Kann gut sein, dass alte Browser hier nicht funktionieren. Regt euch dann bitte nicht
+                    über die Seite sondern eher über eure Unfähigkeit, einen aktuellen Browser zu installieren, auf
+                    ;)</span>
             </p>
         </div>
     </div>

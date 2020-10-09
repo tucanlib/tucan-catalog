@@ -1,4 +1,4 @@
-(function(angular, R, md5) {
+(function (angular, R, md5) {
     'use strict';
 
     var HIDE_DIALOG_KEY = 'hideDialog';
@@ -11,7 +11,7 @@
         // Returns only "modules" in the module tree that have children (= categories)
         parents = flatten(R.path(['children', 'length']), data, []);
         // Returns only modules that have no children (= modules)
-        modules = flatten(function(curr) {
+        modules = flatten(function (curr) {
             return curr.details && curr.details.length;
         }, data, []);
 
@@ -24,30 +24,30 @@
             return md5(hash);
         }
 
-        data.forEach(walkModules.bind(null, function(module, parent) {
+        data.forEach(walkModules.bind(null, function (module, parent) {
             module.parent = parent;
             module.hash = getHash(module, parent)
 
-            var isHidden = !module.children.length && (!module.details ||  (module.details && !module.details.length));
+            var isHidden = !module.children.length && (!module.details || (module.details && !module.details.length));
             module.hidden = isHidden;
         }, null));
 
         var closedParents = getClosedParentsFromLocalStorage() || [];
-        R.forEach(function(parent) {
+        R.forEach(function (parent) {
             if (closedParents.indexOf(parent.title) >= 0) {
                 parent.collapsed = true;
             }
         }, parents);
 
         var hiddenCourses = getHiddenCoursesFromLocalStorage() || [];
-        R.forEach(function(module) {
+        R.forEach(function (module) {
             if (hiddenCourses.indexOf(module.title) >= 0) {
                 module.hidden = true;
             }
         }, modules);
 
         var annotations = getAnnotationsFromLocalStorage() || {};
-        R.forEach(function(module) {
+        R.forEach(function (module) {
             if (module.title in annotations) {
                 module.annotation = annotations[module.title];
             }
@@ -56,34 +56,34 @@
 
     angular
         .module('informatikModules', ['angularTreeview', 'ngSanitize', 'informatikModulesConstants'])
-        .config(function($locationProvider) {
+        .config(function ($locationProvider) {
             $locationProvider.html5Mode({
                 enabled: true,
                 requireBase: false
             });
         })
-        .controller('RootCtrl', function($scope, $http, $location, $timeout, $window, SEMESTER, LAST_UPDATED) {
+        .controller('RootCtrl', function ($scope, $http, $location, $timeout, $window, SEMESTER, LAST_UPDATED) {
             var urlParams = $location.search(),
                 moduleToOpen = unsanitizeModuleID(urlParams.module);
 
             // ....
-            document.onkeydown = function(evt) {
+            document.onkeydown = function (evt) {
                 var ESC_KEY = 27;
                 var H_KEY = 72;
                 var J_KEY = 74;
 
                 var hotkeyMap = {};
-                hotkeyMap[ESC_KEY] = function() {
+                hotkeyMap[ESC_KEY] = function () {
                     $scope.showSelected(null, false);
                     $scope.config.showHiddenCoursesDialog = false;
                     $scope.config.showDialog = false;
                 };
 
-                hotkeyMap[H_KEY] = function() {
+                hotkeyMap[H_KEY] = function () {
                     toggleModuleNamePreAndSuffixes($scope.data);
                 };
 
-                hotkeyMap[J_KEY] = function() {
+                hotkeyMap[J_KEY] = function () {
                     $scope.toggleNodeHiddenStatus($scope.selectedNode, true);
                     $scope.showSelected();
                 };
@@ -112,7 +112,7 @@
                 $http
                     .get('assets/modules.json')
                     // prepare data (= get parents and modules)
-                    .then(function(res) {
+                    .then(function (res) {
                         var data = res.data;
                         prepareData(data);
                         $scope.data = data;
@@ -124,16 +124,16 @@
 
             function initTree() {
                 var lastNode;
-                $scope.labelForNode = function(node) {
+                $scope.labelForNode = function (node) {
                     if (node.children && node.children.length) {
-                        var filteredLength = node.children.filter(function(node) {
+                        var filteredLength = node.children.filter(function (node) {
                             return !!node.hidden;
                         }).length;
                         if (filteredLength > 0) return '(Hidden: %)'.replace('%', filteredLength);
                     }
                 };
                 $scope.treeSelectNodeLabel = $scope.tree.selectNodeLabel;
-                $scope.tree.selectNodeLabel = function(node) {
+                $scope.tree.selectNodeLabel = function (node) {
                     var isSameNode = node === lastNode;
                     $scope.showSelected(node, !isSameNode);
                     $scope.treeSelectNodeLabel(isSameNode ? {} : node);
@@ -141,20 +141,20 @@
                 };
 
                 $scope.treeSelectNodeHead = $scope.tree.selectNodeHead;
-                $scope.tree.selectNodeHead = function(node) {
+                $scope.tree.selectNodeHead = function (node) {
                     $scope.treeSelectNodeHead(node);
                     saveCollapsedStatus();
                 };
             }
 
-            $scope.clearStorage = function() {
+            $scope.clearStorage = function () {
                 if ('localStorage' in $window) {
                     localStorage.clear();
                     init();
                 }
             };
 
-            $scope.getParents = function(module, withCurrent) {
+            $scope.getParents = function (module, withCurrent) {
                 var parents = [];
                 if (withCurrent) {
                     parents.push(module.label);
@@ -168,11 +168,11 @@
                 return parents.reverse().join(' // ');
             };
 
-            $scope.toggleTitleLengths = function() {
+            $scope.toggleTitleLengths = function () {
                 toggleModuleNamePreAndSuffixes($scope.data);
             };
 
-            $scope.openModuleFromUrl = function() {
+            $scope.openModuleFromUrl = function () {
                 if (moduleToOpen) {
                     var moduleData = getModuleBy('hash', moduleToOpen) || getModuleBy('title', moduleToOpen);
                     if (!moduleData) return;
@@ -183,62 +183,62 @@
                 }
             };
 
-            $scope.showSelected = function(node, selected) {
+            $scope.showSelected = function (node, selected) {
                 $scope.selectedNode = selected && node;
                 $location.search('module', (selected && node) ? node.hash : '');
             };
 
-            $scope.hideOverlay = function() {
+            $scope.hideOverlay = function () {
                 $scope.config.showDialog = false;
                 if ($scope.config.hideOverlayNextTime) {
                     setLocalStorage(HIDE_DIALOG_KEY, true);
                 }
             };
 
-            $scope.toggleExpanded = function(state) {
+            $scope.toggleExpanded = function (state) {
                 var collapsed = state === $scope.ALL_COLLAPSED;
-                R.forEach(function(parent) {
+                R.forEach(function (parent) {
                     parent.collapsed = collapsed;
                 }, parents);
                 saveCollapsedStatus();
             };
 
-            $scope.toggleNodeHiddenStatus = function(node, hidden) {
+            $scope.toggleNodeHiddenStatus = function (node, hidden) {
                 if (!node) return;
                 hidden = hidden === undefined ? !node.hidden : hidden;
                 node.hidden = hidden;
                 saveHiddenStatus();
             };
 
-            $scope.setAnnotation = function(node, annotation) {
+            $scope.setAnnotation = function (node, annotation) {
                 if (!node) return;
                 annotation = annotation === node.annotation ? 0 : annotation;
                 node.annotation = annotation;
                 saveAnnotations();
             }
 
-            $scope.showAllCourses = function() {
-                R.forEach(function(module) {
+            $scope.showAllCourses = function () {
+                R.forEach(function (module) {
                     module.hidden = false;
                 }, modules);
                 saveHiddenStatus();
             };
 
-            $scope.hiddenCourses = function() {
+            $scope.hiddenCourses = function () {
                 return modules ? R.filter(R.prop('hidden'), modules) : 0;
             };
 
-            $scope.annotations = function() {
+            $scope.annotations = function () {
                 return modules ? R.filter(R.prop('annotation'), modules) : 0;
             };
         })
-        .directive('scrollTopOnChange', function() {
+        .directive('scrollTopOnChange', function () {
             return {
                 scope: {
                     scrollTopOnChange: '='
                 },
-                link: function($scope, element, attrs, controller) {
-                    $scope.$watch('scrollTopOnChange', function(newVal, oldVal) {
+                link: function ($scope, element, attrs, controller) {
+                    $scope.$watch('scrollTopOnChange', function (newVal, oldVal) {
                         element[0].scrollTop = 0;
                     });
                 }
@@ -263,7 +263,7 @@
 
     function saveAnnotations() {
         var annotations = {};
-        R.filter(R.prop('annotation'), modules).forEach(function(module) {
+        R.filter(R.prop('annotation'), modules).forEach(function (module) {
             annotations[module.title] = module.annotation;
         });
 
@@ -317,7 +317,7 @@
             return name.replace(prefixReg, '').replace(suffixReg, '').trim();
         }
 
-        modules.forEach(walkModules.bind(null, function(module) {
+        modules.forEach(walkModules.bind(null, function (module) {
             if (!module.oldText) {
                 module.label = module.title;
                 module.oldText = module.title;
@@ -340,7 +340,7 @@
     function flatten(test, list, acc) {
         if (!list.length) return acc;
 
-        return R.reduce(function(acc, curr) {
+        return R.reduce(function (acc, curr) {
             if (test(curr)) acc.push(curr);
             return curr.children.length ? flatten(test, curr.children, acc) : acc;
         }, acc, list);
